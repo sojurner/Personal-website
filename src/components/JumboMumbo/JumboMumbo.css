@@ -1,0 +1,85 @@
+.jumbotron {
+  display: flex;
+  margin: 4rem auto 0 auto;
+  justify-content: space-evenly;
+  width: 90%;
+  border-radius: 1rem;
+  background-color: rgba(48, 112, 147, 0.824);
+  animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) normal backwards 1 fadeIn;
+  height: 62rem;
+  box-shadow: 1px 1px 1px 2px #2c425fab;
+}
+
+.slide,
+.carousel {
+  width: 100%;
+  display: flex;
+}
+
+.family-img {
+  margin: 0 0 0 3rem;
+  border-radius: 0.5rem;
+  opacity: 0.7;
+}
+
+.item {
+  /* justify-self: center; */
+}
+
+h1 {
+  text-align: center;
+}
+
+.modal-content {
+  font-size: 1rem;
+}
+
+.carousel-inner {
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  color: rgb(50, 66, 66);
+  background-image: none;
+}
+
+.carousel-control.right {
+  color: black;
+}
+
+.jumbotron .h1,
+.jumbotron h1 {
+  font-size: 90px;
+}
+
+.jumbotron p {
+  font-size: 3rem;
+  font-family: badscript;
+}
+
+.jumbotron h3 {
+  font-size: 5rem;
+}
+
+.carousel-caption {
+  font-size: 2rem;
+  position: static;
+}
+
+.bottom {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: rgb(71, 167, 167);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
