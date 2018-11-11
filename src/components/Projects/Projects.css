@@ -7,7 +7,8 @@
 }
 
 .nav-link {
-  font-size: 5rem;
+  font-size: 6rem;
+  color: rgb(7, 73, 123);
 }
 
 .Redux {
@@ -22,4 +23,12 @@
 .project-navigation .slide {
   grid-column: 1 /5;
   grid-row: 2/3;
+  align-self: center;
+}
+
+.default-show {
+  grid-column: 1 /5;
+  grid-row: 2/3;
+  align-self: center;
+  font-size: 10rem;
 }
