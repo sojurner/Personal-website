@@ -1,0 +1,49 @@
+.navbar {
+  height: 10rem;
+  background-color: rgb(59, 59, 72);
+  margin: 0 -0.1rem;
+  animation: slideInDown 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar-header {
+  grid-column: 1;
+  padding-left: 2rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  height: 10rem;
+  background-color: #0f3f5d;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar-collapse,
+.collapse {
+  height: 4rem;
+  align-self: end;
+}
+
+.projects-tab,
+.about-tab {
+  font-size: 3rem;
+}
+
+.quote {
+  color: rgb(125, 171, 176);
+  letter-spacing: 3px;
+  font-size: 6rem;
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

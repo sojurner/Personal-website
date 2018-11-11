@@ -1,0 +1,17 @@
+@font-face {
+  font-family: burls;
+  src: url(../../Fonts/Burls.ttf);
+}
+
+@font-face {
+  font-family: badscript;
+  src: url(../../Fonts/Badscript.ttf);
+}
+
+* {
+  font-family: burls;
+}
+
+body {
+  background-color: rgba(0, 77, 145, 0.653);
+}
