@@ -22,6 +22,7 @@ export const ProjectModal = ({ show, handleClose, project }) => {
           thumbnail
           src={require(`../../assets/Images/${project.title}.gif`)}
         />
+        <h1 className="project-modal-description">{project.description}</h1>
       </Modal.Body>
       <Modal.Footer>
         <div className="icon-links">
