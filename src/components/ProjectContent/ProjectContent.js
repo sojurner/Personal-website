@@ -28,7 +28,6 @@ class ProjectContent extends Component {
   };
 
   handleHover = (event, direction) => {
-    console.log('fadsfa');
     event.preventDefault();
     this.setState({ direction });
   };
@@ -39,10 +38,18 @@ class ProjectContent extends Component {
         <Carousel.Item>
           <h1>{project.title}</h1>
           <Carousel.Caption className="project-carousel">
-            <img
-              height="500"
+            <Image
+              onClick={e => this.handleShow(e, project)}
+              onMouseEnter={e => this.handleHover(e, true)}
+              onMouseLeave={e => this.handleHover(e, false)}
+              thumbnail
+              height="300"
+              width="600"
               src={require(`../../assets/Images/${project.title}.gif`)}
             />
+            {this.state.direction && (
+              <h1 className="click-to-view">Click to View</h1>
+            )}
           </Carousel.Caption>
         </Carousel.Item>
       );
