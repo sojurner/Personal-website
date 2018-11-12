@@ -6,8 +6,16 @@
 }
 
 .nav-link {
-  font-size: 6rem;
+  font-size: 3rem;
   color: rgb(7, 73, 123);
+}
+
+.nav-link:hover {
+  color: rgb(147, 205, 203);
+}
+
+.active {
+  color: rgb(147, 205, 203);
 }
 
 .Redux {
