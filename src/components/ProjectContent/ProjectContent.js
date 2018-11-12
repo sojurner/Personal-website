@@ -22,8 +22,15 @@ class ProjectContent extends Component {
     this.setState({ show: false });
   };
 
-  handleShow = () => {
-    this.setState({ show: true });
+  handleShow = (event, selectedProject) => {
+    event.preventDefault();
+    this.setState({ show: true, selectedProject });
+  };
+
+  handleHover = (event, direction) => {
+    console.log('fadsfa');
+    event.preventDefault();
+    this.setState({ direction });
   };
 
   render() {
