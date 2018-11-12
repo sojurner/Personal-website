@@ -9,9 +9,14 @@
 }
 
 * {
-  font-family: burls;
+  font-family: antaro;
 }
 
 body {
   background-color: rgba(0, 77, 145, 0.653);
+}
+
+@font-face {
+  font-family: antaro;
+  src: url(../../Fonts/Antaro.ttf);
 }

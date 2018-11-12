@@ -13,6 +13,22 @@
   justify-content: center;
 }
 
+.modal-content {
+  background-color: rgb(77, 99, 136);
+}
+
+.project-modal-description,
+#contained-modal-title {
+  font-family: badscript;
+  line-height: 7rem;
+  color: rgb(171, 209, 241);
+}
+
+#contained-modal-title {
+  font-size: 5rem;
+  text-align: center;
+}
+
 .project-carousel .img-thumbnail {
   cursor: pointer;
 }
@@ -30,6 +46,7 @@
   cursor: pointer;
   font-size: 3rem;
   margin: 0 3rem;
+  color: rgb(171, 209, 241);
 }
 
 .icon-links {

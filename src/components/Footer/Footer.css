@@ -1,0 +1,93 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.high-low {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+
+.weather-high,
+.weather-low {
+  margin: 0 2rem;
+  font-size: 4rem;
+}
+
+.weather-info {
+  background-color: rgb(78, 114, 145);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+}
+
+.weather {
+  font-family: antaro;
+}
+
+.weather-low {
+  color: rgb(150, 206, 249);
+}
+
+.weather-high {
+  color: rgb(179, 165, 165);
+}
+
+.weather-icon {
+  margin: 1rem 2rem;
+}
+
+.weather-summary {
+  font-size: 3rem;
+  color: rgb(215, 231, 245);
+  /* margin: 0 0 3rem 0; */
+}
+
+@font-face {
+  font-family: antaro;
+  src: url(../../Fonts/Antaro.ttf);
+}
+
+.weather-info {
+  font-weight: 100;
+  color: #666;
+  background: rgb(110, 146, 174);
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 40px;
+  max-width: 90vw;
+  width: max-content;
+  position: relative;
+  text-align: center;
+  height: 10rem;
+
+  filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.1));
+  border-right: 2px solid rgb(110, 146, 174);
+  border-left: 2px solid rgb(110, 146, 174);
+}
+
+.weather-info:after,
+.weather-info:before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  border: 50px solid rgb(110, 146, 174);
+}
+
+.weather-info:before {
+  left: -50px;
+  border-right-width: 10px;
+  border-left-color: transparent;
+  filter: drop-shadow(-6px 6px 3px rgba(0, 0, 0, 0.04));
+}
+
+.weather-info:after {
+  right: -50px;
+  border-left-width: 10px;
+  border-right-color: transparent;
+  filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.04));
+}

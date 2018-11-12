@@ -1,6 +1,6 @@
 .jumbotron {
   display: flex;
-  margin: 4rem auto 0 auto;
+  margin: 0 auto;
   justify-content: space-evenly;
   width: 90%;
   border-radius: 1rem;
