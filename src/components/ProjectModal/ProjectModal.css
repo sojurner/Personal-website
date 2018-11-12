@@ -1,0 +1,37 @@
+.modal-container {
+  position: relative;
+  background-color: aquamarine;
+}
+.modal-container .modal,
+.modal-container .modal-backdrop {
+  position: absolute;
+  background-color: aquamarine;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.project-carousel .img-thumbnail {
+  cursor: pointer;
+}
+
+.project-carousel .img-thumbnail:hover {
+  filter: brightness(30%);
+}
+
+.project-image {
+  cursor: pointer;
+}
+
+.fa-github-alt,
+.fa-laptop-code {
+  cursor: pointer;
+  font-size: 3rem;
+  margin: 0 3rem;
+}
+
+.icon-links {
+  margin: auto;
+}

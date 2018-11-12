@@ -32,7 +32,11 @@
 .quote {
   color: rgb(125, 171, 176);
   letter-spacing: 3px;
-  font-size: 6rem;
+  font-size: 5rem;
+}
+
+.default .navbar-nav li a {
+  color: #3681a4;
 }
 
 @keyframes slideInDown {

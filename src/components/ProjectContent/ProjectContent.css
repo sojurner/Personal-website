@@ -1,0 +1,12 @@
+.project-jumbotron {
+  grid-column: 1 /5;
+  grid-row: 2/3;
+  align-self: center;
+}
+.click-to-view {
+  position: absolute;
+  margin: auto;
+  left: 40%;
+  top: 50%;
+  z-index: 20000;
+}

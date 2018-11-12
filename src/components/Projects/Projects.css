@@ -1,8 +1,7 @@
 .project-navigation {
   display: grid;
-  grid-template-rows: 4rem 1fr;
+  grid-template-rows: 7rem 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
   justify-content: center;
 }
 
@@ -31,4 +30,8 @@
   grid-row: 2/3;
   align-self: center;
   font-size: 10rem;
+}
+
+img {
+  border-radius: 0.5rem;
 }
