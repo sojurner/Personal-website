@@ -48,7 +48,7 @@ class ProjectContent extends Component {
               src={require(`../../assets/Images/${project.title}.gif`)}
             />
             {this.state.direction && (
-              <h1 className="click-to-view">Click to View</h1>
+              <h5 className="click-to-view">Click to View</h5>
             )}
           </Carousel.Caption>
         </Carousel.Item>
