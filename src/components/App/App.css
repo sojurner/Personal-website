@@ -8,6 +8,11 @@
   src: url(../../Fonts/Badscript.ttf);
 }
 
+@font-face {
+  font-family: codec;
+  src: url(../../Fonts/codec.ttf);
+}
+
 * {
   font-family: antaro;
 }

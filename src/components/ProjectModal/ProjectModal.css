@@ -19,8 +19,8 @@
 
 .project-modal-description,
 #contained-modal-title {
-  font-family: badscript;
-  line-height: 7rem;
+  font-family: codec;
+  line-height: 5rem;
   color: rgb(171, 209, 241);
 }
 

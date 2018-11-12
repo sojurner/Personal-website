@@ -5,6 +5,7 @@
 }
 .click-to-view {
   position: absolute;
+  font-size: 4rem;
   margin: auto;
   left: 40%;
   top: 50%;
