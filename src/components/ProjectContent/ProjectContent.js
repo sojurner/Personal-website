@@ -55,7 +55,20 @@ class ProjectContent extends Component {
       );
     });
 
-    return <Carousel>{x}</Carousel>;
+    const { show, selectedProject, direction } = this.state;
+
+    return (
+      <Jumbotron className="project-jumbotron">
+        <Carousel>{x}</Carousel>
+        {show && (
+          <ProjectModal
+            show={show}
+            handleClose={this.handleClose}
+            project={selectedProject}
+          />
+        )}
+      </Jumbotron>
+    );
   }
 }
 
