@@ -37,9 +37,10 @@ class JumboMumbo extends Component {
     return (
       <Jumbotron>
         <Image
+          thumbnail
           className="family-img"
-          height="600"
-          width="500"
+          height="400"
+          width="330"
           src={require(`../../assets/Images/family-cropped.jpg`)}
         />
         <Carousel interval={null}>
@@ -51,7 +52,6 @@ class JumboMumbo extends Component {
               <p>currently based in Denver CO</p>
               <br />
               <br />
-
               <Skillset
                 state={this.state}
                 updateDesc={this.updateDesc}
@@ -60,10 +60,10 @@ class JumboMumbo extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <h1>My Interests...</h1>
+            <h1>My Journey...</h1>
             <Carousel.Caption>
-              <p>I love Programming</p>
-              <p>I might be addicted to Reddit</p>
+              <p>FromerCombat Medic in US Military</p>
+              <p />
               <p>I might be addicted to Reddit</p>
             </Carousel.Caption>
           </Carousel.Item>
