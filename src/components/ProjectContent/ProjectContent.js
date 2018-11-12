@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Jumbotron, Image } from 'react-bootstrap';
 
 import { allProjects } from '../../assets/ProjectData';
+import { ProjectModal } from '../ProjectModal/ProjectModal';
+import './ProjectContent.css';
 
 class ProjectContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
+      selectedProject: null,
+      direction: false,
       projects: allProjects.filter(
         project => project.projectType === props.type
       )
