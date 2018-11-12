@@ -12,8 +12,8 @@ class Navigation extends Component {
           <Navbar.Brand>
             <Link to="/">
               <img
-                height="80"
-                width="250"
+                height="60"
+                width="240"
                 src={require(`../../assets/Images/Paul-kim-logo.png`)}
               />
             </Link>
@@ -54,8 +54,8 @@ class Navigation extends Component {
               className="projects-tab"
               eventKey={2}
               componentClass={Link}
-              href="/projects"
-              to="/projects"
+              href="/projects/Redux"
+              to="/projects/Redux"
             >
               Projects
             </NavItem>
