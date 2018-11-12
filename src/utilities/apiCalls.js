@@ -9,6 +9,5 @@ export const getWeather = async (lat, lng) => {
   const result = await response.json();
   result['high'] = Math.round(result['high']);
   result['low'] = Math.round(result['low']);
-
   return result;
 };
