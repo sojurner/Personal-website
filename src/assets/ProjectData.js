@@ -45,7 +45,7 @@ export const allProjects = [
     description:
       'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
     githubURL: 'https://github.com/sojurner/Movie-Tracker',
-    githubPages: 'asdf'
+    githubPages: 'https://movie-tracker-client.herokuapp.com/'
   },
   {
     title: 'Stravant',
@@ -53,7 +53,7 @@ export const allProjects = [
     description:
       'Checkout out your fitness Activity from Strava and track your Pomodoros',
     githubURL: 'https://github.com/sojurner/Stravant',
-    githubPages: 'asdf'
+    githubPages: 'https://stravant.herokuapp.com/'
   },
   {
     title: 'Swapi-box',
