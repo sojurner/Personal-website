@@ -1,5 +1,5 @@
 .icons {
-  animation: flipInX 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: flipInY 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: flex;
   flex-direction: column;
 }
@@ -38,9 +38,9 @@ ion-icon {
 
 .home-container {
   display: grid;
-  grid-template-columns: 22.25rem 6fr;
+  grid-template-columns: 25rem 6fr;
   margin: 0 3rem;
-  height: 66rem;
+  height: 14rem;
 }
 .contact {
   text-align: center;
@@ -49,6 +49,7 @@ ion-icon {
 }
 
 .contact-aside {
+  height: 50rem;
   width: 100%;
   justify-self: center;
   position: relative;
@@ -65,7 +66,7 @@ ion-icon {
   display: block;
   position: absolute;
   /* bottom: 3px; */
-  bottom: -8%;
+  bottom: -12%;
   /* left: 0; */
   border-top: 30px solid #155176;
   border-right: 125px solid #155176;
@@ -73,29 +74,33 @@ ion-icon {
   border-bottom: 60px solid transparent;
 }
 
-@keyframes flipInX {
+@keyframes flipInY {
   from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
   }
+
   40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
   }
+
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
   }
+
   to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
