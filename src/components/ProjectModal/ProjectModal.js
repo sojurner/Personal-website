@@ -7,6 +7,16 @@ export const ProjectModal = ({ show, handleClose, project }) => {
     event.preventDefault();
     window.location = link;
   };
+  const imgs = project.technologies.map(tech => {
+    return (
+      <img
+        height="40"
+        className="modal-tech"
+        name={tech}
+        src={require(`../../assets/Images/${tech}.png`)}
+      />
+    );
+  });
   return (
     <Modal
       show={show}
@@ -18,10 +28,12 @@ export const ProjectModal = ({ show, handleClose, project }) => {
       </Modal.Header>
       <Modal.Body>
         <Image
-          onClick={e => this.handleShow(e, project)}
+          height
           thumbnail
           src={require(`../../assets/Images/${project.title}.gif`)}
         />
+        <div className="imgs">{imgs}</div>
+
         <h1 className="project-modal-description">{project.description}</h1>
       </Modal.Body>
       <Modal.Footer>
