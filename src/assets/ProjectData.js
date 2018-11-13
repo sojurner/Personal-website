@@ -2,6 +2,7 @@ export const allProjects = [
   {
     title: 'Minecraft',
     projectType: 'Compositions',
+    technologies: ['html', 'css'],
     description:
       'Minecraft-inspired static webpage with emphasis on CSS grid and responsive design',
     githubURL: 'https://github.com/sojurner/Static-Composition-1',
@@ -9,15 +10,17 @@ export const allProjects = [
   },
   {
     title: 'Avatar',
+    projectType: 'Compositions',
+    technologies: ['html', 'css'],
     description:
       'Avatar-inspired static webpage with emphasis on CSS grid/flex, responsiveness, and card display',
-    projectType: 'Compositions',
     githubURL: 'https://github.com/sojurner/Static-Composition-2',
     githubPages: 'https://sojurner.github.io/Static-Composition-2/'
   },
   {
     title: 'Amumu',
     projectType: 'Compositions',
+    technologies: ['html', 'css'],
     description:
       'League of legends inspired static webpage with emphasis on responsiveness and element spacing',
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
@@ -26,6 +29,7 @@ export const allProjects = [
   {
     title: 'Event-mapper',
     projectType: 'Redux',
+    technologies: ['react', 'redux', 'jest', 'router'],
     description:
       'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
     githubURL: 'https://github.com/sojurner/Event-Mapper',
@@ -34,6 +38,7 @@ export const allProjects = [
   {
     title: 'Fantasy-futbol',
     projectType: 'Redux',
+    technologies: ['react', 'redux', 'jest', 'router', 'node'],
     description:
       'Create your own league, add users, and create soccer team with Fantasy-futbol.  Users can search by country, player name, and/or club and view player stats.',
     githubURL: 'https://github.com/sojurner/fantasy-futbol_client',
@@ -42,6 +47,7 @@ export const allProjects = [
   {
     title: 'Movie-tracker',
     projectType: 'Redux',
+    technologies: ['react', 'redux', 'jest', 'router'],
     description:
       'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
     githubURL: 'https://github.com/sojurner/Movie-Tracker',
@@ -50,6 +56,7 @@ export const allProjects = [
   {
     title: 'Stravant',
     projectType: 'Redux',
+    technologies: ['react', 'redux', 'jest', 'router'],
     description:
       'Checkout out your fitness Activity from Strava and track your Pomodoros',
     githubURL: 'https://github.com/sojurner/Stravant',
@@ -58,6 +65,7 @@ export const allProjects = [
   {
     title: 'Swapi-box',
     projectType: 'React',
+    technologies: ['react', 'jest', 'router'],
     description:
       'Checkout the characters, vehicles, and planet information from the Star Wars series',
     githubURL: 'https://github.com/sojurner/swapi-box',
@@ -66,6 +74,7 @@ export const allProjects = [
   {
     title: 'Headcount',
     projectType: 'React',
+    technologies: ['react', 'jest'],
     description:
       'Compare student grade averages between two districts in Colorado.',
     githubURL: 'https://github.com/sojurner/headcount2.0',
@@ -74,6 +83,7 @@ export const allProjects = [
   {
     title: 'Polo-picker',
     projectType: 'JavaScript',
+    technologies: ['node', 'html', 'css'],
     description:
       'Does that Shirt look good on you?  Well with Polo Picker you can find out!  Create a project and add a palette of polos to view later.',
     githubURL: 'https://github.com/sojurner/Polo-picker',
@@ -82,6 +92,7 @@ export const allProjects = [
   {
     title: 'Tron',
     projectType: 'JavaScript',
+    technologies: ['node', 'html', 'css'],
     description:
       'Recreation of Tron game with HTML Canvas and focus on Object-Oriented Programming',
     githubURL: 'https://github.com/sojurner/game-time-1',
@@ -91,22 +102,25 @@ export const allProjects = [
   {
     title: 'Number-guesser',
     projectType: 'JavaScript',
+    technologies: ['node', 'html', 'css'],
     description:
-      'Guess a Number!  Whether its too high or too low, Number-guesser will let you know.  Built using Vanilla JS, HTML5 ',
+      'Guess a Number!  Whether its too high or too low, Number-guesser will let you know.',
     githubURL: 'https://github.com/sojurner/Number-Guesser',
     githubPages: 'https://sojurner.github.io/Number-Guesser/'
   },
   {
     title: 'Linked-list',
     projectType: 'JavaScript',
+    technologies: ['node', 'html', 'css'],
     description:
-      'Bookmark your favorite sites, check them off after reading them, and delete',
+      'Manage your favorite links.  Add links, check them off after reading, and remove them from your linked-list',
     githubURL: 'https://github.com/sojurner/linked-list',
     githubPages: 'https://sojurner.github.io/linked-list/'
   },
   {
     title: '2Do-box',
     projectType: 'JavaScript',
+    technologies: ['node', 'html', 'css'],
     description:
       'Save your to-dos and Rate them by importance.  also Search for specific to-dos and delete when completed',
     githubURL: 'https://github.com/sojurner/2DoBox-Pivot',
@@ -157,7 +171,7 @@ export const timeline = [
     name: 'Turing',
     details: 'Front-end Developer',
     body:
-      'Seven month long coding bootcamp focusing on JavaScript, React, Redux, Node/Express',
+      'Seven month long coding bootcamp focusing on JavaScript, React, Redux, node/Express',
     startYear: 2017,
     endYear: '',
     img:
