@@ -1,6 +1,8 @@
 import React from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
 
+import './Skillset.css';
+
 export const Skillset = ({ state, updateDesc, resetDesc }) => {
   let descriptions = [
     'React',
@@ -19,7 +21,7 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
         overlay={state[description] ? state[description] : null}
       >
         <img
-          height="60"
+          height="50"
           style={styles}
           name={description}
           onMouseEnter={e => updateDesc(e, descriptions[index])}
