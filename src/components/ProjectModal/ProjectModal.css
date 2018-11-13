@@ -22,6 +22,8 @@
   font-family: codec;
   line-height: 5rem;
   color: rgb(171, 209, 241);
+  font-size: 29px;
+  margin: 0;
 }
 
 #contained-modal-title {
@@ -31,6 +33,7 @@
 
 .project-carousel .img-thumbnail {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .project-carousel .img-thumbnail:hover {
@@ -41,12 +44,26 @@
   cursor: pointer;
 }
 
+.imgs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.modal-tech {
+  margin: 0 2rem;
+}
+
 .fa-github-alt,
 .fa-laptop-code {
   cursor: pointer;
   font-size: 3rem;
   margin: 0 3rem;
   color: rgb(171, 209, 241);
+}
+
+i:hover {
+  color: rgb(199, 226, 250);
 }
 
 .icon-links {

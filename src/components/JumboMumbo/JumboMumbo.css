@@ -50,11 +50,11 @@ h1 {
 .jumbotron .h1,
 .jumbotron h1 {
   font-size: 70px;
+  margin: 0;
 }
 
 .jumbotron p {
   font-size: 2.6rem;
-  font-family: badscript;
 }
 
 .jumbotron h3 {
@@ -82,4 +82,51 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+.odd,
+.even {
+  font-size: 2.5rem;
+  color: rgb(174, 231, 255);
+}
+
+.even {
+  color: rgb(197, 255, 243);
+}
+
+.main-page-jumbo {
+  margin: 4.5rem 0 0 7rem;
+}
+
+.main-page-jumbo div .carousel-indicators {
+  bottom: -3rem;
+}
+
+.bucket-items {
+  display: flex;
+}
+
+.bucket-items ul {
+  margin: auto;
+}
+
+.bucket-items ul li {
+  text-align: start;
+}
+
+.journey-items {
+  display: flex;
+}
+
+.journey-items ul {
+  margin: auto;
+}
+
+.journey-items ul li {
+  text-align: start;
+  margin: 2rem 0;
+}
+
+.about-items p strong {
+  color: rgb(209, 249, 241);
 }

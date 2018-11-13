@@ -14,8 +14,8 @@
 
 .weather-high,
 .weather-low {
-  margin: 0 2rem;
-  font-size: 4rem;
+  margin: 1rem 2rem 0 2rem;
+  font-size: 3.3rem;
 }
 
 .weather-info {
@@ -33,7 +33,7 @@
 }
 
 .weather-high {
-  color: rgb(179, 165, 165);
+  color: rgb(210, 142, 142);
 }
 
 .weather-icon {
@@ -42,7 +42,7 @@
 
 .weather-summary {
   font-size: 3rem;
-  color: rgb(215, 231, 245);
+  color: rgb(183, 216, 245);
   /* margin: 0 0 3rem 0; */
 }
 

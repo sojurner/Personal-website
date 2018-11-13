@@ -11,3 +11,7 @@
   top: 50%;
   z-index: 20000;
 }
+
+.project-jumbotron div .carousel-indicators {
+  bottom: -1rem;
+}
