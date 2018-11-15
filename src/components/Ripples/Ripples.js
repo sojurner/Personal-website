@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { TransitionMotion, spring } from 'react-motion';
-import './Ripples.css';
 
 const leavingSpringConfig = { stiffness: 60, damping: 15 };
 
