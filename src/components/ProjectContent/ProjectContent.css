@@ -9,7 +9,7 @@
   margin: auto;
   left: 40%;
   top: 50%;
-  z-index: 20000;
+  z-index: 2;
 }
 
 .project-jumbotron div .carousel-indicators {
