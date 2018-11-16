@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Switch, NavLink, Route } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import ProjectContent from '../ProjectContent/ProjectContent';
 
 import './Projects.css';
-
 export default class Projects extends Component {
   state = {
     routes: ['Redux', 'React', 'JavaScript', 'Compositions'],
