@@ -10,7 +10,6 @@ class Ripples extends Component {
   }
 
   handleMouseMove = ({ pageX, pageY }) => {
-    console.log('zsd');
     this.setState(() => {
       return {
         mouse: [pageX - 25, pageY - 25],
