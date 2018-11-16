@@ -18,10 +18,12 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
     return (
       <OverlayTrigger
         placement="bottom"
-        overlay={state[description] ? state[description] : null}
+        overlay={state[description]}
+        key={`overlay-${index}`}
       >
         <img
           height="50"
+          alt="Showcase of my personal projects"
           style={styles}
           name={description}
           onMouseEnter={e => updateDesc(e, descriptions[index])}
