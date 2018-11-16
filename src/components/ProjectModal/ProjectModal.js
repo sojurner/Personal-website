@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Modal, Button, Image } from 'react-bootstrap';
+import { Modal, Image } from 'react-bootstrap';
 import './ProjectModal.css';
 export const ProjectModal = ({ show, handleClose, project }) => {
   const redirect = (event, link) => {
@@ -11,6 +11,7 @@ export const ProjectModal = ({ show, handleClose, project }) => {
     return (
       <img
         height="40"
+        alt="Tech stack skills"
         className="modal-tech"
         name={tech}
         src={require(`../../assets/Images/${tech}.png`)}
