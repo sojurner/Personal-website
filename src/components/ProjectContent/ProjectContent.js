@@ -4,7 +4,6 @@ import { Carousel, Jumbotron, Image } from 'react-bootstrap';
 import { allProjects } from '../../assets/ProjectData';
 import { ProjectModal } from '../ProjectModal/ProjectModal';
 import './ProjectContent.css';
-
 class ProjectContent extends Component {
   constructor(props) {
     super(props);
@@ -55,7 +54,7 @@ class ProjectContent extends Component {
       );
     });
 
-    const { show, selectedProject, direction } = this.state;
+    const { show, selectedProject } = this.state;
 
     return (
       <Jumbotron className="project-jumbotron">
