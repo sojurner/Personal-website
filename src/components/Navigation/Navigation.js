@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Ripples from '../Ripples/Ripples';
 
 import './Navigation.css';
 
@@ -8,10 +9,12 @@ class Navigation extends Component {
   render() {
     return (
       <Navbar default collapseOnSelect>
+        <Ripples />
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
               <img
+                alt="Paul Kim Signature"
                 height="60"
                 width="240"
                 src={require(`../../assets/Images/Paul-kim-logo.png`)}
