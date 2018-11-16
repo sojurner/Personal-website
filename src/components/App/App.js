@@ -4,7 +4,6 @@ import Navigation from '../Navigation/Navigation';
 import { Home } from '../Home/Home';
 import { Footer } from '../Footer/Footer';
 import { getWeather } from '../../utilities/apiCalls';
-import Ripples from '../Ripples/Ripples';
 import './App.css';
 
 class App extends Component {
@@ -28,7 +27,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Ripples />
           <Navigation />
           <Home />
           {this.state.weather && <Footer weather={this.state.weather} />}
