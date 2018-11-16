@@ -26,15 +26,23 @@
 
 .projects-tab,
 .about-tab {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  z-index: 10;
 }
 
-.quote {
+.navbar-default .navbar-nav > li > a {
+  color: rgb(41, 161, 182);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgb(29, 197, 230);
+}
+
+.navbar-default .navbar-nav > li > a:active .quote {
   color: rgb(125, 171, 176);
   letter-spacing: 3px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-
 .default .navbar-nav li a {
   color: #3681a4;
 }
@@ -43,6 +51,10 @@
   border-color: #ddd;
   position: absolute;
   right: 0;
+}
+
+.quote {
+  font-size: 2.5rem;
 }
 
 @keyframes slideInDown {
