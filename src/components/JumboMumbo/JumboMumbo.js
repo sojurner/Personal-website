@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Jumbotron,
-  Image,
-  Tooltip,
-  OverlayTrigger,
-  Carousel
-} from 'react-bootstrap';
+import { Jumbotron, Image, Tooltip, Carousel } from 'react-bootstrap';
 import { Skillset } from '../Skillset/Skillset';
 
 import './JumboMumbo.css';
