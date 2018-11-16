@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
+
 import Projects from '../Projects/Projects';
-
 import { Route } from 'react-router-dom';
-
 import JumboMumbo from '../JumboMumbo/JumboMumbo';
-
 import './Home.css';
 
 export const Home = () => {
