@@ -6,6 +6,7 @@ export const Footer = ({ weather }) => {
   return (
     <footer className="footer">
       <img
+        alt="Weather icon"
         className="weather-icon"
         src={require(`../../assets/Images/weather/${weather.icon}.png`)}
       />
@@ -18,6 +19,7 @@ export const Footer = ({ weather }) => {
       </div>
       <img
         className="weather-icon"
+        alt="Weather icon"
         src={require(`../../assets/Images/weather/${weather.icon}.png`)}
       />
     </footer>
