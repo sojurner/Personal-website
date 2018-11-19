@@ -24,7 +24,7 @@ class Gifs extends Component {
 
   getGifs = async () => {
     const { start, end } = this.state;
-    const gifs = await calls.getGifs();
+    const gifs = await calls.getGifs('cats');
     this.setState({
       gifs: gifs.data,
       mappedGifs: gifs.data.slice(start, end),
