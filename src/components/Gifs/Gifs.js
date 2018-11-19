@@ -9,10 +9,12 @@ class Gifs extends Component {
     super();
     this.state = {
       gifs: null,
+      query: '',
       mappedGifs: [],
       loading: true,
       start: 0,
-      end: 6
+      end: 15,
+      searchResults: ''
     };
   }
 
