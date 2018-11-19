@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import { Home } from '../Home/Home';
+import Gifs from '../Gifs/Gifs';
 import { Footer } from '../Footer/Footer';
 import { getWeather } from '../../utilities/apiCalls';
 import './App.css';
@@ -26,10 +27,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="root">
           <Navigation />
           <Home />
           {this.state.weather && <Footer weather={this.state.weather} />}
+          <Gifs />
         </div>
       </Router>
     );
