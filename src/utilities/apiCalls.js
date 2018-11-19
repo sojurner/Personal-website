@@ -11,3 +11,12 @@ export const getWeather = async (lat, lng) => {
   result['low'] = Math.round(result['low']);
   return result;
 };
+
+export const getGifs = async () => {
+  const url = `https://api.giphy.com/v1/gifs/search?q=cats&api_key=${
+    process.env.REACT_APP_GIPHY_API_KEY
+  }&limit=200`;
+  const response = await fetch(url);
+  const result = await response.json();
+  return result;
+};
