@@ -1,4 +1,6 @@
 .gif-items {
+  margin: 1rem;
+}
 
 .gif-form {
   width: 20rem;
@@ -17,8 +19,29 @@
   padding: 0.5rem;
 }
 
+.search-results {
+  width: 28rem;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+}
+
+.gif-container {
+  height: 100vh;
+  margin-bottom: 1rem;
+  margin-top: 17rem;
+}
+
 #scrolling {
-  height: 400px;
-  width: 400px;
+  margin: auto;
+  overflow-y: auto;
+  width: 670px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.infinite-scroll-component {
+  height: 700px;
   overflow-y: auto;
 }
