@@ -1,0 +1,8 @@
+.gif-items {
+}
+
+#scrolling {
+  height: 400px;
+  width: 400px;
+  overflow-y: auto;
+}
