@@ -27,17 +27,28 @@ class Navigation extends Component {
           <Carousel indicators={false} controls={false}>
             <Carousel.Item>
               <h1 className="quote">
-                Great minds discuss <strong>Ideas</strong>
+                "One more time, into the <strong>Fray</strong>...
               </h1>
             </Carousel.Item>
             <Carousel.Item>
               <h1 className="quote">
-                Average minds discuss <strong>Events</strong>
+                ...into the last great <strong>Fight</strong>...
+              </h1>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <h1 className="quote">
+                ...that I'll ever <strong>know</strong>.
               </h1>
             </Carousel.Item>
             <Carousel.Item>
               <h1 className="quote">
-                Small minds discuss <strong>People</strong>
+                Live and die on this <strong>Day</strong>...
+              </h1>
+            </Carousel.Item>
+            <Carousel.Item>
+              <h1 className="quote">
+                ...Live and die on this <strong>Day</strong>..."
               </h1>
             </Carousel.Item>
           </Carousel>
