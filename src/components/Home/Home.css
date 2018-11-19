@@ -51,6 +51,7 @@ ion-icon {
 }
 
 .contact-aside {
+  top: 10rem;
   height: 50rem;
   width: 100%;
   justify-self: center;

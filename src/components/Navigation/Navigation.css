@@ -1,4 +1,7 @@
 .navbar {
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
   height: 10rem;
   background-color: rgb(59, 59, 72);
   margin: 0 -0.1rem;
