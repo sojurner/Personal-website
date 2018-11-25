@@ -1,8 +1,16 @@
 .project-jumbotron {
-  grid-column: 1 /5;
-  grid-row: 2/3;
-  align-self: center;
+  display: flex;
+  grid-column: 1/5;
+  justify-content: space-evenly;
+  width: 90%;
+  border-radius: 1rem;
+  background-color: rgba(48, 112, 147, 0.824);
+  animation: 1s linear normal backwards 1 fadeIn;
+  height: 50rem;
+  box-shadow: 1px 1px 1px 2px #2c425fab;
+  height: 34em;
 }
+
 .click-to-view {
   position: absolute;
   font-size: 4rem;

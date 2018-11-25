@@ -36,6 +36,7 @@ export const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="rope" />
       <aside className="contact-aside">
         <h2 className="contact">Contact</h2>
         <div className="icons">
@@ -78,6 +79,9 @@ export const Home = () => {
           </OverlayTrigger>
         </div>
       </aside>
+      <div className="string" />
+      <div className="string string-2" />
+
       <Route exact path="/" component={JumboMumbo} />
       <Route path="/projects" component={Projects} />
     </div>

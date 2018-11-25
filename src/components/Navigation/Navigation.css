@@ -1,9 +1,8 @@
 .navbar {
+  grid-row: 1 /2;
   z-index: 1000;
-  position: fixed;
   width: 100vw;
   height: 10rem;
-  background-color: rgb(59, 59, 72);
   margin: 0 -0.1rem;
   animation: slideInDown 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -17,7 +16,7 @@
   width: 100%;
   display: grid;
   height: 10rem;
-  background-color: #0f3f5d;
+  background-image: linear-gradient(to right, #0f3f5d, #44718e);
   grid-template-columns: 1fr 1fr 1fr;
 }
 

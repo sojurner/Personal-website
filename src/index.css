@@ -8,12 +8,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./assets/Images/night-gazing-2.jpg);
+  background-size: 110em;
+  background-repeat: no-repeat;
+  background-color: #53708f;
 }
 
 #root,
 .root {
   height: 100vh;
   width: 100vw;
+  scroll-snap-type: mandatory;
+  overflow-y: scroll;
 }
 
 code {

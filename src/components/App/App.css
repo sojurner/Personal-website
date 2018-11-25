@@ -13,6 +13,11 @@
   src: url(../../Fonts/codec.ttf);
 }
 
+@font-face {
+  font-family: antaro;
+  src: url(../../Fonts/Antaro.ttf);
+}
+
 * {
   font-family: antaro;
   padding: 0;
@@ -22,16 +27,18 @@
   user-select: none;
 }
 
-body {
-  background-color: rgba(0, 77, 145, 0.653);
+.transition {
+  margin-top: 15rem;
+  background-image: linear-gradient(to bottom right, #26b5fc, #2d5960);
+
+  height: 20rem;
 }
 
-.root {
-}
-
-@font-face {
-  font-family: antaro;
-  src: url(../../Fonts/Antaro.ttf);
+.scroll-snap {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 10rem 1fr 10rem;
 }
 
 .ripples {

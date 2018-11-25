@@ -5,9 +5,13 @@ import './Footer.css';
 export const Footer = ({ weather }) => {
   return (
     <footer className="footer">
+      <div className="rope-2" />
+      <span className="double-lines" />
+      <span className="weather-content" />
+
       <img
         alt="Weather icon"
-        className="weather-icon"
+        className="weather-icon-left"
         src={require(`../../assets/Images/weather/${weather.icon}.png`)}
       />
       <div className="weather-info">
@@ -18,7 +22,7 @@ export const Footer = ({ weather }) => {
         <p className="weather weather-summary">{weather.summary}</p>
       </div>
       <img
-        className="weather-icon"
+        className="weather-icon-right"
         alt="Weather icon"
         src={require(`../../assets/Images/weather/${weather.icon}.png`)}
       />
