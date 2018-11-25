@@ -28,9 +28,11 @@ class App extends Component {
     return (
       <Router>
         <div className="root">
-          <Navigation />
-          <Home />
-          {this.state.weather && <Footer weather={this.state.weather} />}
+          <div className="scroll-snap">
+            <Navigation />
+            <Home />
+            {this.state.weather && <Footer weather={this.state.weather} />}
+          </div>
           <Gifs />
         </div>
       </Router>
