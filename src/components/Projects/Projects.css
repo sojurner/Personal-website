@@ -1,13 +1,16 @@
 .project-navigation {
+  grid-column: 3/4;
+  grid-row: 1/2;
   display: grid;
   grid-template-rows: 7rem 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .nav-link {
   font-size: 3rem;
-  color: rgb(7, 73, 123);
+  color: rgb(65, 136, 189);
   align-self: center;
 }
 
