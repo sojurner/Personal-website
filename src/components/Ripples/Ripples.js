@@ -19,7 +19,6 @@ class Ripples extends Component {
   };
 
   handleTouchMove = e => {
-    console.log('adfasd');
     e.preventDefault();
     this.handleMouseMove(e.touches[0]);
   };
