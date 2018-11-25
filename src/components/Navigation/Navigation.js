@@ -73,6 +73,14 @@ class Navigation extends Component {
             >
               Projects
             </NavItem>
+            <NavItem
+              className="projects-tab"
+              href="/#gifs"
+              to="/#gifs"
+              eventKey={3}
+            >
+              GIFS
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
