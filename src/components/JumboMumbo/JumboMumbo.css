@@ -1,6 +1,6 @@
-.jumbotron {
+.main-page-jumbo {
   display: flex;
-  margin: 0 auto;
+  margin: 2rem 0;
   justify-content: space-evenly;
   width: 90%;
   border-radius: 1rem;
@@ -46,7 +46,7 @@ h1 {
 
 .jumbotron .h1,
 .jumbotron h1 {
-  font-size: 70px;
+  font-size: 60px;
   margin: 0;
 }
 
@@ -92,7 +92,8 @@ h1 {
 }
 
 .main-page-jumbo {
-  margin: 14.5rem 0 0 7rem;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .main-page-jumbo div .carousel-indicators {
