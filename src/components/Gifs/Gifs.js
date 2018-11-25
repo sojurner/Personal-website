@@ -9,6 +9,7 @@ class Gifs extends Component {
     super();
     this.state = {
       gifs: null,
+      input: '',
       query: '',
       mappedGifs: [],
       loading: true,
@@ -24,7 +25,7 @@ class Gifs extends Component {
 
   getGifs = async () => {
     const { start, end } = this.state;
-    const gifs = await calls.getGifs('cats');
+    const gifs = await calls.getGifs('paul');
     this.setState({
       gifs: gifs.data,
       mappedGifs: gifs.data.slice(start, end),
@@ -34,20 +35,20 @@ class Gifs extends Component {
   };
 
   handleChange = event => {
-    this.setState({ query: event.target.value });
+    this.setState({ input: event.target.value });
   };
 
   searchGifs = async e => {
     e.preventDefault();
-    const { query, start, end } = this.state;
+    const { query, start, end, input } = this.state;
     this.setState({ start: 0, end: 6 });
-    const gifs = await calls.getGifs(query);
+    const gifs = await calls.getGifs(input);
     this.setState({
       gifs: gifs.data,
       mappedGifs: gifs.data.slice(start, end),
       loading: false,
-      searchResults: query,
-      query: ''
+      query: input,
+      input: ''
     });
   };
 
@@ -65,22 +66,23 @@ class Gifs extends Component {
   };
 
   render() {
-    const { query, mappedGifs, searchResults } = this.state;
+    const { query, mappedGifs, searchResults, input } = this.state;
     return (
-      <div className="gif-container">
-        Gifs
-        <form className="gif-form" onSubmit={e => this.searchGifs(e)}>
+      <div className="gif-container" id="gifs">
+        <h1 className="jify">{query ? query.toUpperCase() : 'PAUL'} LAND</h1>
+        <form className="gif-form" onSubmit={this.searchGifs}>
           <input
             className="gif-input"
             type="text"
-            value={query}
+            value={input}
             onChange={this.handleChange}
+            placeholder="Search Gifs"
           />
-          <i className="fab fa-searchengin" />
+          <i className="fab fa-searchengin" onClick={this.searchGifs} />
         </form>
-        {searchResults && (
+        {query && (
           <h4 className="search-results">
-            Search results for: '<strong>{searchResults}</strong>'
+            Search results for: '<strong>{query}</strong>'
           </h4>
         )}
         <div id="scrolling">
