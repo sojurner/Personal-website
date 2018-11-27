@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel, Jumbotron, Image } from 'react-bootstrap';
+import Coverflow from 'react-coverflow';
 
 import { allProjects } from '../../assets/ProjectData';
 import { ProjectModal } from '../ProjectModal/ProjectModal';
@@ -10,7 +11,7 @@ class ProjectContent extends Component {
     this.state = {
       show: false,
       selectedProject: null,
-      direction: false,
+      direction: '',
       projects: allProjects.filter(
         project => project.projectType === props.type
       )
@@ -32,25 +33,20 @@ class ProjectContent extends Component {
   };
 
   render() {
-    const x = this.state.projects.map(project => {
+    const { projects, direction } = this.state;
+    const x = this.state.projects.map((project, index) => {
       return (
-        <Carousel.Item>
-          <h1>{project.title}</h1>
-          <Carousel.Caption className="project-carousel">
-            <Image
-              onClick={e => this.handleShow(e, project)}
-              onMouseEnter={e => this.handleHover(e, true)}
-              onMouseLeave={e => this.handleHover(e, false)}
-              thumbnail
-              height="300"
-              width="600"
-              src={require(`../../assets/Images/${project.title}.gif`)}
-            />
-            {this.state.direction && (
-              <h5 className="click-to-view">Click to View</h5>
-            )}
-          </Carousel.Caption>
-        </Carousel.Item>
+        <Image
+          key={`project-${index}`}
+          className="project-gifs"
+          onClick={e => this.handleShow(e, project)}
+          onMouseEnter={e => this.handleHover(e, project.title)}
+          onMouseLeave={e => this.handleHover(e, '')}
+          enableHeading={true}
+          style={{ display: 'block', width: '100%' }}
+          alt={direction === project.title ? 'Click to view' : project.title}
+          src={require(`../../assets/Images/${project.title}.gif`)}
+        />
       );
     });
 
@@ -58,7 +54,17 @@ class ProjectContent extends Component {
 
     return (
       <Jumbotron className="project-jumbotron">
-        <Carousel>{x}</Carousel>
+        <Coverflow
+          width="960"
+          height="1000"
+          displayQuantityOfSide={1}
+          navigation={true}
+          enableScroll={false}
+          clickable={true}
+          active={0}
+        >
+          {x}
+        </Coverflow>
         {show && (
           <ProjectModal
             show={show}

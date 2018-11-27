@@ -9,6 +9,7 @@
   height: 50rem;
   box-shadow: 1px 1px 1px 2px #2c425fab;
   height: 34em;
+  padding: 0;
 }
 
 .click-to-view {
@@ -20,6 +21,76 @@
   z-index: 2;
 }
 
+.project-gifs:hover {
+  opacity: 0.3;
+}
+
 .project-jumbotron div .carousel-indicators {
   bottom: -1rem;
+}
+
+.coverflow__figure__3bk_C {
+  width: 1000px;
+  display: block;
+  position: relative;
+  margin: 0 0 5rem 0;
+  padding: 0;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 600ms ease;
+  backface-visibility: hidden;
+  z-index: 9;
+  align-self: center;
+  box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5);
+}
+
+div:focus {
+  outline: none;
+}
+
+.coverflow__cover__25-7e {
+  height: 24rem;
+  opacity: 0.8;
+  filter: brightness(1);
+}
+.coverflow__cover__25-7e:hover {
+  filter: brightness(0.5);
+
+  opacity: 0.8;
+}
+
+.coverflow__stage__14oqC {
+  /* margin-left: 10rem; */
+
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-end; */
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.coverflow__actions__1D5QO {
+  bottom: 17px;
+}
+
+.coverflow__actions__1D5QO .coverflow__button__25AqX {
+  font-size: 1.7rem;
+  background-color: rgb(71, 84, 85);
+}
+
+.coverflow__actions__1D5QO .coverflow__button__25AqX:hover {
+  background-color: #4b617eab;
+}
+
+.coverflow__text__39hqd {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  padding: 5px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.63);
 }
