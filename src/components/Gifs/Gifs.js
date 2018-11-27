@@ -94,10 +94,16 @@ class Gifs extends Component {
             loader={<h4>Loading...</h4>}
             scrollableTarget="scrolling"
           >
-            {this.state.mappedGifs.map(gif => {
+            {this.state.mappedGifs.map((gif, index) => {
               const url = `https://media.giphy.com/media/${gif.id}/giphy.gif`;
               return (
-                <img className="gif-items" src={url} height="200" width="200" />
+                <img
+                  key={`gif-${index}`}
+                  className="gif-items"
+                  src={url}
+                  height="200"
+                  width="200"
+                />
               );
             })}
           </InfiniteScroll>

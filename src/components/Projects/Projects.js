@@ -13,6 +13,7 @@ export default class Projects extends Component {
     return this.state.routes.map((route, index) => {
       return (
         <NavLink
+          key={`nav-${index}`}
           onClick={this.showDefault}
           className={`nav-link ${route}`}
           to={`/projects/${route}`}
