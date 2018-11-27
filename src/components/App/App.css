@@ -43,7 +43,7 @@
 
 .ripples {
   position: absolute;
-  width: 100%;
+  width: 97vw;
   height: 100%;
   z-index: 9;
 }

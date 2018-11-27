@@ -1,0 +1,516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer
+    weather={
+      Object {
+        "high": 65,
+        "icon": "rain",
+        "low": 20,
+        "summary": "Its gonna be Cold man",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="rope-2"
+        />,
+        <span
+          className="double-lines"
+        />,
+        <span
+          className="weather-content"
+        />,
+        <img
+          alt="Weather icon"
+          className="weather-icon-left"
+          src="rain.png"
+        />,
+        <div
+          className="weather-info"
+        >
+          <div
+            className="high-low"
+          >
+            <h1
+              className="weather weather-high"
+            >
+              ↑
+              65
+              °F
+            </h1>
+            <h1
+              className="weather weather-low"
+            >
+              ↓
+              20
+              °F
+            </h1>
+          </div>
+          <p
+            className="weather weather-summary"
+          >
+            Its gonna be Cold man
+          </p>
+        </div>,
+        <img
+          alt="Weather icon"
+          className="weather-icon-right"
+          src="rain.png"
+        />,
+      ],
+      "className": "footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "rope-2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "double-lines",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "weather-content",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Weather icon",
+          "className": "weather-icon-left",
+          "src": "rain.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="high-low"
+            >
+              <h1
+                className="weather weather-high"
+              >
+                ↑
+                65
+                °F
+              </h1>
+              <h1
+                className="weather weather-low"
+              >
+                ↓
+                20
+                °F
+              </h1>
+            </div>,
+            <p
+              className="weather weather-summary"
+            >
+              Its gonna be Cold man
+            </p>,
+          ],
+          "className": "weather-info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="weather weather-high"
+                >
+                  ↑
+                  65
+                  °F
+                </h1>,
+                <h1
+                  className="weather weather-low"
+                >
+                  ↓
+                  20
+                  °F
+                </h1>,
+              ],
+              "className": "high-low",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "↑",
+                    65,
+                    "°F",
+                  ],
+                  "className": "weather weather-high",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "↑",
+                  65,
+                  "°F",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "↓",
+                    20,
+                    "°F",
+                  ],
+                  "className": "weather weather-low",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "↓",
+                  20,
+                  "°F",
+                ],
+                "type": "h1",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Its gonna be Cold man",
+              "className": "weather weather-summary",
+            },
+            "ref": null,
+            "rendered": "Its gonna be Cold man",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Weather icon",
+          "className": "weather-icon-right",
+          "src": "rain.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+    ],
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="rope-2"
+          />,
+          <span
+            className="double-lines"
+          />,
+          <span
+            className="weather-content"
+          />,
+          <img
+            alt="Weather icon"
+            className="weather-icon-left"
+            src="rain.png"
+          />,
+          <div
+            className="weather-info"
+          >
+            <div
+              className="high-low"
+            >
+              <h1
+                className="weather weather-high"
+              >
+                ↑
+                65
+                °F
+              </h1>
+              <h1
+                className="weather weather-low"
+              >
+                ↓
+                20
+                °F
+              </h1>
+            </div>
+            <p
+              className="weather weather-summary"
+            >
+              Its gonna be Cold man
+            </p>
+          </div>,
+          <img
+            alt="Weather icon"
+            className="weather-icon-right"
+            src="rain.png"
+          />,
+        ],
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "rope-2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "double-lines",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "weather-content",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Weather icon",
+            "className": "weather-icon-left",
+            "src": "rain.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="high-low"
+              >
+                <h1
+                  className="weather weather-high"
+                >
+                  ↑
+                  65
+                  °F
+                </h1>
+                <h1
+                  className="weather weather-low"
+                >
+                  ↓
+                  20
+                  °F
+                </h1>
+              </div>,
+              <p
+                className="weather weather-summary"
+              >
+                Its gonna be Cold man
+              </p>,
+            ],
+            "className": "weather-info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="weather weather-high"
+                  >
+                    ↑
+                    65
+                    °F
+                  </h1>,
+                  <h1
+                    className="weather weather-low"
+                  >
+                    ↓
+                    20
+                    °F
+                  </h1>,
+                ],
+                "className": "high-low",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "↑",
+                      65,
+                      "°F",
+                    ],
+                    "className": "weather weather-high",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "↑",
+                    65,
+                    "°F",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "↓",
+                      20,
+                      "°F",
+                    ],
+                    "className": "weather weather-low",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "↓",
+                    20,
+                    "°F",
+                  ],
+                  "type": "h1",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Its gonna be Cold man",
+                "className": "weather weather-summary",
+              },
+              "ref": null,
+              "rendered": "Its gonna be Cold man",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Weather icon",
+            "className": "weather-icon-right",
+            "src": "rain.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+      ],
+      "type": "footer",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

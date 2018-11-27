@@ -42,10 +42,10 @@
   border-bottom: 7px solid rgb(57, 125, 184);
   border-top: 7px solid rgb(57, 125, 184);
   background-color: #0f3f5db8;
-  top: 3.3rem;
-  left: 11rem;
-  width: 20%;
-  z-index: -1;
+  top: 2.9rem;
+  left: 13.3rem;
+  width: 18%;
+  z-index: 1;
 }
 
 .weather-high,
