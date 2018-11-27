@@ -72,6 +72,14 @@ export const allProjects = [
     githubPages: 'https://sojurner.github.io/swapi-box/'
   },
   {
+    title: 'Weatherly',
+    projectType: 'React',
+    technologies: ['react', 'jest', 'node'],
+    description: 'View weather forecasts from cities all over the world',
+    githubURL: 'https://github.com/sojurner/WeatherLee-client',
+    githubPages: 'https://weatherly-client.herokuapp.com/'
+  },
+  {
     title: 'Headcount',
     projectType: 'React',
     technologies: ['react', 'jest'],

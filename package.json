@@ -6,6 +6,7 @@
     "moment": "^2.22.2",
     "react": "^16.6.1",
     "react-bootstrap": "^0.32.4",
+    "react-coverflow": "^0.2.17",
     "react-dom": "^16.6.1",
     "react-infinite-scroll-component": "^4.2.0",
     "react-motion": "^0.5.2",
@@ -27,5 +28,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0"
+  }
 }
