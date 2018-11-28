@@ -27,17 +27,17 @@ export const allProjects = [
     githubPages: 'https://sojurner.github.io/Static-Comp-3/'
   },
   {
-    title: 'Event-mapper',
-    projectType: 'Redux',
+    title: 'Stravant',
+    projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router'],
     description:
-      'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
-    githubURL: 'https://github.com/sojurner/Event-Mapper',
-    githubPages: 'https://event--mapper.herokuapp.com/'
+      'Checkout out your fitness Activity from Strava and track your Pomodoros',
+    githubURL: 'https://github.com/sojurner/Stravant',
+    githubPages: 'https://stravant.herokuapp.com/'
   },
   {
     title: 'Fantasy-futbol',
-    projectType: 'Redux',
+    projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router', 'node'],
     description:
       'Create your own league, add users, and create soccer team with Fantasy-futbol.  Users can search by country, player name, and/or club and view player stats.',
@@ -46,7 +46,7 @@ export const allProjects = [
   },
   {
     title: 'Movie-tracker',
-    projectType: 'Redux',
+    projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router'],
     description:
       'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
@@ -54,13 +54,13 @@ export const allProjects = [
     githubPages: 'https://movie-tracker-client.herokuapp.com/'
   },
   {
-    title: 'Stravant',
-    projectType: 'Redux',
+    title: 'Event-mapper',
+    projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router'],
     description:
-      'Checkout out your fitness Activity from Strava and track your Pomodoros',
-    githubURL: 'https://github.com/sojurner/Stravant',
-    githubPages: 'https://stravant.herokuapp.com/'
+      'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
+    githubURL: 'https://github.com/sojurner/Event-Mapper',
+    githubPages: 'https://event--mapper.herokuapp.com/'
   },
   {
     title: 'Swapi-box',
@@ -87,6 +87,14 @@ export const allProjects = [
       'Compare student grade averages between two districts in Colorado.',
     githubURL: 'https://github.com/sojurner/headcount2.0',
     githubPages: 'https://sojurner.github.io/headcount2.0/'
+  },
+  {
+    title: 'Swavi-box',
+    projectType: 'Vue',
+    technologies: ['vue', 'html', 'css'],
+    description: 'Learn more about the star wars universe',
+    githubURL: 'https://github.com/sojurner/Swavi-box',
+    githubPages: 'https://swavi-box.netlify.com/'
   },
   {
     title: 'Polo-picker',
@@ -133,62 +141,5 @@ export const allProjects = [
       'Save your to-dos and Rate them by importance.  also Search for specific to-dos and delete when completed',
     githubURL: 'https://github.com/sojurner/2DoBox-Pivot',
     githubPages: 'https://sojurner.github.io/2DoBox-Pivot/'
-  }
-];
-
-export const timeline = [
-  {
-    title: 'College',
-    name: 'Pacific Union College',
-    details: 'BS Biology',
-    body: 'Studied Biology in pursuit of medicine',
-    startYear: 2009,
-    endYear: 2013,
-    img:
-      'http://d21gd0ap5v1ndt.cloudfront.net/web01/puc/images_web/logo-puc.png',
-    description: {}
-  },
-  {
-    title: 'Military',
-    name: 'U.S. Army',
-    details: 'Combat Medic',
-    startYear: 2013,
-    endYear: 2017,
-    show: false,
-    img: 'http://www.clker.com/cliparts/r/3/q/h/V/z/caduceus-pink-hi.png',
-    description: [
-      {
-        title: '168th MMB',
-        body: 'Combat Medic in Area IV',
-        location: 'Daegu, S. Korea',
-        startYear: 2013,
-        endYear: 2015
-      },
-      {
-        title: 'Lyster Army Health Clinic',
-        body:
-          'Environmental Health technician at the Preventive Medicine department',
-        location: 'FortRucker, AL',
-        startYear: 2015,
-        endYear: 2017
-      }
-    ]
-  },
-  {
-    title: 'Software Development',
-    name: 'Turing',
-    details: 'Front-end Developer',
-    body:
-      'Seven month long coding bootcamp focusing on JavaScript, React, Redux, node/Express',
-    startYear: 2017,
-    endYear: '',
-    img:
-      'https://static1.squarespace.com/static/59a6f9d3579fb360d747292d/5ac68cbe758d46c0754f6433/5ac68d44aa4a99ed1aa5a4a6/1523039439760/TuringSchool_LogoHorizontal_White.png?format=500w',
-    description: {
-      skills: {
-        React:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
-      }
-    }
   }
 ];
