@@ -7,9 +7,10 @@ export const ProjectModal = ({ show, handleClose, project }) => {
     event.preventDefault();
     window.location = link;
   };
-  const imgs = project.technologies.map(tech => {
+  const imgs = project.technologies.map((tech, index) => {
     return (
       <img
+        key={`tech-${index}`}
         height="40"
         alt="Tech stack skills"
         className="modal-tech"
@@ -29,7 +30,6 @@ export const ProjectModal = ({ show, handleClose, project }) => {
       </Modal.Header>
       <Modal.Body>
         <Image
-          height
           thumbnail
           src={require(`../../assets/Images/${project.title}.gif`)}
         />
@@ -40,11 +40,11 @@ export const ProjectModal = ({ show, handleClose, project }) => {
       <Modal.Footer>
         <div className="icon-links">
           <i
-            class="fab fa-github-alt"
+            className="fab fa-github-alt"
             onClick={e => redirect(e, project.githubURL)}
           />
           <i
-            class="fas fa-laptop-code"
+            className="fas fa-laptop-code"
             onClick={e => redirect(e, project.githubPages)}
           />
         </div>
