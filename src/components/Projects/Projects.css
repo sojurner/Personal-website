@@ -10,8 +10,9 @@
 
 .nav-link {
   font-size: 3rem;
-  color: rgb(65, 136, 189);
+  color: rgb(154, 211, 255);
   align-self: center;
+  justify-self: safe;
 }
 
 .nav-link:hover {

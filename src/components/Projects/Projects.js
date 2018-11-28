@@ -5,8 +5,8 @@ import ProjectContent from '../ProjectContent/ProjectContent';
 import './Projects.css';
 export default class Projects extends Component {
   state = {
-    routes: ['Redux', 'React', 'JavaScript', 'Compositions'],
-    description: ['React/Redux', 'React', 'Vanilla JavaScript', 'Html/Css']
+    routes: ['React', 'Vue', 'JavaScript', 'Compositions'],
+    description: ['React', 'Vue', 'Vanilla JS', 'Html/Css']
   };
 
   registerNavLinks = () => {
@@ -39,7 +39,7 @@ export default class Projects extends Component {
         />
         <Route
           exact
-          path={`/projects/Redux`}
+          path={`/projects/Vue`}
           render={({ match }) => {
             const { path } = match;
             const chosenPath = path.slice(10);
