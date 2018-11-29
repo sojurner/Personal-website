@@ -4,6 +4,7 @@
   justify-content: center;
   bottom: 0;
   width: 100%;
+  grid-row: 3 / 4;
 }
 
 .weather-content {

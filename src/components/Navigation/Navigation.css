@@ -4,6 +4,7 @@
   width: 100vw;
   height: 10rem;
   margin: 0 -0.1rem;
+  position: fixed;
   animation: slideInDown 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
