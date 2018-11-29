@@ -60,7 +60,7 @@ export const allProjects = [
     description:
       'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
     githubURL: 'https://github.com/sojurner/Event-Mapper',
-    githubPages: 'https://event--mapper.herokuapp.com/'
+    githubPages: 'https://event-mapper.netlify.com'
   },
   {
     title: 'Swapi-box',
