@@ -68,8 +68,8 @@ class Navigation extends Component {
               className="projects-tab"
               eventKey={2}
               componentClass={Link}
-              href="/projects/Redux"
-              to="/projects/Redux"
+              href="/projects/React"
+              to="/projects/React"
             >
               Projects
             </NavItem>
