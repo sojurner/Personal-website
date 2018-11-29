@@ -5,8 +5,6 @@ import './Footer.css';
 export const Footer = ({ weather }) => {
   return (
     <footer className="footer">
-      <div className="rope-2" />
-      <span className="double-lines" />
       <span className="weather-content" />
 
       <img
