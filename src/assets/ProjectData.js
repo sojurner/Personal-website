@@ -77,7 +77,7 @@ export const allProjects = [
     technologies: ['react', 'jest', 'node'],
     description: 'View weather forecasts from cities all over the world',
     githubURL: 'https://github.com/sojurner/WeatherLee-client',
-    githubPages: 'https://weatherly-client.herokuapp.com/'
+    githubPages: 'https://weatherlee.netlify.com'
   },
   {
     title: 'Headcount',
