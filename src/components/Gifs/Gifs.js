@@ -66,7 +66,7 @@ class Gifs extends Component {
   };
 
   render() {
-    const { query, mappedGifs, searchResults, input } = this.state;
+    const { query, mappedGifs, input } = this.state;
     return (
       <div className="gif-container" id="gifs">
         <h1 className="jify">{query ? query.toUpperCase() : 'PAUL'} LAND</h1>

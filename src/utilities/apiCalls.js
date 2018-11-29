@@ -13,9 +13,7 @@ export const getWeather = async (lat, lng) => {
 };
 
 export const getGifs = async query => {
-  const url = `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${
-    process.env.REACT_APP_GIPHY_API_KEY
-  }&limit=200`;
+  const url = `https://weatherlee-server.herokuapp.com/api/giphy?q=${query}`;
   try {
     const response = await fetch(url);
     const result = await response.json();
