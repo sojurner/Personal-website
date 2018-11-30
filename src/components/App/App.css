@@ -39,6 +39,7 @@
   width: 100vw;
   display: grid;
   grid-template-rows: 10rem 1fr 10rem;
+  scroll-snap-align: start;
 }
 
 .ripples {

@@ -1,5 +1,5 @@
 .jify {
-  padding-top: 3rem;
+  padding-top: 14rem;
   font-size: 5rem;
   color: aqua;
   margin: 0;
@@ -7,6 +7,12 @@
 
 .gif-items {
   margin: 1rem;
+  cursor: pointer;
+  filter: brightness(60%);
+}
+
+.gif-items:hover {
+  filter: brightness(100%);
 }
 
 .gif-form {
@@ -38,7 +44,6 @@
 }
 
 .gif-container {
-  margin-top: 2rem;
   scroll-snap-align: start;
 }
 
