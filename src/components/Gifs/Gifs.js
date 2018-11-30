@@ -31,7 +31,6 @@ class Gifs extends Component {
       mappedGifs: gifs.data.slice(start, end),
       loading: false
     });
-    // this.renderGifs();
   };
 
   handleChange = event => {
@@ -65,6 +64,11 @@ class Gifs extends Component {
     }, 2000);
   };
 
+  openNewTab = url => {
+    const newTab = window.open(url, '_blank');
+    newTab.focus();
+  };
+
   render() {
     const { query, mappedGifs, input } = this.state;
     return (
@@ -81,9 +85,9 @@ class Gifs extends Component {
           <i className="fab fa-searchengin" onClick={this.searchGifs} />
         </form>
         {query && (
-          <h4 className="search-results">
+          <p className="search-results">
             Search results for: '<strong>{query}</strong>'
-          </h4>
+          </p>
         )}
         <div id="scrolling">
           <InfiniteScroll
@@ -101,8 +105,10 @@ class Gifs extends Component {
                   key={`gif-${index}`}
                   className="gif-items"
                   src={url}
+                  alt="Gif search results"
                   height="200"
                   width="200"
+                  onClick={this.openNewTab.bind(null, gif.url)}
                 />
               );
             })}
