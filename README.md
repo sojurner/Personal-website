@@ -1,6 +1,6 @@
 ## Personal Website
 
-[Live](https://paul-kim-developer.herokuapp.com/)
+[Live](https://paul-kim-developer.netlify.com)
 
 --------
 
