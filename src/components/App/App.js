@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import { Home } from '../Home/Home';
+import Resume from '../Resume/Resume';
 import Gifs from '../Gifs/Gifs';
 import { Footer } from '../Footer/Footer';
 import { getWeather } from '../../utilities/apiCalls';
@@ -28,11 +29,12 @@ class App extends Component {
     return (
       <Router>
         <div className="root">
-          <div className="scroll-snap">
+          <div className="scroll-snap" id="projects">
             <Navigation />
             <Home />
             {this.state.weather && <Footer weather={this.state.weather} />}
           </div>
+          <Resume />
           <Gifs />
         </div>
       </Router>
