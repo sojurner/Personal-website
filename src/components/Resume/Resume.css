@@ -1,0 +1,303 @@
+/* outer container */
+.chart-container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  /* display: flex; */
+}
+
+.resume-page {
+  font-family: nunito;
+  scroll-snap-type: y proximity;
+  width: 70vw;
+  margin: 3rem 6rem 0 30rem;
+  border-radius: 0.5rem;
+  height: 90rem;
+  background: #5284b1f0;
+  box-shadow: 1px 1px 1px 1px #fafdff2b;
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.resume-header-title {
+  font-size: 5rem;
+  color: #92adbd;
+  padding-top: 14rem;
+  scroll-snap-align: start;
+  margin: auto;
+  position: relative;
+}
+
+.resume-header {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+  background-color: #196391;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.resume-header::after {
+  content: '';
+  position: absolute;
+  background-color: #196391;
+  width: 100%;
+  height: 40px;
+  bottom: -20.5px;
+  left: 0;
+  transform: skewY(-10deg);
+}
+
+.signature {
+  align-self: center;
+  margin-bottom: 4rem;
+}
+
+.resume-job-title {
+  scroll-snap-align: start;
+
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #92adbd;
+}
+
+.resume-programming,
+.resume-recent-work,
+.resume-experience-education {
+  justify-self: center;
+  margin: 1rem;
+  text-align: start;
+  width: 65rem;
+  /* margin: 5rem 6rem auto auto; */
+}
+
+.resume-about {
+  grid-column: 1 / 2;
+  grid-row: 2 /3;
+  text-align: start;
+}
+
+.resume-interests {
+  grid-column: 1 / 2;
+  grid-row: 4 /5;
+}
+
+.resume-programming {
+  margin: 1.5rem 0 0 0;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.left-aside {
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 7;
+  background-color: #166ec548;
+}
+
+.programming-skills,
+.interests,
+.recent-work,
+.experience-title,
+.education-title,
+.about-title {
+  align-self: center;
+  color: #1e5082;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin: 2rem -2rem;
+}
+
+.about-title {
+  margin: 1rem;
+}
+
+.resume-interests {
+  text-align: start;
+  grid-column: 1/2;
+  grid-row: 2 /4;
+  margin-top: 17rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.resume-about p {
+  font-size: 1.5rem;
+  color: #92cae8;
+  font-weight: 800;
+  text-align: left;
+  padding: 1rem 0.5rem 0 1.5rem;
+}
+
+.fa-code,
+.fa-code-branch,
+.fa-star,
+.fa-briefcase,
+.fa-graduation-cap,
+.fa-user {
+  background-color: #143f6a;
+  color: #226aa9f0;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: auto 1rem;
+}
+
+.fa-code-branch {
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+}
+
+.recent-work-img {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-project {
+  position: absolute;
+  text-align: center;
+  color: #aec2ce;
+  left: 0;
+  bottom: 0rem;
+  padding: 0;
+
+  background-color: rgba(0, 0, 0, 0.808);
+  font-size: 2.5rem;
+  right: 0;
+  height: 3rem;
+}
+.resume-project-0 {
+  margin: 0 0.5rem 0 0;
+}
+
+.resume-project-1 {
+  margin: 0 1.5rem;
+}
+
+.resume-project-2 {
+  margin: 0 0 0 0.5rem;
+}
+
+.recent-work-gifs {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.recent-work-gif {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(10, 102, 189, 0.219);
+}
+
+.recent-work-gif-0 {
+  margin: 0 0.5rem 0 0;
+}
+
+.recent-work-gif-1 {
+  margin: 0 1.5rem;
+}
+
+.recent-work-gif-2 {
+  margin: 0 0 0 0.5rem;
+}
+
+.recent-work-gif-active {
+  filter: brightness(20%);
+}
+
+.interests-list {
+  font-size: 2rem;
+  margin: 2rem;
+  list-style: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.interest-item {
+  margin: 0.5rem;
+  color: #92cae8;
+}
+
+.interest-item .fas {
+  text-align: start;
+  margin-right: 1rem;
+}
+
+.resume-experience-education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.resume-experience-education ul {
+  list-style: none;
+  margin: 2.5rem 3.5rem;
+  padding: 0;
+  position: relative;
+}
+
+.resume-experience-education ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  border: 2px solid rgb(113, 159, 199);
+}
+
+.resume-experience-education ul li {
+  margin: 20px 20px;
+  position: relative;
+  font-size: 1.9rem;
+
+  color: #0b4680;
+  font-weight: 800;
+}
+
+.resume-experience-education ul li p {
+  margin: 0;
+}
+
+.experience-time-period,
+.education-time-period {
+  font-size: 1.4rem;
+  color: #6ca6c7;
+}
+
+.resume-experience-education ul li span {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 0;
+  height: 100%;
+  border: 2px solid rgb(113, 159, 199);
+  background-color: black;
+}
+
+.resume-experience-education ul li span::before,
+.resume-experience-education uul li span::after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgb(113, 159, 199);
+
+  background-color: rgb(1, 56, 104);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.resume-experience-education ul li span::before {
+  top: -5px;
+  left: -8.5px;
+}
+
+.resume-experience-education ul li span::after {
+  top: 100%;
+  left: -5px;
+}

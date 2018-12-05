@@ -65,10 +65,10 @@ ion-icon {
 .rope {
   grid-column: 1/2;
   justify-self: center;
-  height: 16rem;
+  height: 100vh;
   position: fixed;
   width: 3rem;
-  left: 13rem;
+  left: 13.3rem;
   border: 7px solid rgb(28, 84, 133);
   border-top: 0;
   background-color: #0f3f5d;
