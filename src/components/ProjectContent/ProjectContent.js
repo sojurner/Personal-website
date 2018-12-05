@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Carousel, Jumbotron, Image } from 'react-bootstrap';
+import { Jumbotron, Image } from 'react-bootstrap';
 import Coverflow from 'react-coverflow';
 
 import { allProjects } from '../../assets/ProjectData';
@@ -33,7 +33,7 @@ class ProjectContent extends Component {
   };
 
   render() {
-    const { projects, direction } = this.state;
+    const { direction } = this.state;
     const x = this.state.projects.map((project, index) => {
       return (
         <Image
