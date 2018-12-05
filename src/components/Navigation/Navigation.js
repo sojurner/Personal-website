@@ -68,16 +68,24 @@ class Navigation extends Component {
               className="projects-tab"
               eventKey={2}
               componentClass={Link}
-              href="/projects/React"
+              href="/#projects/React"
               to="/projects/React"
             >
               Projects
             </NavItem>
             <NavItem
               className="projects-tab"
-              href="/#gifs"
-              to="/#gifs"
+              href="/#resume"
+              to="/resume"
               eventKey={3}
+            >
+              Resume
+            </NavItem>
+            <NavItem
+              className="projects-tab"
+              href="/#gifs"
+              to="/gifs"
+              eventKey={4}
             >
               GIFS
             </NavItem>
