@@ -39,7 +39,7 @@ class Gifs extends Component {
 
   searchGifs = async e => {
     e.preventDefault();
-    const { query, start, end, input } = this.state;
+    const { start, end, input } = this.state;
     this.setState({ start: 0, end: 6 });
     const gifs = await calls.getGifs(input);
     this.setState({
