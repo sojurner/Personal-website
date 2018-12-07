@@ -1,8 +1,8 @@
 .navbar {
   grid-row: 1 /2;
   z-index: 1000;
-  width: 100vw;
-  height: 10rem;
+  width: 101vw;
+  height: 8rem;
   margin: 0 -0.1rem;
   position: fixed;
   animation: slideInDown 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -13,10 +13,14 @@
   padding-left: 2rem;
 }
 
+.navbar-brand {
+  padding: 2px 15px;
+}
+
 .container {
   width: 100%;
   display: grid;
-  height: 10rem;
+  height: 8rem;
   background-image: linear-gradient(to right, #0f3f5d, #44718e);
   grid-template-columns: 1fr 1fr 1fr;
 }
