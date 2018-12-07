@@ -43,7 +43,7 @@ class App extends Component {
             {this.state.weather && <Footer weather={this.state.weather} />}
           </div>
           <Resume />
-          <Gifs />
+          {/* <Gifs /> */}
         </div>
       </Router>
     );
