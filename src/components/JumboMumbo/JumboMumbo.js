@@ -78,12 +78,22 @@ class JumboMumbo extends Component {
             <h1>I'd love to one day... </h1>
             <Carousel.Caption className="bucket-items">
               <ul>
-                <li className="odd">Use all fingers when typing</li>
-                <li className="even">Live somewhere with no mosquitoes</li>
-                <li className="odd">Try Franklin's BBQ</li>
-                <li className="even">Not be so awkward</li>
-                <li className="odd">Encounter a bear and survive</li>
-                <li className="even">Experience true level</li>
+                <li>Build a site of great ideas</li>
+                <li>Live somewhere with no mosquitoes</li>
+                <li>Try Franklin's BBQ</li>
+                <li>
+                  Find all the{' '}
+                  <a
+                    className="live-simply"
+                    href="https://www.google.com/search?biw=1309&bih=725&tbm=isch&sa=1&ei=dhMKXIbADdD8jwT6yYCADw&q=live+simply+hats+patagonia&oq=live+simply+hats+patagonia&gs_l=img.3...17247.18825..18935...0.0..0.110.953.8j2......1....1..gws-wiz-img.ltS2TXTSZcc"
+                  >
+                    "Live Simply"
+                  </a>{' '}
+                  hats
+                </li>
+                <li>Encounter a bear and survive</li>
+                <li>Experience true level</li>
+                <li>Be that guy</li>
               </ul>
             </Carousel.Caption>
           </Carousel.Item>
