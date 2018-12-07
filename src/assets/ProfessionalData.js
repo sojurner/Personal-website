@@ -1,13 +1,13 @@
 export const data = {
   skills: {
     JavaScript: {
-      width: '350',
+      width: '330',
       height: '8',
       x: '95',
       y: '25'
     },
     React: {
-      width: '380',
+      width: '350',
       height: '8',
       x: '95',
 
@@ -28,14 +28,14 @@ export const data = {
       y: '100'
     },
     Redux: {
-      width: '380',
+      width: '350',
       height: '8',
       x: '95',
 
       y: '125'
     },
     HTML5: {
-      width: '350',
+      width: '330',
       height: '8',
       x: '95',
 
@@ -49,14 +49,14 @@ export const data = {
       y: '175'
     },
     Jest: {
-      width: '380',
+      width: '350',
       height: '8',
       x: '95',
 
       y: '200'
     },
     Enzyme: {
-      width: '400',
+      width: '330',
       height: '8',
       x: '95',
 
