@@ -56,8 +56,18 @@
   right: 0;
 }
 
-.quote {
+.quote_1,
+.quote_2,
+.quote_3 {
   font-size: 2.5rem;
+}
+
+.quote_2 {
+  color: #6dbee1;
+}
+
+.quote_3 {
+  color: #03a4ee;
 }
 
 @keyframes slideInDown {
