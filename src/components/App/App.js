@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
+
 import { Home } from '../Home/Home';
 import Resume from '../Resume/Resume';
 import Gifs from '../Gifs/Gifs';
@@ -29,6 +31,11 @@ class App extends Component {
     return (
       <Router>
         <div className="root">
+          <ReactAudioPlayer
+            src={require(`../../assets/music/Ocean-17.mp3`)}
+            autoPlay={true}
+            loop={true}
+          />
           <div className="scroll-snap" id="projects">
             <Navigation />
             <Home />
