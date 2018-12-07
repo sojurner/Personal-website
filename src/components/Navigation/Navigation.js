@@ -70,14 +70,14 @@ class Navigation extends Component {
             >
               Resume
             </NavItem>
-            <NavItem
+            {/* <NavItem
               className="projects-tab"
               href="/#gifs"
               to="/gifs"
               eventKey={4}
             >
               GIFS
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

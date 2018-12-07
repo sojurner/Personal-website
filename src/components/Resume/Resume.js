@@ -63,7 +63,7 @@ class Resume extends Component {
               <i className="far fa-user" />
               About
             </span>
-            <p>
+            <p className="about-paragraph">
               I specialize in Javascript, React, and Redux, but enjoy learning
               about and working with other languages and frameworks. Prior
               experience in the military, has provided me a strong foundation in
@@ -87,6 +87,10 @@ class Resume extends Component {
               <li className="interest-item">
                 <i className="fas fa-hiking" />
                 <span>Hiking</span>
+              </li>
+              <li className="interest-item">
+                <i className="fas fa-map-marked-alt" />
+                <span>Travel</span>
               </li>
             </ul>
           </section>
