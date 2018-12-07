@@ -34,6 +34,7 @@ class App extends Component {
           <ReactAudioPlayer
             src={require(`../../assets/music/Ocean-17.mp3`)}
             autoPlay={true}
+            controls={true}
             loop={true}
           />
           <div className="scroll-snap" id="projects">

@@ -32,6 +32,16 @@
   user-select: none;
 }
 
+audio {
+  position: absolute;
+  z-index: 10200;
+  top: 54rem;
+  left: 0rem;
+  height: 7rem;
+  width: 20rem;
+  padding-left: 9rem;
+}
+
 .transition {
   margin-top: 15rem;
   background-image: linear-gradient(to bottom right, #26b5fc, #2d5960);
