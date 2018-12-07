@@ -1,5 +1,5 @@
 .jify {
-  padding-top: 14rem;
+  padding-top: 10rem;
   font-size: 5rem;
   color: aqua;
   margin-top: 23rem;
@@ -48,9 +48,9 @@
 }
 
 #scrolling {
-  margin: auto;
+  margin: auto 1rem auto auto;
   overflow-y: auto;
-  width: 88rem;
+  width: 114rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
