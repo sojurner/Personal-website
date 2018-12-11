@@ -26,19 +26,22 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Carousel indicators={false} controls={false}>
             <Carousel.Item>
-              <h1 className="quote_1">Santa Claus is a reverse burglar </h1>
+              <h1 className="quote_1">Do It !</h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_2">The more fast food you eat ...</h1>
+              <h1 className="quote_2">Just Do It !</h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_2">... the slower you become.</h1>
+              <h1 className="quote_2">Yes, You Can !</h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_3">The Big Bang ...</h1>
+              <h1 className="quote_3">JUST ...</h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_3">... made no sound</h1>
+              <h1 className="quote_3">DO ...</h1>
+            </Carousel.Item>
+            <Carousel.Item>
+              <h1 className="quote_3">IT !!</h1>
             </Carousel.Item>
           </Carousel>
         </Navbar.Collapse>
