@@ -35,11 +35,12 @@
 audio {
   position: absolute;
   z-index: 10200;
-  top: 54rem;
-  left: 0rem;
+  bottom: 17rem;
+  left: 10.5rem;
   height: 7rem;
-  width: 20rem;
-  padding-left: 9rem;
+  width: 6em;
+  padding-right: 0rem;
+  cursor: pointer;
 }
 
 .transition {
