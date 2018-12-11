@@ -3,9 +3,9 @@ import React from 'react';
 import { Modal, Image } from 'react-bootstrap';
 import './ProjectModal.css';
 export const ProjectModal = ({ show, handleClose, project }) => {
-  const redirect = (event, link) => {
-    event.preventDefault();
-    window.location = link;
+  const redirect = link => {
+    const newTab = window.open(link, '_blank');
+    newTab.focus();
   };
   const imgs = project.technologies.map((tech, index) => {
     return (
@@ -41,11 +41,11 @@ export const ProjectModal = ({ show, handleClose, project }) => {
         <div className="icon-links">
           <i
             className="fab fa-github-alt"
-            onClick={e => redirect(e, project.githubURL)}
+            onClick={redirect.bind(null, project.githubURL)}
           />
           <i
             className="fas fa-laptop-code"
-            onClick={e => redirect(e, project.githubPages)}
+            onClick={redirect.bind(null, project.githubPages)}
           />
         </div>
       </Modal.Footer>
