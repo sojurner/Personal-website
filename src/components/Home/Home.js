@@ -29,9 +29,9 @@ export const Home = () => {
       <strong>562-483-9937</strong>
     </Tooltip>
   );
-  const redirectLink = (event, link) => {
-    event.preventDefault();
-    window.location = link;
+  const redirectLink = link => {
+    const newTab = window.open(link, '_blank');
+    newTab.focus();
   };
 
   return (
@@ -44,33 +44,30 @@ export const Home = () => {
             <ion-icon
               name="logo-github"
               className="github-icon"
-              onClick={event =>
-                redirectLink(event, 'https://www.github.com/sojurner')
-              }
+              onClick={redirectLink.bind(
+                null,
+                'https://www.github.com/sojurner'
+              )}
             />
           </OverlayTrigger>
 
           <OverlayTrigger placement="right" overlay={linkedin}>
             <ion-icon
               name="logo-linkedin"
-              onClick={event =>
-                redirectLink(
-                  event,
-                  'https://www.linkedin.com/in/paulkim-sojurner/'
-                )
-              }
+              onClick={redirectLink.bind(
+                null,
+                'https://www.linkedin.com/in/paulkim-sojurner/'
+              )}
             />
           </OverlayTrigger>
 
           <OverlayTrigger placement="right" overlay={mail}>
             <ion-icon
               name="mail"
-              onClick={event =>
-                redirectLink(
-                  event,
-                  'https://www.linkedin.com/in/paulkim-sojurner/'
-                )
-              }
+              onClick={redirectLink.bind(
+                null,
+                'https://www.paul.kim0591@gmail.com'
+              )}
             />
           </OverlayTrigger>
 
