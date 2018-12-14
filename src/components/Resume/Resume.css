@@ -1,8 +1,10 @@
 /* outer container */
 .chart-container {
+  margin-top: 5rem;
   width: 100vw;
   height: 100vh;
   text-align: center;
+
   /* display: flex; */
 }
 
@@ -10,7 +12,7 @@
   font-family: nunito;
   scroll-snap-type: y proximity;
   width: 70vw;
-  margin: 3rem 6rem 0 30rem;
+  margin: 3rem 6rem 3rem 30rem;
   border-radius: 0.5rem;
   height: 90rem;
   background: #5284b1f0;
@@ -18,12 +20,13 @@
   display: grid;
   grid-template-columns: 22rem 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 112vh;
 }
 
 .resume-header-title {
   font-size: 5rem;
   color: #92adbd;
-  padding-top: 10rem;
+  padding-top: 4rem;
   scroll-snap-align: start;
   margin: auto;
   position: relative;

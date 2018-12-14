@@ -2,7 +2,7 @@
   display: flex;
   grid-column: 1/5;
   justify-content: space-evenly;
-  width: 90%;
+  width: 91.5%;
   border-radius: 1rem;
   background-color: rgba(48, 112, 147, 0.824);
   animation: 1s linear normal backwards 1 fadeIn;
@@ -10,6 +10,7 @@
   box-shadow: 1px 1px 1px 2px #2c425fab;
   height: 34em;
   padding: 0;
+  margin-left: 5rem;
 }
 
 .click-to-view {
@@ -30,7 +31,7 @@
 }
 
 .coverflow__figure__3bk_C {
-  width: 1000px;
+  width: 1100px;
   display: block;
   position: relative;
   margin: 0 0 5rem 0;

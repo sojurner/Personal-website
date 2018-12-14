@@ -6,9 +6,37 @@ import Ripples from '../Ripples/Ripples';
 import './Navigation.css';
 
 class Navigation extends Component {
+  state = {
+    previous: 0,
+    current: 0
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll, true);
+  }
+
+  handleScroll = event => {
+    const { scrollTop } = event.srcElement;
+    this.setState(prevState => {
+      if (prevState.current !== scrollTop) {
+        return {
+          previous: prevState.current,
+          current: scrollTop
+        };
+      }
+    });
+  };
+
   render() {
+    const { current, previous } = this.state;
     return (
-      <Navbar default collapseOnSelect>
+      <Navbar
+        className={current > previous ? 'nav-bar nav-bar-hide' : 'nav-bar'}
+      >
         <Ripples />
         <Navbar.Header>
           <Navbar.Brand>

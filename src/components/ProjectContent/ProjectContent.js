@@ -55,7 +55,7 @@ class ProjectContent extends Component {
     return (
       <Jumbotron className="project-jumbotron">
         <Coverflow
-          width="960"
+          width="1100"
           height="1000"
           displayQuantityOfSide={1}
           navigation={true}

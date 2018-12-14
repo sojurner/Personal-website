@@ -39,12 +39,11 @@ class JumboMumbo extends Component {
         />
         <Carousel interval={null}>
           <Carousel.Item>
-            <h1>I AM..</h1>
             <Carousel.Caption className="about-items">
+              <h1>I AM..</h1>
               <p>
                 an aspiring <strong> Software Developer</strong>,
               </p>
-              <br />
               <p>
                 Currently based in <strong> Denver, CO</strong>
               </p>
@@ -58,20 +57,58 @@ class JumboMumbo extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className="journey">
-            <h1>My Journey...</h1>
             <Carousel.Caption className="journey-items">
-              <ul>
-                <li className="even">
-                  <strong> BS Biology (Pacific Union College) </strong>:
-                  2009-2013
-                </li>
-                <li className="odd">
-                  <strong> Combat Medic (US Army) </strong>: 2013-2017
-                </li>
-                <li className="even">
-                  <strong> Front-end Developer (Turing)</strong> : 2017 - Curr
-                </li>
-              </ul>
+              <section className="resume-experience-education">
+                <section className="jumbo-resume-section">
+                  <span className="jumbo-experience-title">
+                    <i className="fas fa-briefcase" />
+                    Experience
+                  </span>
+                  <ul>
+                    <li>
+                      <span />
+                      <p className="jumbo-experience-job-title">Developer</p>
+                      <p className="jumbo-experience-time-period">2017 - Now</p>
+                    </li>
+                    <li>
+                      <span />
+                      <p className="jumbo-experience-job-title">Combat Medic</p>
+                      <p className="jumbo-experience-time-period">
+                        2013 - 2017
+                      </p>
+                    </li>
+                    <li>
+                      <span />
+                      <p className="jumbo-experience-job-title">File Clerk</p>
+                      <p className="jumbo-experience-time-period">
+                        2009 - 2011
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+                <section className="jumbo-education-section">
+                  <span className="jumbo-education-title">
+                    <i className="fas fa-graduation-cap" />
+                    Education
+                  </span>
+                  <ul>
+                    <li>
+                      <span />
+                      <p className="jumbo-education-title">
+                        Turing School of Software
+                      </p>
+                      <p className="jumbo-education-time-period">2018</p>
+                    </li>
+                    <li>
+                      <span />
+                      <p className="jumbo-education-title">
+                        Pacific Union College
+                      </p>
+                      <p className="jumbo-education-time-period">2009 - 2013</p>
+                    </li>
+                  </ul>
+                </section>
+              </section>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

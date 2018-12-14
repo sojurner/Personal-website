@@ -59,13 +59,13 @@ ion-icon {
   -webkit-animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   left: 6rem;
-  top: 14rem;
+  top: 12.7rem;
 }
 
 .rope {
-  grid-column: 1/2;
+  top: 15rem;
   justify-self: center;
-  height: 100vh;
+  height: 90vh;
   position: fixed;
   width: 3rem;
   left: 13.3rem;
@@ -76,13 +76,16 @@ ion-icon {
 
 .string {
   height: 3rem;
-  grid-column: 2 / 3;
-  grid-row: 1/ 2;
+  position: absolute;
+  margin: -5rem 0;
+  top: 47%;
+  /* transform: translate(50%, 50%); */
+  left: 19rem;
   width: 14rem;
   border: 7px solid rgb(28, 84, 133);
   border-left: 0;
   border-right: 0;
-  z-index: 0;
+  z-index: -1;
   background-color: #0f3f5d;
   align-self: end;
   margin-bottom: 4rem;
