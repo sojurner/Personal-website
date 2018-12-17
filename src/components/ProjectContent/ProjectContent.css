@@ -4,13 +4,14 @@
   justify-content: space-evenly;
   width: 91.5%;
   border-radius: 1rem;
-  background-color: rgba(48, 112, 147, 0.824);
+  background-color: #175b85;
   animation: 1s linear normal backwards 1 fadeIn;
   height: 50rem;
   box-shadow: 1px 1px 1px 2px #2c425fab;
   height: 34em;
   padding: 0;
-  margin-left: 5rem;
+  justify-self: center;
+  align-self: center;
 }
 
 .click-to-view {
