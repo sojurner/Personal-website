@@ -1,6 +1,5 @@
 /* outer container */
 .chart-container {
-  margin-top: 5rem;
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -12,7 +11,7 @@
   font-family: nunito;
   scroll-snap-type: y proximity;
   width: 70vw;
-  margin: 3rem 6rem 3rem 30rem;
+  margin: 0.5rem 6rem 3rem 30rem;
   border-radius: 0.5rem;
   height: 90rem;
   background: #5284b1f0;
@@ -26,7 +25,8 @@
 .resume-header-title {
   font-size: 5rem;
   color: #92adbd;
-  padding-top: 4rem;
+  padding-top: 6.7rem;
+  padding-left: 5rem;
   scroll-snap-align: start;
   margin: auto;
   position: relative;

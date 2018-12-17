@@ -9,6 +9,23 @@
   animation: slideInDown 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: 0.4s;
   opacity: 0.7;
+  background: none;
+  border: none;
+}
+
+.navbar-right .active,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: rgb(88, 174, 255);
+  color: rgb(50, 87, 110);
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  color: rgb(26, 87, 100);
+  background: rgb(112, 186, 255);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
 }
 
 .nav-bar-hide {
@@ -23,14 +40,16 @@
 
 .navbar-brand {
   padding: 2px 15px;
+  margin-top: 1rem;
 }
 
 .container {
   width: 100%;
   display: grid;
   height: 8rem;
-  background-image: linear-gradient(to right, #0f3f5d, #44718e);
+  /* background-image: linear-gradient(to right, #0f3f5d, #44718e); */
   grid-template-columns: 1fr 1fr 1fr;
+  background: none;
 }
 
 .navbar-collapse,
@@ -109,6 +128,10 @@
 
 .quote_3 {
   color: #03a4ee;
+}
+
+.navbar-right {
+  margin: 0;
 }
 
 @keyframes slideInDown {

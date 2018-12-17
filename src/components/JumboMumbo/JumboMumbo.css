@@ -1,6 +1,5 @@
 .main-page-jumbo {
   display: flex;
-  margin: 2rem 0;
   justify-content: space-evenly;
   width: 90%;
   border-radius: 1rem;
@@ -11,7 +10,7 @@
   grid-column: 3/4;
   grid-row: 1/3;
   align-self: start;
-  margin: 7rem 0 0 6rem;
+  margin: 5rem 0 0 6rem;
 }
 
 .live-simply {
