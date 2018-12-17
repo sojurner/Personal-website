@@ -8,7 +8,8 @@ import './Navigation.css';
 class Navigation extends Component {
   state = {
     previous: 0,
-    current: 0
+    current: 0,
+    key: 1
   };
 
   componentDidMount() {
@@ -29,6 +30,11 @@ class Navigation extends Component {
         };
       }
     });
+  };
+
+  handleSelect = key => {
+    console.log(key);
+    this.setState({ key });
   };
 
   render() {
@@ -54,27 +60,38 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Carousel indicators={false} controls={false}>
             <Carousel.Item>
-              <h1 className="quote_1">Do It !</h1>
+              <h1 className="quote_2">
+                <strong>( •.• )ﾉ</strong>
+              </h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_2">Just Do It !</h1>
+              <h1 className="quote_1">
+                <strong>(ﾉ^∇^)ﾉﾟ</strong>
+              </h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_2">Yes, You Can !</h1>
+              <h1 className="quote_2">
+                <strong>(´◕ ◡ ◕｀)</strong>
+              </h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_3">JUST ...</h1>
+              <h1 className="quote_3">
+                <strong>( ͡° ͜ʖ ͡°)</strong>
+              </h1>
             </Carousel.Item>
             <Carousel.Item>
-              <h1 className="quote_3">DO ...</h1>
-            </Carousel.Item>
-            <Carousel.Item>
-              <h1 className="quote_3">IT !!</h1>
+              <h1 className="quote_3">
+                <strong>ᵔᴥᵔ</strong>
+              </h1>
             </Carousel.Item>
           </Carousel>
         </Navbar.Collapse>
         <Navbar.Collapse>
-          <Nav pullRight>
+          <Nav
+            pullRight
+            activeKey={this.state.key}
+            onSelect={k => this.handleSelect(k)}
+          >
             <NavItem
               className="projects-tab"
               eventKey={1}
