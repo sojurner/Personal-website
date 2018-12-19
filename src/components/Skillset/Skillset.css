@@ -1,9 +1,9 @@
-#React,
-#Redux,
-#Enzyme/Jest,
-#Router,
-#Node,
-#HTML5,
-#CSS3 {
-  font-size: 2rem;
+.skill-icons {
+  margin: 2rem !important;
+}
+
+.skillset {
+  width: 40rem;
+  text-align: center;
+  float: right;
 }

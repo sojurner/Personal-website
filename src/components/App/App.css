@@ -50,12 +50,13 @@ audio {
   height: 20rem;
 }
 
-.scroll-snap {
-  height: 100vh;
+.header-container {
+  position: absolute;
+  z-index: 1;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
-  display: grid;
-  grid-template-rows: 8rem 1fr 10rem;
-  scroll-snap-align: start;
 }
 
 .ripples {
