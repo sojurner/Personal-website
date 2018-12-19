@@ -56,7 +56,7 @@ class ProjectContent extends Component {
       <section className="project-content-container">
         <Coverflow
           width="1100"
-          height="1000"
+          height="800"
           displayQuantityOfSide={1}
           navigation={true}
           enableScroll={false}
