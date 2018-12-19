@@ -72,13 +72,13 @@ div:focus {
 }
 
 .coverflow__actions__1D5QO {
-  bottom: 30rem;
+  bottom: 8rem !important;
 }
 
 .coverflow__actions__1D5QO .coverflow__button__25AqX {
-  font-size: 2rem;
-  margin: 2rem;
-  background-color: rgb(71, 84, 85);
+  font-size: 2rem !important;
+  margin: 2rem !important;
+  background-color: rgb(71, 84, 85) !important;
 }
 
 .coverflow__actions__1D5QO .coverflow__button__25AqX:hover {
