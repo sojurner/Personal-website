@@ -1,12 +1,8 @@
 import React from 'react';
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
-
-import Projects from '../Projects/Projects';
-import { Route } from 'react-router-dom';
-import JumboMumbo from '../JumboMumbo/JumboMumbo';
 import './Home.css';
 
-export const Home = () => {
+export const Home = ({ toggleContact, contactDisplay }) => {
   const github = (
     <Tooltip id="github">
       <strong>Github</strong>
@@ -36,10 +32,11 @@ export const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="rope" />
-      <aside className="contact-aside">
-        <h2 className="contact">Contact</h2>
-        <div className="icons">
+      <div className={contactDisplay ? 'full-rope' : 'part-rope'} />
+      <aside
+        className={contactDisplay ? 'contact-aside' : 'contact-aside-half'}
+      >
+        <div className={!contactDisplay ? 'icons-hide' : 'icons'}>
           <OverlayTrigger placement="right" overlay={github}>
             <ion-icon
               name="logo-github"
@@ -76,11 +73,20 @@ export const Home = () => {
           </OverlayTrigger>
         </div>
       </aside>
-      <div className="string" />
-      <div className="string string-2" />
-
-      <Route exact path="/" component={JumboMumbo} />
-      <Route path="/projects" component={Projects} />
+      <div
+        onClick={toggleContact}
+        className={contactDisplay ? 'string-full' : 'string-half'}
+      >
+        <section className="contact-string-icon">
+          <p className="contact-string">Contact</p>
+          <i
+            className={
+              contactDisplay ? 'fas fa-caret-left' : 'fas fa-caret-right'
+            }
+          />
+        </section>
+      </div>
+      {/* <div className="string string-2" /> */}
     </div>
   );
 };
