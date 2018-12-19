@@ -53,11 +53,11 @@ class ProjectContent extends Component {
     const { show, selectedProject } = this.state;
 
     return (
-      <Jumbotron className="project-jumbotron">
+      <section className="project-content-container">
         <Coverflow
           width="1100"
           height="1000"
-          displayQuantityOfSide={2}
+          displayQuantityOfSide={1}
           navigation={true}
           enableScroll={false}
           clickable={true}
@@ -72,7 +72,7 @@ class ProjectContent extends Component {
             project={selectedProject}
           />
         )}
-      </Jumbotron>
+      </section>
     );
   }
 }
