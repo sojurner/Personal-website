@@ -27,7 +27,8 @@ export default class Projects extends Component {
   render() {
     return (
       <section className="project-navigation">
-        {this.registerNavLinks()}
+        <h1 className="projects-title">Work of Fame</h1>
+        <nav className="project-navbar">{this.registerNavLinks()}</nav>
         <Route
           exact
           path={`/projects/React`}
