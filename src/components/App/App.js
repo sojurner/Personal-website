@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
+import Projects from '../Projects/Projects';
+import JumboMumbo from '../JumboMumbo/JumboMumbo';
 
 import { Home } from '../Home/Home';
 import Resume from '../Resume/Resume';
@@ -12,38 +14,47 @@ import './App.css';
 
 class App extends Component {
   state = {
-    weather: null
+    weather: null,
+    contactDisplay: false
   };
 
-  componentDidMount() {
-    this.fetchWeather();
-  }
+  // componentDidMount() {
+  //   this.fetchWeather();
+  // }
 
-  fetchWeather = () => {
-    navigator.geolocation.getCurrentPosition(async location => {
-      const { latitude, longitude } = location.coords;
-      const weather = await getWeather(latitude, longitude);
-      await this.setState({ weather });
-    });
+  // fetchWeather = () => {
+  //   navigator.geolocation.getCurrentPosition(async location => {
+  //     const { latitude, longitude } = location.coords;
+  //     const weather = await getWeather(latitude, longitude);
+  //     await this.setState({ weather });
+  //   });
+  // };
+
+  toggleContact = () => {
+    this.setState({ contactDisplay: !this.state.contactDisplay });
   };
 
   render() {
     return (
       <Router>
         <div className="root">
-          <ReactAudioPlayer
+          {/* <ReactAudioPlayer
             src={require(`../../assets/music/Ocean-17.mp3`)}
             autoPlay={true}
             controls={true}
             loop={true}
-          />
-          <div className="scroll-snap" id="projects">
+          /> */}
+          <div className="header-container">
             <Navigation />
-            <Home />
-            {this.state.weather && <Footer weather={this.state.weather} />}
+            <Home
+              toggleContact={this.toggleContact}
+              contactDisplay={this.state.contactDisplay}
+            />
+            {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
-          <Resume />
-          {/* <Gifs /> */}
+          <Route exact path="/" component={JumboMumbo} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/resume" component={Resume} />
         </div>
       </Router>
     );
