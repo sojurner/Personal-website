@@ -64,8 +64,6 @@
 }
 
 .resume-job-title {
-  scroll-snap-align: start;
-
   font-size: 2.5rem;
   letter-spacing: 2px;
   color: #92adbd;

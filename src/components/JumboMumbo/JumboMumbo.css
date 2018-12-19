@@ -5,7 +5,6 @@
 }
 
 .header-job-family {
-  scroll-snap-align: start;
   display: flex;
   flex-direction: row-reverse;
   justify-content: right;
@@ -140,7 +139,6 @@ h1 {
 }
 
 .jumbo-experience-education {
-  scroll-snap-align: start;
   display: flex;
   flex-direction: row;
   justify-content: center;
