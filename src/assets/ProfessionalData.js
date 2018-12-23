@@ -1,3 +1,6 @@
+import React from 'react';
+import { Tooltip } from 'react-bootstrap';
+
 export const data = {
   skills: {
     JavaScript: {
@@ -65,3 +68,42 @@ export const data = {
   },
   tools: ['VS Code', 'Git', 'GitHub', 'Heroku', 'PostgreSQL']
 };
+
+export const iconContent = [
+  {
+    tooltip: (
+      <Tooltip id="github">
+        <strong>Github</strong>
+      </Tooltip>
+    ),
+    name: 'logo-github',
+    url: 'https://www.github.com/sojurner'
+  },
+  {
+    tooltip: (
+      <Tooltip id="linkedin">
+        <strong>LinkedIn</strong>
+      </Tooltip>
+    ),
+    name: 'logo-linkedin',
+    url: 'https://www.linkedin.com/in/paulkim-sojurner/'
+  },
+  {
+    tooltip: (
+      <Tooltip id="mail">
+        <strong>E-Mail</strong>
+      </Tooltip>
+    ),
+    name: 'mail',
+    url: 'https://www.github.com/sojurner'
+  },
+  {
+    tooltip: (
+      <Tooltip id="phone">
+        <strong>562-483-9937</strong>
+      </Tooltip>
+    ),
+    name: 'call',
+    url: ''
+  }
+];
