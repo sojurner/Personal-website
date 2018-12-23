@@ -24,51 +24,28 @@ export default class Projects extends Component {
     });
   };
 
+  registerRoutes = () => {
+    return this.state.routes.map((route, index) => {
+      return (
+        <Route
+          exact
+          path={`/projects/${route}`}
+          render={({ match }) => {
+            const { path } = match;
+            const chosenPath = path.slice(10);
+            return <ProjectContent type={chosenPath} />;
+          }}
+        />
+      );
+    });
+  };
+
   render() {
     return (
       <section className="project-navigation">
         <h1 className="projects-title">Work of Fame</h1>
         <nav className="project-navbar">{this.registerNavLinks()}</nav>
-        <Route
-          exact
-          path={`/projects/React`}
-          render={({ match }) => {
-            const { path } = match;
-            const chosenPath = path.slice(10);
-            return <ProjectContent type={chosenPath} />;
-          }}
-        />
-        <Route
-          exact
-          path={`/projects/Vue`}
-          render={({ match }) => {
-            const { path } = match;
-            const chosenPath = path.slice(10);
-
-            return <ProjectContent type={chosenPath} />;
-          }}
-        />
-
-        <Route
-          exact
-          path={`/projects/JavaScript`}
-          render={({ match }) => {
-            const { path } = match;
-            const chosenPath = path.slice(10);
-
-            return <ProjectContent type={chosenPath} />;
-          }}
-        />
-        <Route
-          exact
-          path={`/projects/Compositions`}
-          render={({ match }) => {
-            const { path } = match;
-            const chosenPath = path.slice(10);
-
-            return <ProjectContent type={chosenPath} />;
-          }}
-        />
+        {this.registerRoutes()}
       </section>
     );
   }
