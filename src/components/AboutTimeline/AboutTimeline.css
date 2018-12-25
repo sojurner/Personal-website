@@ -1,0 +1,52 @@
+.jumbo-experience-education {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.jumbo-experience-education .resume-experience-education {
+  width: 100vw;
+  justify-content: center;
+}
+
+.jumbo-resume-section ul li {
+  margin: 40px 20px 100px 20px !important;
+}
+
+.jumbo-education-section ul li {
+  margin: 40px 20px 100px 20px !important;
+}
+.jumbo-education-title,
+.jumbo-experience-job-title {
+  color: rgb(173, 210, 213);
+}
+
+.jumbo-experience-job-title,
+.jumbo-education-title {
+  font-size: 3.5rem;
+  width: 25rem;
+  color: rgb(114, 228, 232);
+}
+
+.jumbo-education-header,
+.jumbo-experience-header {
+  font-size: 5rem;
+  color: rgb(143, 184, 233);
+}
+
+.jumbo-experience-time-period,
+.jumbo-education-time-period {
+  color: rgb(133, 133, 133);
+  font-size: 2.5rem;
+}
+
+.jumbo-resume-section {
+  margin: 0 7rem;
+  width: 30rem;
+}
+
+.jumbo-education-section {
+  margin-right: -10rem;
+  margin-left: 10rem;
+}

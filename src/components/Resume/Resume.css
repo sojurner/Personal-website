@@ -13,13 +13,12 @@
   width: 70vw;
   margin: 15rem auto;
   border-radius: 0.5rem;
-  height: 90rem;
   background: #5284b1f0;
   box-shadow: 1px 1px 1px 1px #fafdff2b;
   display: grid;
   grid-template-columns: 22rem 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 112vh;
+  height: 90rem;
 }
 
 .resume-header-title {

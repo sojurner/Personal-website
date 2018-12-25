@@ -8,7 +8,7 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
     'React',
     'Redux',
     'Enzyme/Jest',
-    'React Router',
+    'Vue',
     'Node',
     'HTML5',
     'CSS3'

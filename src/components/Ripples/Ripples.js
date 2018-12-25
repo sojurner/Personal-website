@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { TransitionMotion, spring } from 'react-motion';
 
+import './Ripples.css';
+
 const leavingSpringConfig = { stiffness: 60, damping: 15 };
 
 class Ripples extends Component {
@@ -12,7 +14,7 @@ class Ripples extends Component {
   handleMouseMove = ({ pageX, pageY }) => {
     this.setState(() => {
       return {
-        mouse: [pageX - 25, pageY - 25],
+        mouse: [pageX - 20, pageY - 160],
         now: 't' + Date.now()
       };
     });
@@ -27,7 +29,7 @@ class Ripples extends Component {
     return {
       ...styleCell.style,
       opacity: spring(0, leavingSpringConfig),
-      scale: spring(2, leavingSpringConfig)
+      scale: spring(1.5, leavingSpringConfig)
     };
   };
 
@@ -50,6 +52,7 @@ class Ripples extends Component {
               }
             }
           ];
+
     return (
       <TransitionMotion willLeave={this.willLeave} styles={styles}>
         {circles => (

@@ -1,0 +1,15 @@
+.ripples {
+  position: absolute;
+  width: inherit;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.ripples-ball {
+  /* z-index: 100000; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid rgb(154, 226, 250);
+}

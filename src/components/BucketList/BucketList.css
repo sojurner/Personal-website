@@ -1,0 +1,65 @@
+.bucket-items {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  align-items: center;
+}
+
+.bucket-items h3 {
+  font-size: 7rem;
+  color: aquamarine;
+  margin-bottom: 7rem;
+}
+
+.bucket-items ul {
+  justify-self: center;
+  list-style-type: none;
+  position: relative;
+  width: 70vw;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.bucket-items ul li {
+  text-align: start;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.bucket-items ul li:nth-child(odd) {
+  font-size: 3.3rem;
+  color: rgb(148, 213, 243);
+
+  text-align: left;
+}
+
+.bucket-items ul li:nth-child(even) {
+  font-size: 3.3rem;
+  color: rgb(125, 255, 229);
+  text-align: right;
+}
+
+.bucket-items-section {
+  scroll-snap-align: start;
+}
+
+.journey-items {
+  display: flex;
+
+  margin: auto;
+}
+
+.journey-items ul {
+  margin: auto;
+}
+
+.journey-items ul li {
+  text-align: start;
+  margin: 2rem 0;
+}
+
+.about-items p strong {
+  color: rgb(209, 249, 241);
+}

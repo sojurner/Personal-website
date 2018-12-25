@@ -1,0 +1,33 @@
+.header-job-family {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  padding: 20rem 5rem 5rem 5rem;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.job-location {
+  margin: 0 5rem 0 0;
+  text-align: right;
+}
+
+.family-img {
+  margin: 0 5rem 0 5rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  font-weight: bold;
+  border: 4px solid rgba(0, 0, 0, 0.23);
+}
+
+.location-title {
+  color: rgb(33, 167, 167);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.job-title {
+  font-size: 7rem;
+  color: rgb(107, 159, 159);
+}
