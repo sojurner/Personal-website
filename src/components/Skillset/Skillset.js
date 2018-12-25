@@ -29,7 +29,7 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
           name={description}
           onMouseEnter={e => updateDesc(e, descriptions[index])}
           onMouseLeave={resetDesc}
-          src={require(`../../assets/Images/${description}.png`)}
+          src={require(`../../assets/Images/skill-icons/${description}.png`)}
         />
       </OverlayTrigger>
     );

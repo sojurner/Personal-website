@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+
 import { SVGContainer } from '../SVGContainer/SVGContainer';
 import { allProjects } from '../../assets/ProjectData';
-import './Resume.css';
 import { ProjectModal } from '../ProjectModal/ProjectModal';
+import Ripples from '../Ripples/Ripples';
+
+import './Resume.css';
 
 class Resume extends Component {
   constructor() {
@@ -113,7 +116,7 @@ class Resume extends Component {
                           : `recent-work-gif recent-work-gif-${index}`
                       }
                       name={item}
-                      src={require(`../../assets/Images/${item}.gif`)}
+                      src={require(`../../assets/Images/project-ss/${item}.png`)}
                       onMouseEnter={this.handleHover.bind(null, item)}
                       onMouseLeave={this.handleHover.bind(null, '')}
                       onClick={this.handleOpen.bind(null, item)}

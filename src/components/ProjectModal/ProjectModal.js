@@ -15,7 +15,7 @@ export const ProjectModal = ({ show, handleClose, project }) => {
         alt="Tech stack skills"
         className="modal-tech"
         name={tech}
-        src={require(`../../assets/Images/${tech}.png`)}
+        src={require(`../../assets/Images/skill-icons/${tech}.png`)}
       />
     );
   });
@@ -31,7 +31,7 @@ export const ProjectModal = ({ show, handleClose, project }) => {
       <Modal.Body>
         <Image
           thumbnail
-          src={require(`../../assets/Images/${project.title}.gif`)}
+          src={require(`../../assets/Images/project-ss/${project.title}.png`)}
         />
         <div className="imgs">{imgs}</div>
 
