@@ -45,15 +45,6 @@ export const allProjects = [
     githubPages: 'https://fantasy-futbol.netlify.com'
   },
   {
-    title: 'Movie-tracker',
-    projectType: 'React',
-    technologies: ['react', 'redux', 'jest', 'router'],
-    description:
-      'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
-    githubURL: 'https://github.com/sojurner/Movie-Tracker',
-    githubPages: 'https://movie-tracker-client.herokuapp.com/'
-  },
-  {
     title: 'Event-mapper',
     projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router'],
@@ -63,30 +54,13 @@ export const allProjects = [
     githubPages: 'https://event-mapper.netlify.com'
   },
   {
-    title: 'Swapi-box',
+    title: 'Movie-tracker',
     projectType: 'React',
-    technologies: ['react', 'jest', 'router'],
+    technologies: ['react', 'redux', 'jest', 'router'],
     description:
-      'Checkout the characters, vehicles, and planet information from the Star Wars series',
-    githubURL: 'https://github.com/sojurner/swapi-box',
-    githubPages: 'https://sojurner.github.io/swapi-box/'
-  },
-  {
-    title: 'Weatherly',
-    projectType: 'React',
-    technologies: ['react', 'jest', 'node'],
-    description: 'View weather forecasts from cities all over the world',
-    githubURL: 'https://github.com/sojurner/WeatherLee-client',
-    githubPages: 'https://weatherlee.netlify.com'
-  },
-  {
-    title: 'Headcount',
-    projectType: 'React',
-    technologies: ['react', 'jest'],
-    description:
-      'Compare student grade averages between two districts in Colorado.',
-    githubURL: 'https://github.com/sojurner/headcount2.0',
-    githubPages: 'https://sojurner.github.io/headcount2.0/'
+      'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
+    githubURL: 'https://github.com/sojurner/Movie-Tracker',
+    githubPages: 'https://movie-tracker-client.herokuapp.com/'
   },
   {
     title: 'Swavi-box',
