@@ -58,18 +58,3 @@ audio {
   flex-direction: column;
   width: 100vw;
 }
-
-.ripples {
-  position: absolute;
-  width: 97vw;
-  height: 100%;
-  z-index: 9;
-}
-.ripples-ball {
-  /* z-index: 100000; */
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  border: 1px solid rgb(154, 226, 250);
-}

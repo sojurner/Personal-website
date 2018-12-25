@@ -164,18 +164,38 @@ ion-icon {
   margin-top: 4rem;
 } */
 
-.contact-aside:before {
+.contact-aside-half::before {
   content: '';
   height: 0;
   width: 0;
   display: block;
   position: absolute;
+  opacity: 0;
+  /* bottom: 3px; */
+  bottom: -14%;
+  left: -1rem;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  transition-delay: 0.2s;
+}
+
+.contact-aside::before {
+  content: '';
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  opacity: 1;
   /* bottom: 3px; */
   bottom: -14%;
   left: -1rem;
   border-right: 87.5px solid #0f3f5d;
   border-left: 87.5px solid #0f3f5d;
   border-bottom: 60px solid transparent;
+  transition-delay: 0.2s;
+  transition: 0.4s linear;
+
   filter: drop-shadow(1px 8px 3px rgba(0, 0, 0, 0.3));
 }
 
