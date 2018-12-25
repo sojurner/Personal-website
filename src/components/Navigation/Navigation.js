@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import Ripples from '../Ripples/Ripples';
-
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -40,7 +38,6 @@ class Navigation extends Component {
     const { current, previous } = this.state;
     return (
       <header className={current > previous ? 'nav-header-hide' : 'nav-header'}>
-        {/* <Ripples /> */}
         <img
           alt="Paul Kim Signature"
           height="60"
