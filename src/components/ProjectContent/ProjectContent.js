@@ -45,7 +45,7 @@ class ProjectContent extends Component {
           enableHeading={true}
           style={{ display: 'block', width: '100%' }}
           alt={direction === project.title ? 'Click to view' : project.title}
-          src={require(`../../assets/Images/${project.title}.gif`)}
+          src={require(`../../assets/Images/project-ss/${project.title}.png`)}
         />
       );
     });
