@@ -1,11 +1,18 @@
 import React from 'react';
 
-export const SkillBars = ({ skills }) => {
+import './SkillBars.css';
+
+export const SkillBars = ({ skills, handleTooltip, displayTooltip }) => {
   return Object.keys(skills).map((key, index) => {
     return (
-      <g key={`bar-${index}`} className={`bar bar${index}`}>
+      <g
+        key={`bar-${index}`}
+        className={`bar bar${index}`}
+        onMouseEnter={handleTooltip.bind(null, key)}
+        onMouseLeave={handleTooltip.bind(null, '')}
+      >
         <rect
-          className={`lead-bar`}
+          className="lead-bar"
           width={500}
           height={3}
           rx="3"
@@ -14,7 +21,7 @@ export const SkillBars = ({ skills }) => {
           y={skills[key].y - 0.8}
         />
         <rect
-          className={`skill-bar`}
+          className="skill-bar"
           rx="5"
           ry="5"
           width={skills[key].width}
@@ -25,6 +32,16 @@ export const SkillBars = ({ skills }) => {
         <text x="0" y={30 + 25 * index} className="bar-text">
           {key}
         </text>
+        <text
+          className={
+            displayTooltip === key ? 'tooltip-text' : 'tooltip-text-hide'
+          }
+          x={`${parseInt(skills[key].width) + 100}`}
+          y={30 + 25 * index}
+        >
+          {skills[key].tooltip}
+        </text>
+        )}
       </g>
     );
   });

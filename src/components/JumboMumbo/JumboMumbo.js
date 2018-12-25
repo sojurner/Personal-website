@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Jumbotron, Image, Tooltip, Carousel } from 'react-bootstrap';
+import { Tooltip } from 'react-bootstrap';
 
 import './JumboMumbo.css';
 import { AboutTimeline } from '../AboutTimeline/AboutTimeline';
-import { MainHeader } from '../MainHeader/MainHeader';
+import MainHeader from '../MainHeader/MainHeader';
 import { BucketList } from '../BucketList/BucketList';
 
 class JumboMumbo extends Component {
@@ -29,11 +29,15 @@ class JumboMumbo extends Component {
     });
   };
 
+  handlePlay = () => {
+    this.setState({ displayAudio: !this.state.displayAudio });
+  };
+
   render() {
     return (
       <section className="main-page-jumbo">
         <MainHeader
-          state={this.state}
+          skills={this.state}
           updateDesc={this.updateDesc}
           resetDesc={this.resetDesc}
         />

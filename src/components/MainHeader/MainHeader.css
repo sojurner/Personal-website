@@ -8,6 +8,63 @@
   scroll-snap-align: start;
 }
 
+.audio-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.audio-hide {
+  width: 6rem !important;
+  overflow: hidden;
+  transition: 0.2s linear;
+}
+
+.audio-show {
+  width: 23rem !important;
+  transition: 0.2s linear;
+}
+
+.flex {
+  background-color: rgba(190, 190, 190, 0.082) !important;
+  border-radius: 5rem;
+}
+
+.toggle-play-button {
+  background-color: rgb(58, 95, 138) !important;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.toggle-play-button i {
+  border-left: 20px solid rgb(16, 47, 51) !important;
+  transition: 0.2s linear;
+  background-color: rgba(158, 128, 128, 0) !important;
+  box-shadow: none !important;
+}
+
+.progress-bar-wrapper div:nth-child(1) {
+  background-color: rgba(250, 250, 250, 0.062) !important;
+}
+
+.toggle-play-button:hover {
+  background-color: rgb(82, 133, 192) !important;
+}
+
+.toggle-play-button:hover > i {
+  border-left: 20px solid rgb(1, 71, 141) !important;
+}
+
+.time,
+.current-time,
+.total-time {
+  color: skyblue;
+  letter-spacing: 1px;
+}
+
+.total-time {
+  color: aqua;
+}
+
 .job-location {
   margin: 0 5rem 0 0;
   text-align: right;

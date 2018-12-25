@@ -1,0 +1,44 @@
+.lead-bar {
+  fill: #00000038 !important;
+  border-radius: 0.5rem;
+}
+
+.bar {
+  fill: #88b9d3;
+}
+
+.bar:hover > .skill-bar {
+  fill: #02619c !important;
+}
+
+.bar-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  transition: 0.2s linear;
+}
+
+.skill-bar {
+  margin: 10rem 0;
+  color: white;
+  fill: #1e5082 !important;
+  transition: 0.2s linear;
+  border-radius: 0.5rem;
+}
+
+.tooltip-text {
+  position: absolute;
+  font-size: 1.4rem;
+  fill-opacity: 1;
+  transition: 0.2s linear;
+  /* fill: rgb(72, 106, 168) !important; */
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: 10rem;
+  height: 10rem;
+}
+
+.tooltip-text-hide {
+  transition: 0.2s linear;
+
+  fill-opacity: 0;
+}

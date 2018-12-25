@@ -7,63 +7,64 @@ export const data = {
       width: '330',
       height: '8',
       x: '95',
-      y: '25'
+      y: '25',
+      tooltip: 'ES7, REST API, JSON'
     },
     React: {
       width: '350',
       height: '8',
       x: '95',
-
-      y: '50'
+      y: '50',
+      tooltip: 'React-Router, MapboxGL, React-Charts'
     },
     'Vue.JS': {
       width: '200',
       height: '8',
       x: '95',
-
-      y: '75'
+      y: '75',
+      tooltip: 'Vuex, VueCLI'
     },
     'Node.JS': {
       width: '180',
       height: '8',
       x: '95',
-
-      y: '100'
+      y: '100',
+      tooltip: 'Express, Nightmare, Knex, '
     },
     Redux: {
       width: '350',
       height: '8',
       x: '95',
-
-      y: '125'
+      y: '125',
+      tooltip: ''
     },
     HTML5: {
       width: '330',
       height: '8',
       x: '95',
-
-      y: '150'
+      y: '150',
+      tooltip: ''
     },
     CSS3: {
       width: '280',
       height: '8',
       x: '95',
-
-      y: '175'
+      y: '175',
+      tooltip: ''
     },
     Jest: {
       width: '350',
       height: '8',
       x: '95',
-
-      y: '200'
+      y: '200',
+      tooltip: ''
     },
     Enzyme: {
       width: '330',
       height: '8',
       x: '95',
-
-      y: '225'
+      y: '225',
+      tooltip: ''
     }
   },
   tools: ['VS Code', 'Git', 'GitHub', 'Heroku', 'PostgreSQL']

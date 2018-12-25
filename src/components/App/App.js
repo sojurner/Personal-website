@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import Projects from '../Projects/Projects';
@@ -38,12 +37,6 @@ class App extends Component {
     return (
       <Router>
         <div className="root">
-          {/* <ReactAudioPlayer
-            src={require(`../../assets/music/Ocean-17.mp3`)}
-            autoPlay={true}
-            controls={true}
-            loop={true}
-          /> */}
           <div className="header-container">
             <Navigation />
             <Home

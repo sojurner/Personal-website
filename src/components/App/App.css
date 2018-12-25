@@ -32,17 +32,6 @@
   user-select: none;
 }
 
-audio {
-  position: absolute;
-  z-index: 10200;
-  bottom: 17rem;
-  left: 10.5rem;
-  height: 7rem;
-  width: 6em;
-  padding-right: 0rem;
-  cursor: pointer;
-}
-
 .transition {
   margin-top: 15rem;
   background-image: linear-gradient(to bottom right, #26b5fc, #2d5960);

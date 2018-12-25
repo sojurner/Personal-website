@@ -4,20 +4,36 @@ import { SkillBars } from '../SkillBars/SkillBars';
 import './SVGContainer.css';
 import { data } from '../../assets/ProfessionalData';
 
-export const SVGContainer = () => {
-  const { skills } = data;
+class SVGContainer extends React.Component {
+  state = {
+    displayTooltip: ''
+  };
 
-  return (
-    <svg
-      className="horizontal-chart"
-      dx="1000"
-      y="00"
-      width="600"
-      height="260"
-      aria-labelledby="title"
-      role="img"
-    >
-      <SkillBars skills={skills} />
-    </svg>
-  );
-};
+  handleTooltip = displayTooltip => {
+    this.setState({ displayTooltip });
+  };
+
+  render() {
+    const { skills } = data;
+
+    return (
+      <svg
+        className="horizontal-chart"
+        dx="1000"
+        y="00"
+        width="600"
+        height="260"
+        aria-labelledby="title"
+        role="img"
+      >
+        <SkillBars
+          handleTooltip={this.handleTooltip}
+          displayTooltip={this.state.displayTooltip}
+          skills={skills}
+        />
+      </svg>
+    );
+  }
+}
+
+export default SVGContainer;

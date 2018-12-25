@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { SVGContainer } from '../SVGContainer/SVGContainer';
+import SVGContainer from '../SVGContainer/SVGContainer';
 import { allProjects } from '../../assets/ProjectData';
 import { ProjectModal } from '../ProjectModal/ProjectModal';
 import Ripples from '../Ripples/Ripples';
@@ -60,7 +60,6 @@ class Resume extends Component {
             </span>
             <SVGContainer />
           </section>
-
           <section className="resume-about">
             <span className="about-title">
               <i className="far fa-user" />
@@ -70,7 +69,7 @@ class Resume extends Component {
               I specialize in Javascript, React, and Redux, but enjoy learning
               about and working with other languages and frameworks. Prior
               experience in the military, has provided me a strong foundation in
-              team- collaborative efforts and strategic problem solving.
+              team-collaborative efforts and strategic problem solving.
             </p>
           </section>
           <section className="resume-interests">

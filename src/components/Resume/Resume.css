@@ -3,13 +3,25 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
+  position: relative;
 
   /* display: flex; */
 }
 
+audio {
+  position: absolute;
+  height: 7rem;
+  top: 22.6rem;
+  left: 6.5rem;
+  width: 6em;
+  padding-right: 0rem;
+  cursor: pointer;
+  z-index: 10;
+  fill: red !important;
+}
+
 .resume-page {
   font-family: nunito;
-  scroll-snap-type: y proximity;
   width: 70vw;
   margin: 15rem auto;
   border-radius: 0.5rem;

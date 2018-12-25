@@ -16,9 +16,13 @@ export const Home = ({ toggleContact, contactDisplay }) => {
         className={contactDisplay ? 'contact-aside' : 'contact-aside-half'}
       >
         <div className={!contactDisplay ? 'icons-hide' : 'icons'}>
-          {iconContent.map(icon => {
+          {iconContent.map((icon, index) => {
             return (
-              <OverlayTrigger placement="right" overlay={icon.tooltip}>
+              <OverlayTrigger
+                key={`overlay-${index}`}
+                placement="right"
+                overlay={icon.tooltip}
+              >
                 <ion-icon
                   name={icon.name}
                   onClick={redirectLink.bind(null, icon.url)}

@@ -25,7 +25,7 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
           height="50"
           alt="Showcase of my personal projects"
           style={styles}
-          class="skill-icons"
+          className="skill-icons"
           name={description}
           onMouseEnter={e => updateDesc(e, descriptions[index])}
           onMouseLeave={resetDesc}

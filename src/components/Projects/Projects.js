@@ -28,6 +28,7 @@ export default class Projects extends Component {
     return this.state.routes.map((route, index) => {
       return (
         <Route
+          key={`route-${index}`}
           exact
           path={`/projects/${route}`}
           render={({ match }) => {
