@@ -2,7 +2,12 @@ import React from 'react';
 
 import './SkillBars.css';
 
-export const SkillBars = ({ skills, handleTooltip, displayTooltip }) => {
+export const SkillBars = ({
+  skills,
+  handleTooltip,
+  displayTooltip,
+  delayBars
+}) => {
   return Object.keys(skills).map((key, index) => {
     return (
       <g
@@ -21,7 +26,8 @@ export const SkillBars = ({ skills, handleTooltip, displayTooltip }) => {
           y={skills[key].y - 0.8}
         />
         <rect
-          className="skill-bar"
+          className={delayBars ? 'skill-bar-hide' : 'skill-bar-show'}
+          style={{ transition: `${1 + index * 0.2}s linear` }}
           rx="5"
           ry="5"
           width={skills[key].width}

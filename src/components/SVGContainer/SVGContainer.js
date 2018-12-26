@@ -6,8 +6,15 @@ import { data } from '../../assets/ProfessionalData';
 
 class SVGContainer extends React.Component {
   state = {
-    displayTooltip: ''
+    displayTooltip: '',
+    delayBars: true
   };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ delayBars: false });
+    }, 200);
+  }
 
   handleTooltip = displayTooltip => {
     this.setState({ displayTooltip });
@@ -15,6 +22,7 @@ class SVGContainer extends React.Component {
 
   render() {
     const { skills } = data;
+    const { displayTooltip, delayBars } = this.state;
 
     return (
       <svg
@@ -28,8 +36,9 @@ class SVGContainer extends React.Component {
       >
         <SkillBars
           handleTooltip={this.handleTooltip}
-          displayTooltip={this.state.displayTooltip}
+          displayTooltip={displayTooltip}
           skills={skills}
+          delayBars={delayBars}
         />
       </svg>
     );

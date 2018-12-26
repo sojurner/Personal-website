@@ -29,7 +29,8 @@
   margin: 1rem 0;
   color: rgb(154, 211, 255);
   padding: 0rem 1rem;
-
+  width: max-content;
+  height: max-content;
   transition: 0.2s linear;
 }
 

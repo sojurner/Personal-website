@@ -7,8 +7,13 @@
   fill: #88b9d3;
 }
 
-.bar:hover > .skill-bar {
-  fill: #02619c !important;
+.bar:hover > .skill-bar-show {
+  fill: #0968a3 !important;
+  height: 10px;
+}
+
+.bar:hover > .bar-text {
+  font-size: 2rem;
 }
 
 .bar-text {
@@ -17,12 +22,15 @@
   transition: 0.2s linear;
 }
 
-.skill-bar {
+.skill-bar-show {
   margin: 10rem 0;
   color: white;
   fill: #1e5082 !important;
-  transition: 0.2s linear;
   border-radius: 0.5rem;
+}
+
+.skill-bar-hide {
+  width: 0px;
 }
 
 .tooltip-text {
