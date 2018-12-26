@@ -11,11 +11,10 @@
   content: '';
   position: absolute;
   border-left: 4px dashed rgb(46, 113, 158);
-
   width: 0;
   height: 3rem;
   top: 3.3rem;
-  left: 4rem;
+  left: 5rem;
 }
 .jumbo-experience-time-period::after {
   content: '';
