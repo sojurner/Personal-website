@@ -108,3 +108,34 @@ export const iconContent = [
     url: ''
   }
 ];
+
+export const experienceInfo = [
+  {
+    career: 'Developer',
+    start: 2017,
+    end: 'Now'
+  },
+  {
+    career: 'Combat Medic',
+    start: 2013,
+    end: 2017
+  },
+  {
+    career: 'File Clerk',
+    start: 2009,
+    end: 2011
+  }
+];
+
+export const educationInfo = [
+  {
+    institution: 'Turing School',
+    start: 2018,
+    end: 'Now'
+  },
+  {
+    institution: 'Pacific Union College',
+    start: 2009,
+    end: 2013
+  }
+];

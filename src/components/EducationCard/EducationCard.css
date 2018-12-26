@@ -1,0 +1,17 @@
+.jumbo-education-section {
+  width: max-content;
+}
+
+.jumbo-education-section ul li {
+  margin: 40px 50px 80px 50px !important;
+}
+
+.jumbo-education-time-period::before {
+  content: '';
+  position: absolute;
+  border-left: 4px dashed rgb(46, 113, 158);
+  width: 0;
+  height: 3rem;
+  top: 3.3rem;
+  left: 4rem;
+}

@@ -1,32 +1,50 @@
 .jumbo-experience-education {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around !important;
   scroll-snap-align: start;
 }
 
 .jumbo-experience-education .resume-experience-education {
   width: 100vw;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.jumbo-resume-section ul li {
-  margin: 40px 20px 100px 20px !important;
+.jumbo-education-section ul li,
+.jumbo-experience-section ul li {
+  display: flex;
+  height: 10rem;
+  width: max-content;
+  flex-direction: row-reverse;
+  margin: 40px 50px 100px 50px !important;
 }
 
-.jumbo-education-section ul li {
-  margin: 40px 20px 100px 20px !important;
+.resume-experience-education ul li span {
+  left: -49px !important;
 }
+
+.resume-experience-education ul li span::after {
+  content: '';
+  position: absolute;
+  top: -6.5rem !important;
+  left: 1.5rem !important;
+  z-index: -1;
+  padding: 0 4rem;
+  width: 1rem;
+  height: 100%;
+  border-bottom: 4px solid rgb(113, 159, 199) !important;
+  transform: rotate(32deg);
+  background: none !important;
+}
+
 .jumbo-education-title,
 .jumbo-experience-job-title {
   color: rgb(143, 184, 233);
-}
-
-.jumbo-experience-job-title,
-.jumbo-education-title {
+  width: max-content;
   font-size: 3.5rem;
-  width: 30rem;
   color: rgb(173, 210, 213);
+  align-self: center;
+  margin: 0 !important;
 }
 
 .jumbo-education-header,
@@ -45,14 +63,11 @@
 .jumbo-education-time-period {
   color: rgb(133, 133, 133);
   font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.jumbo-resume-section {
-  margin: 0 7rem;
-  width: 30rem;
-}
-
-.jumbo-education-section {
-  margin-right: -10rem;
-  margin-left: 10rem;
+.jumbo-experience-time-start,
+.jumbo-education-time-start {
 }
