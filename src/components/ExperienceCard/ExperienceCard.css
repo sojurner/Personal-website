@@ -17,3 +17,14 @@
   top: 3.3rem;
   left: 4rem;
 }
+.jumbo-experience-time-period::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(113, 159, 199);
+  left: -58px;
+  top: -4px;
+  background-color: rgb(1, 56, 104);
+  position: absolute;
+  border-radius: 50%;
+}

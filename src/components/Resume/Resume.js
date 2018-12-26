@@ -37,7 +37,7 @@ class Resume extends Component {
     const recentWork = ['Event-mapper', 'Movie-tracker', 'Fantasy-futbol'];
     return (
       <div className="chart-container" id="resume">
-        <h1 className="resume-header-title">Resume</h1>
+        <h3 className="resume-header-title">Resume</h3>
         <main className="resume-page">
           <section className="resume-header">
             <img
@@ -146,17 +146,20 @@ class Resume extends Component {
               </span>
               <ul>
                 <li>
-                  <span />
+                  <span className="resume-span" />
+
                   <p className="experience-job-title">Developer</p>
                   <p className="experience-time-period">2017 - Now</p>
                 </li>
                 <li>
-                  <span />
+                  <span className="resume-span" />
+
                   <p className="experience-job-title">Combat Medic</p>
                   <p className="experience-time-period">2013 - 2017</p>
                 </li>
                 <li>
-                  <span />
+                  <span className="resume-span" />
+
                   <p className="experience-job-title">File Clerk</p>
                   <p className="experience-time-period">2009 - 2011</p>
                 </li>
@@ -169,12 +172,12 @@ class Resume extends Component {
               </span>
               <ul>
                 <li>
-                  <span />
+                  <span className="resume-span" />
                   <p className="">Turing School of Software</p>
                   <p className="education-time-period">2018</p>
                 </li>
                 <li>
-                  <span />
+                  <span className="resume-span" />
                   <p className="experience-job-title">Pacific Union College</p>
                   <p className="education-time-period">2009 - 2013</p>
                 </li>
