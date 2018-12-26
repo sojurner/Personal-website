@@ -14,21 +14,44 @@
   z-index: -2;
 }
 
-ion-icon:hover {
-  color: rgb(133, 206, 206);
+.ion-icon-wrap {
+  width: max-content;
+  /* background-color: rgb(14, 85, 85); */
+  transform: rotate3d(4, 2, 30, 30deg);
+  padding: 0;
+  border-radius: 1rem;
+  margin: 0.5rem 2.3rem;
+  transition: 0.4s linear;
+  height: max-content;
+  padding: 0.2rem 0.4rem 0rem 0.1rem;
+}
+
+.ion-icon-wrap:hover {
   background: rgba(155, 211, 211, 0.367);
   animation: pulse 1.2s linear infinite;
+  transform: rotate3d(0, 0, 0, 0deg);
+  border-radius: 50%;
+}
+
+.ion-icon-wrap:hover > ion-icon {
+  color: rgb(133, 206, 206);
+  transform: rotate(0deg);
 }
 
 ion-icon {
   font-size: 4rem;
   color: rgb(138, 186, 186);
-  margin: 1rem 2rem;
   cursor: pointer;
   padding: 5px;
-  border-radius: 50%;
+  transform: rotate3d(4, 2, 30, -30deg);
+  /* transform: perspective(1000px); */
   height: 5rem;
+  transition: 0.4s;
   width: 5rem;
+}
+
+ion-icon .icon-inner {
+  transform: rotate(-20deg) !important;
 }
 
 .tooltip {

@@ -23,10 +23,12 @@ export const Home = ({ toggleContact, contactDisplay }) => {
                 placement="right"
                 overlay={icon.tooltip}
               >
-                <ion-icon
-                  name={icon.name}
-                  onClick={redirectLink.bind(null, icon.url)}
-                />
+                <div className="ion-icon-wrap">
+                  <ion-icon
+                    name={icon.name}
+                    onClick={redirectLink.bind(null, icon.url)}
+                  />
+                </div>
               </OverlayTrigger>
             );
           })}
