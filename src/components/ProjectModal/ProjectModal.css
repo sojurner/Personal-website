@@ -52,6 +52,7 @@
 
 .modal-tech {
   margin: 0 2rem;
+  filter: invert(0.95);
 }
 
 .fa-github-alt,
