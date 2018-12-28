@@ -1,5 +1,6 @@
 .skill-icons {
   margin: 2rem !important;
+  filter: invert(0.95);
 }
 
 .skillset {
