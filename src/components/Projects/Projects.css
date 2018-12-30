@@ -20,8 +20,14 @@
   top: 1rem;
 }
 
-.project-navigation {
+.project-navigation-show {
+  opacity: 1;
   height: 100vh;
+  transition: 0.4s linear;
+}
+
+.project-navigation-hide {
+  opacity: 0;
 }
 
 .nav-link {
@@ -52,7 +58,7 @@
   height: 4rem;
 }
 
-.project-navigation .active {
+.project-navbar .active {
   color: rgb(0, 255, 247);
   border-left: 4px solid rgb(35, 143, 143);
   padding: 0rem 1rem;
