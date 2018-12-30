@@ -7,19 +7,23 @@ import JumboMumbo from '../JumboMumbo/JumboMumbo';
 import { Home } from '../Home/Home';
 import Resume from '../Resume/Resume';
 import Gifs from '../Gifs/Gifs';
-import { Footer } from '../Footer/Footer';
 import { getWeather } from '../../utilities/apiCalls';
 import './App.css';
 
 class App extends Component {
   state = {
+    opaque: true,
     weather: null,
     contactDisplay: false
   };
 
-  // componentDidMount() {
-  //   this.fetchWeather();
-  // }
+  componentDidMount() {
+    //   this.fetchWeather();
+    const opaque = false;
+    setTimeout(() => {
+      this.setState({ opaque });
+    }, 500);
+  }
 
   // fetchWeather = () => {
   //   navigator.geolocation.getCurrentPosition(async location => {
@@ -34,10 +38,15 @@ class App extends Component {
   };
 
   render() {
+    const { opaque } = this.state;
     return (
       <Router>
-        <div className="root">
-          <div className="header-container">
+        <div className={opaque ? 'root-hide' : 'root-show'}>
+          <div
+            className={
+              opaque ? 'header-container-hide' : 'header-container-show'
+            }
+          >
             <Navigation />
             <Home
               toggleContact={this.toggleContact}
