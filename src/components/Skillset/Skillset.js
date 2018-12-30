@@ -11,7 +11,8 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
     'Vue',
     'Node',
     'HTML5',
-    'CSS3'
+    'CSS3',
+    'Git'
   ];
   const people = Object.keys(state).map((description, index) => {
     const styles = { margin: '0 5px' };
