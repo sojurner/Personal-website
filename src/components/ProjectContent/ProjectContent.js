@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import Coverflow from 'react-coverflow';
 
 import { allProjects } from '../../assets/ProjectData';
@@ -22,26 +22,24 @@ class ProjectContent extends Component {
     this.setState({ show: false });
   };
 
-  handleShow = (event, selectedProject) => {
-    event.preventDefault();
+  handleShow = selectedProject => {
     this.setState({ show: true, selectedProject });
   };
 
-  handleHover = (event, direction) => {
-    event.preventDefault();
+  handleHover = direction => {
     this.setState({ direction });
   };
 
   render() {
     const { direction } = this.state;
-    const x = this.state.projects.map((project, index) => {
+    const projectImages = this.state.projects.map((project, index) => {
       return (
         <Image
           key={`project-${index}`}
           className="project-gifs"
-          onClick={e => this.handleShow(e, project)}
-          onMouseEnter={e => this.handleHover(e, project.title)}
-          onMouseLeave={e => this.handleHover(e, '')}
+          onClick={this.handleShow.bind(null, project)}
+          onMouseEnter={this.handleHover.bind(null, project.title)}
+          onMouseLeave={this.handleHover.bind(null, '')}
           enableHeading={true}
           style={{ display: 'block', width: '100%' }}
           alt={direction === project.title ? 'Click to view' : project.title}
@@ -63,7 +61,7 @@ class ProjectContent extends Component {
           clickable={true}
           active={0}
         >
-          {x}
+          {projectImages}
         </Coverflow>
         {show && (
           <ProjectModal
