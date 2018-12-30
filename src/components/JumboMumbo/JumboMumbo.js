@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Tooltip } from 'react-bootstrap';
 
 import './JumboMumbo.css';
-import { AboutTimeline } from '../AboutTimeline/AboutTimeline';
+import AboutTimeline from '../AboutTimeline/AboutTimeline';
 import MainHeader from '../MainHeader/MainHeader';
 import { BucketList } from '../BucketList/BucketList';
 
@@ -14,7 +14,8 @@ class JumboMumbo extends Component {
     vue: null,
     node: null,
     html: null,
-    css: null
+    css: null,
+    git: null
   };
 
   updateDesc = (e, description) => {
