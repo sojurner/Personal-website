@@ -5,9 +5,17 @@ import ProjectContent from '../ProjectContent/ProjectContent';
 import './Projects.css';
 export default class Projects extends Component {
   state = {
+    opaque: true,
     routes: ['React', 'Vue', 'JavaScript', 'Compositions'],
     description: ['React', 'Vue', 'Vanilla JS', 'Html/Css']
   };
+
+  componentDidMount() {
+    const opaque = false;
+    setTimeout(() => {
+      this.setState({ opaque });
+    }, 100);
+  }
 
   registerNavLinks = () => {
     return this.state.routes.map((route, index) => {
@@ -42,8 +50,13 @@ export default class Projects extends Component {
   };
 
   render() {
+    const { opaque } = this.state;
     return (
-      <section className="project-navigation">
+      <section
+        className={
+          opaque ? 'project-navigation-hide' : 'project-navigation-show'
+        }
+      >
         <h1 className="projects-title">Work of Fame</h1>
         <nav className="project-navbar">{this.registerNavLinks()}</nav>
         {this.registerRoutes()}

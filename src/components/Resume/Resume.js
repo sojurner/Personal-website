@@ -11,11 +11,20 @@ class Resume extends Component {
   constructor() {
     super();
     this.state = {
+      opaque: true,
       description: '',
       show: false,
       project: null
     };
   }
+
+  componentDidMount = () => {
+    const opaque = false;
+
+    setTimeout(() => {
+      this.setState({ opaque });
+    }, 100);
+  };
 
   handleClose = () => {
     this.setState({ show: false });
@@ -33,10 +42,10 @@ class Resume extends Component {
   };
 
   render() {
-    const { description, show, project } = this.state;
+    const { description, show, project, opaque } = this.state;
     const recentWork = ['Event-mapper', 'Movie-tracker', 'Fantasy-futbol'];
     return (
-      <div className="chart-container" id="resume">
+      <div className={opaque ? 'chart-container-hide' : 'chart-container-show'}>
         <h3 className="resume-header-title">Resume</h3>
         <main className="resume-page">
           <section className="resume-header">
