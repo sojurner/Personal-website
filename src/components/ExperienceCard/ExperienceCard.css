@@ -5,6 +5,7 @@
 
 .jumbo-experience-section ul li {
   margin: 40px 50px 70px 50px !important;
+  position: relative;
 }
 
 .jumbo-experience-time-period::before {
