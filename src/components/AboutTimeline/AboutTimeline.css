@@ -37,6 +37,12 @@
   background: none !important;
 }
 
+.resume-experience-education ul li:hover > .jumbo-experience-job-title,
+.resume-experience-education ul li:hover > .jumbo-education-title {
+  border-radius: 2rem;
+  text-decoration-line: underline;
+}
+
 .jumbo-education-title,
 .jumbo-experience-job-title {
   color: rgb(143, 184, 233);
@@ -71,4 +77,17 @@
 
 .jumbo-experience-time-start,
 .jumbo-education-time-start {
+}
+
+.detail-popup {
+  position: absolute;
+  left: -27rem;
+  color: rgb(227, 248, 252);
+  font-size: 1.5rem;
+  width: 21rem;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.098);
+  height: max-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
