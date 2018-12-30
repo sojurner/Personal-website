@@ -112,16 +112,20 @@ export const iconContent = [
 export const experienceInfo = [
   {
     career: 'Developer',
+    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, webpack, git',
     start: 2017,
     end: 'Now'
   },
   {
     career: 'Combat Medic',
+    details:
+      '168th MMB Camp Walker, Korea; Lyster Army Health Clinic Fort Rucker, AL',
     start: 2013,
     end: 2017
   },
   {
     career: 'File Clerk',
+    details: 'Giardi & Keese: File management and storage',
     start: 2009,
     end: 2011
   }
@@ -130,11 +134,14 @@ export const experienceInfo = [
 export const educationInfo = [
   {
     institution: 'Turing School',
+    details:
+      'Front-end engineering Program; Emphasis on React, Redux, JavaScript, HTML and CSS',
     start: 2018,
     end: 'Now'
   },
   {
     institution: 'Pacific Union College',
+    details: 'Majored in Biology with emphasis on medicine',
     start: 2009,
     end: 2013
   }
