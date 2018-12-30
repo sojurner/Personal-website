@@ -1,11 +1,19 @@
 /* outer container */
-.chart-container {
+.chart-container-show {
   width: 100vw;
   height: 100vh;
   text-align: center;
   position: relative;
+  opacity: 1;
+  transition: 0.5s linear;
+}
 
-  /* display: flex; */
+.chart-container-hide {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  opacity: 0;
 }
 
 .resume-page {
@@ -18,7 +26,7 @@
   display: grid;
   grid-template-columns: 22rem 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 90rem;
+  height: 93rem;
 }
 
 .resume-header-title {
@@ -83,11 +91,6 @@
   text-align: start;
 }
 
-.resume-interests {
-  grid-column: 1 / 2;
-  grid-row: 4 /5;
-}
-
 .resume-programming {
   margin: 3rem 0 0 0;
   grid-row: 1/2;
@@ -121,14 +124,13 @@
 .resume-interests {
   text-align: start;
   grid-column: 1/2;
-  grid-row: 2 /4;
-  margin-top: 20rem;
+  grid-row: 3 /4;
   align-self: center;
   justify-self: center;
 }
 
 .resume-about p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #92cae8;
   font-weight: 800;
   text-align: left;
@@ -229,7 +231,7 @@
 }
 
 .interest-item {
-  margin: 0.5rem;
+  margin: 0.8rem 0.5rem;
   color: #92cae8;
 }
 
