@@ -1,6 +1,4 @@
 import React from 'react';
-import { OverlayTrigger } from 'react-bootstrap';
-import { Tooltip } from 'react-bootstrap';
 
 import { withState } from 'recompose';
 
@@ -17,14 +15,10 @@ const Skillset = ({ tooltip, handleTooltip }) => {
     'CSS',
     'Git'
   ];
-  const people = descriptions.map((description, index) => {
+  const people = descriptions.map(description => {
     const styles = { margin: '0 5px' };
     return (
-      <OverlayTrigger
-        placement="bottom"
-        overlay={<Tooltip id={tooltip}>{tooltip}</Tooltip>}
-        key={`overlay-${index}`}
-      >
+      <div className="skill-box">
         <img
           height="50"
           alt="Showcase of my personal projects"
@@ -35,7 +29,10 @@ const Skillset = ({ tooltip, handleTooltip }) => {
           onMouseLeave={() => handleTooltip('')}
           src={require(`../../assets/Images/skill-icons/${description.toLowerCase()}.png`)}
         />
-      </OverlayTrigger>
+        {tooltip === description && (
+          <p className={`skill-tool-tip ${description}`}>{tooltip}</p>
+        )}
+      </div>
     );
   });
   return <div className="skillset">{people}</div>;

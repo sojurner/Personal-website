@@ -4,7 +4,47 @@
 }
 
 .skillset {
-  width: 40rem;
+  width: 45rem;
   text-align: center;
   float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-box {
+  position: relative;
+}
+
+.skill-tool-tip {
+  position: absolute;
+  top: 7.5rem;
+  left: 20%;
+  font-size: 2rem;
+  color: rgb(162, 189, 213);
+  padding: 0.1rem 1rem;
+  background-color: rgb(61, 99, 118);
+  z-index: 12;
+  border-radius: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.Redux {
+  left: 10%;
+}
+
+.Node {
+  left: 13%;
+}
+
+.HTML {
+  left: 10%;
+}
+
+.Jest {
+  left: 25%;
+}
+
+.Git {
+  left: 26%;
 }
