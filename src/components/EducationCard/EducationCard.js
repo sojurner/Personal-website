@@ -1,13 +1,14 @@
 import React from 'react';
 import { educationInfo } from '../../assets/ProfessionalData';
+import { withState } from 'recompose';
 import './EducationCard.css';
 
-export const EducationCard = ({ detailDisplay, handleHover }) => {
+const EducationCard = ({ detailDisplay, handleHover }) => {
   const educationCard = educationInfo.map(item => {
     return (
       <li
-        onMouseEnter={handleHover.bind(null, item.institution)}
-        onMouseLeave={handleHover.bind(null, '')}
+        onMouseEnter={() => handleHover(item.institution)}
+        onMouseLeave={() => handleHover('')}
       >
         <span />
         <p className="jumbo-education-title">{item.institution}</p>
@@ -32,3 +33,5 @@ export const EducationCard = ({ detailDisplay, handleHover }) => {
     </section>
   );
 };
+
+export default withState('detailDisplay', 'handleHover', '')(EducationCard);
