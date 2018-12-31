@@ -45,7 +45,7 @@ class Navigation extends Component {
           src={require(`../../assets/Images/Paul-kim-logo.png`)}
         />
         <nav className="nav-links">
-          <NavLink className="projects-tab" exact to="/" to="/">
+          <NavLink className="projects-tab" exact to="/">
             <i className="fas fa-home" />
             Home
           </NavLink>
