@@ -1,15 +1,15 @@
 import React from 'react';
 import { experienceInfo } from '../../assets/ProfessionalData';
-
+import { withState } from 'recompose';
 import './ExperienceCard.css';
 
-export const ExperienceCard = ({ detailDisplay, handleHover }) => {
+const ExperienceCard = ({ detailDisplay, handleHover }) => {
   console.log(detailDisplay);
   const experienceCard = experienceInfo.map(item => {
     return (
       <li
-        onMouseEnter={handleHover.bind(null, item.career)}
-        onMouseLeave={handleHover.bind(null, '')}
+        onMouseEnter={() => handleHover(item.career)}
+        onMouseLeave={() => handleHover('')}
       >
         <span />
         <p className="jumbo-experience-job-title">{item.career}</p>
@@ -34,3 +34,5 @@ export const ExperienceCard = ({ detailDisplay, handleHover }) => {
     </section>
   );
 };
+
+export default withState('detailDisplay', 'handleHover', '')(ExperienceCard);
