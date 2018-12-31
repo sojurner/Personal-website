@@ -2,19 +2,15 @@ import React, { Component } from 'react';
 import { Image } from 'react-bootstrap';
 import Coverflow from 'react-coverflow';
 
-import { allProjects } from '../../assets/ProjectData';
-import { ProjectModal } from '../ProjectModal/ProjectModal';
+import ProjectModal from '../ProjectModal/ProjectModal';
 import './ProjectContent.css';
 class ProjectContent extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       show: false,
       selectedProject: null,
-      direction: '',
-      projects: allProjects.filter(
-        project => project.projectType === props.type
-      )
+      direction: ''
     };
   }
 
@@ -32,7 +28,7 @@ class ProjectContent extends Component {
 
   render() {
     const { direction } = this.state;
-    const projectImages = this.state.projects.map((project, index) => {
+    const projectImages = this.props.projects.map((project, index) => {
       return (
         <Image
           key={`project-${index}`}
@@ -53,9 +49,10 @@ class ProjectContent extends Component {
     return (
       <section className="project-content-container">
         <Coverflow
-          width="1100"
+          width="900"
           height="800"
           displayQuantityOfSide={1}
+          infiniteScroll={true}
           navigation={true}
           enableScroll={false}
           clickable={true}
