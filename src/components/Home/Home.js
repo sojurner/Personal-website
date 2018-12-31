@@ -1,9 +1,10 @@
 import React from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
 import { iconContent } from '../../assets/ProfessionalData';
+import { withState } from 'recompose';
 import './Home.css';
 
-export const Home = ({ toggleContact, contactDisplay }) => {
+const Home = ({ toggleContact, contactDisplay }) => {
   const redirectLink = link => {
     const newTab = window.open(link, '_blank');
     newTab.focus();
@@ -35,7 +36,7 @@ export const Home = ({ toggleContact, contactDisplay }) => {
         </div>
       </aside>
       <div
-        onClick={toggleContact}
+        onClick={() => toggleContact(!contactDisplay)}
         className={contactDisplay ? 'string-full' : 'string-half'}
       >
         <section className="contact-string-icon">
@@ -51,4 +52,4 @@ export const Home = ({ toggleContact, contactDisplay }) => {
   );
 };
 
-export default Home;
+export default withState('contactDisplay', 'toggleContact', false)(Home);
