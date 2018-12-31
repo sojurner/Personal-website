@@ -1,25 +1,28 @@
 import React from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
+import { Tooltip } from 'react-bootstrap';
+
+import { withState } from 'recompose';
 
 import './Skillset.css';
 
-export const Skillset = ({ state, updateDesc, resetDesc }) => {
+const Skillset = ({ tooltip, handleTooltip }) => {
   let descriptions = [
     'React',
     'Redux',
-    'Enzyme/Jest',
+    'Jest',
     'Vue',
     'Node',
-    'HTML5',
-    'CSS3',
+    'HTML',
+    'CSS',
     'Git'
   ];
-  const people = Object.keys(state).map((description, index) => {
+  const people = descriptions.map((description, index) => {
     const styles = { margin: '0 5px' };
     return (
       <OverlayTrigger
         placement="bottom"
-        overlay={state[description]}
+        overlay={<Tooltip id={tooltip}>{tooltip}</Tooltip>}
         key={`overlay-${index}`}
       >
         <img
@@ -28,12 +31,14 @@ export const Skillset = ({ state, updateDesc, resetDesc }) => {
           style={styles}
           className="skill-icons"
           name={description}
-          onMouseEnter={e => updateDesc(e, descriptions[index])}
-          onMouseLeave={resetDesc}
-          src={require(`../../assets/Images/skill-icons/${description}.png`)}
+          onMouseEnter={() => handleTooltip(description)}
+          onMouseLeave={() => handleTooltip('')}
+          src={require(`../../assets/Images/skill-icons/${description.toLowerCase()}.png`)}
         />
       </OverlayTrigger>
     );
   });
   return <div className="skillset">{people}</div>;
 };
+
+export default withState('tooltip', 'handleTooltip', '')(Skillset);

@@ -10,7 +10,7 @@ class ProjectContent extends Component {
     this.state = {
       show: false,
       selectedProject: null,
-      direction: ''
+      title: ''
     };
   }
 
@@ -22,13 +22,12 @@ class ProjectContent extends Component {
     this.setState({ show: true, selectedProject });
   };
 
-  handleHover = direction => {
-    this.setState({ direction });
+  handleHover = title => {
+    this.setState({ title });
   };
 
-  render() {
-    const { direction } = this.state;
-    const projectImages = this.props.projects.map((project, index) => {
+  renderProjectImageCards = () => {
+    return this.props.projects.map((project, index) => {
       return (
         <Image
           key={`project-${index}`}
@@ -38,12 +37,16 @@ class ProjectContent extends Component {
           onMouseLeave={this.handleHover.bind(null, '')}
           enableHeading={true}
           style={{ display: 'block', width: '100%' }}
-          alt={direction === project.title ? 'Click to view' : project.title}
+          alt={
+            project.title === this.state.title ? 'Click to view' : project.title
+          }
           src={require(`../../assets/Images/project-ss/${project.title}.png`)}
         />
       );
     });
+  };
 
+  render() {
     const { show, selectedProject } = this.state;
 
     return (
@@ -58,7 +61,7 @@ class ProjectContent extends Component {
           clickable={true}
           active={0}
         >
-          {projectImages}
+          {this.renderProjectImageCards()}
         </Coverflow>
         {show && (
           <ProjectModal

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import SVGContainer from '../SVGContainer/SVGContainer';
 import { allProjects } from '../../assets/ProjectData';
-import { ProjectModal } from '../ProjectModal/ProjectModal';
-import Ripples from '../Ripples/Ripples';
+import ProjectModal from '../ProjectModal/ProjectModal';
+// import Ripples from '../Ripples/Ripples';
 
 import './Resume.css';
 
