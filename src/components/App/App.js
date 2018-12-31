@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation';
 import Projects from '../Projects/Projects';
 import JumboMumbo from '../JumboMumbo/JumboMumbo';
 
-import { Home } from '../Home/Home';
+import Home from '../Home/Home';
 import Resume from '../Resume/Resume';
 import Gifs from '../Gifs/Gifs';
 import { getWeather } from '../../utilities/apiCalls';
@@ -13,8 +13,7 @@ import './App.css';
 class App extends Component {
   state = {
     opaque: true,
-    weather: null,
-    contactDisplay: false
+    weather: null
   };
 
   componentDidMount() {
@@ -33,10 +32,6 @@ class App extends Component {
   //   });
   // };
 
-  toggleContact = () => {
-    this.setState({ contactDisplay: !this.state.contactDisplay });
-  };
-
   render() {
     const { opaque } = this.state;
     return (
@@ -48,10 +43,7 @@ class App extends Component {
             }
           >
             <Navigation />
-            <Home
-              toggleContact={this.toggleContact}
-              contactDisplay={this.state.contactDisplay}
-            />
+            <Home />
             {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
           <Route exact path="/" component={JumboMumbo} />
