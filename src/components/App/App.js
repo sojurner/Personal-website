@@ -6,8 +6,8 @@ import JumboMumbo from '../JumboMumbo/JumboMumbo';
 
 import Home from '../Home/Home';
 import Resume from '../Resume/Resume';
-import Gifs from '../Gifs/Gifs';
-import { getWeather } from '../../utilities/apiCalls';
+// import Gifs from '../Gifs/Gifs';
+// import { getWeather } from '../../utilities/apiCalls';
 import './App.css';
 
 class App extends Component {
