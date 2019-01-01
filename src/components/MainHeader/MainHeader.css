@@ -15,6 +15,7 @@
 
 .audio-hide {
   width: 6rem !important;
+
   overflow: hidden;
   transition: 0.4s linear;
   margin: 0 2rem 0 0;
@@ -23,16 +24,18 @@
 .audio-show {
   width: 23rem !important;
   transition: 0.4s linear;
+  overflow: hidden;
+
   margin: 0 2rem 0 0;
 }
 
 .flex {
-  background-color: rgba(190, 190, 190, 0.082) !important;
-  border-radius: 5rem;
+  background-color: rgba(190, 190, 190, 0) !important;
+  border-radius: 1rem;
 }
 
 .toggle-play-button {
-  background-color: rgb(58, 95, 138) !important;
+  background-color: rgb(78, 128, 186) !important;
   cursor: pointer;
   transition: 0.2s linear;
 }
@@ -49,7 +52,7 @@
 }
 
 .toggle-play-button:hover {
-  background-color: rgb(82, 133, 192) !important;
+  background-color: rgb(93, 159, 235) !important;
 }
 
 .toggle-play-button:hover > i {
@@ -81,12 +84,12 @@
 }
 
 .location-title {
-  color: rgb(33, 167, 167);
+  color: rgb(71, 227, 227);
   font-size: 3.5rem;
   font-weight: bold;
 }
 
 .job-title {
   font-size: 7rem;
-  color: rgb(107, 159, 159);
+  color: #8ac9ff;
 }
