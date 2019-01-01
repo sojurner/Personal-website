@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-// import Coverflow from 'react-coverflow';
-
-import ProjectModal from '../ProjectModal/ProjectModal';
+// import Coverflow from 'react-coverflow'
 import './ProjectContent.css';
 import ProjectCoverflow from '../ProjectCoverflow/ProjectCoverflow';
 class ProjectContent extends Component {
   constructor() {
     super();
     this.state = {
+      module: null,
       show: false,
       selectedProject: null,
       title: ''
@@ -19,11 +18,13 @@ class ProjectContent extends Component {
   };
 
   handleShow = selectedProject => {
-    this.setState({ show: true, selectedProject });
+    import('../ProjectModal/ProjectModal').then(module => {
+      this.setState({ module: module.default, show: true, selectedProject });
+    });
   };
 
   render() {
-    const { show, selectedProject } = this.state;
+    const { show, selectedProject, module: ProjectModal } = this.state;
 
     return (
       <section className="project-content-container">

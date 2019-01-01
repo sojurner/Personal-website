@@ -1,11 +1,9 @@
-.modal-container {
-  position: relative;
-  background-color: aquamarine;
+.modal-dialog {
+  width: 45%;
 }
-.modal-container .modal,
-.modal-container .modal-backdrop {
-  position: absolute;
-  background-color: aquamarine;
+
+.modal-project-image {
+  width: 100%;
 }
 
 .modal-footer {

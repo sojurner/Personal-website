@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Image } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import './ProjectModal.css';
 
 const ProjectModal = ({ show, handleClose, project }) => {
@@ -17,8 +17,9 @@ const ProjectModal = ({ show, handleClose, project }) => {
         <Modal.Title id="contained-modal-title">{project.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image
-          thumbnail
+        <img
+          alt="Project Image Modal"
+          className="modal-project-image"
           src={require(`../../assets/Images/project-ss/${project.title}.png`)}
         />
         <div className="imgs">
@@ -27,7 +28,7 @@ const ProjectModal = ({ show, handleClose, project }) => {
               <img
                 key={`tech-${index}`}
                 height="40"
-                alt="Tech stack skills"
+                alt="Technology stack skills"
                 className="modal-tech"
                 name={tech}
                 src={require(`../../assets/Images/skill-icons/${tech}.png`)}
