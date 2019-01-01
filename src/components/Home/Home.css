@@ -98,14 +98,14 @@ ion-icon .icon-inner {
   transform: translate3d(5.8rem, 21.5rem, 0);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  transition: 0.4s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .contact-aside-half {
-  transform: translate3d(5.8rem, 25.5rem, 0);
-  border-top: 0;
+  /* transform: translate3d(5.8rem, 25.5rem, 0); */
+  border-top: 13px solid rgb(28, 84, 133);
   height: 0rem;
-  width: 0em;
+  opacity: 0;
   z-index: -2;
 }
 
@@ -127,6 +127,7 @@ ion-icon .icon-inner {
 .part-rope {
   height: 0;
   width: 0;
+  transition-delay: 0.25s;
 }
 
 .string-half,
@@ -150,6 +151,7 @@ ion-icon .icon-inner {
 
 .string-half {
   transform: translate3d(-13rem, 13.7rem, 0);
+  transition-delay: 0.5s;
 }
 
 .contact-string-icon {
