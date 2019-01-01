@@ -9,7 +9,7 @@
 
 .bucket-items h3 {
   font-size: 7rem;
-  color: rgb(107, 159, 159);
+  color: #8ac9ff;
   margin-bottom: 7rem;
 }
 
@@ -37,8 +37,12 @@
 
 .bucket-items ul li:nth-child(even) {
   font-size: 3.3rem;
-  color: rgb(125, 255, 229);
+  color: rgb(144, 255, 236);
   text-align: right;
+}
+
+.live-simply {
+  color: rgb(110, 224, 255);
 }
 
 .bucket-items-section {

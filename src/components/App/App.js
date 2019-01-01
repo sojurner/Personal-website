@@ -17,7 +17,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    //   this.fetchWeather();
     const opaque = false;
     setTimeout(() => {
       this.setState({ opaque });
