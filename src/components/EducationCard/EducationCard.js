@@ -4,9 +4,10 @@ import { withState } from 'recompose';
 import './EducationCard.css';
 
 const EducationCard = ({ detailDisplay, handleHover }) => {
-  const educationCard = educationInfo.map(item => {
+  const educationCard = educationInfo.map((item, index) => {
     return (
       <li
+        key={`education-${index}`}
         onMouseEnter={() => handleHover(item.institution)}
         onMouseLeave={() => handleHover('')}
       >

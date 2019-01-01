@@ -4,10 +4,10 @@ import { withState } from 'recompose';
 import './ExperienceCard.css';
 
 const ExperienceCard = ({ detailDisplay, handleHover }) => {
-  console.log(detailDisplay);
-  const experienceCard = experienceInfo.map(item => {
+  const experienceCard = experienceInfo.map((item, index) => {
     return (
       <li
+        key={`experience-${index}`}
         onMouseEnter={() => handleHover(item.career)}
         onMouseLeave={() => handleHover('')}
       >
