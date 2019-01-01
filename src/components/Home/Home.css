@@ -10,8 +10,8 @@
 
 .icons-hide {
   transform: translate3d(-8rem, 0, 0);
-  opacity: 0;
-  z-index: -2;
+  z-index: -1;
+  display: none;
 }
 
 .ion-icon-wrap {
