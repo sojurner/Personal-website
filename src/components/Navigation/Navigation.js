@@ -30,7 +30,6 @@ class Navigation extends Component {
   };
 
   handleSelect = key => {
-    console.log(key);
     this.setState({ key });
   };
 

@@ -31,9 +31,7 @@ class Resume extends Component {
   };
 
   handleOpen = name => {
-    console.log(allProjects);
     const project = allProjects.find(proj => proj.title === name);
-    console.log(project);
     this.setState({ show: true, project });
   };
 
@@ -64,7 +62,7 @@ class Resume extends Component {
           <section className="resume-programming">
             <span className="programming-skills">
               {' '}
-              <i class="fas fa-code" />
+              <i className="fas fa-code" />
               Programming Skills
             </span>
             <SVGContainer />

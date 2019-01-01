@@ -15,10 +15,10 @@ const Skillset = ({ tooltip, handleTooltip }) => {
     'CSS',
     'Git'
   ];
-  const people = descriptions.map(description => {
+  const skills = descriptions.map((description, index) => {
     const styles = { margin: '0 5px' };
     return (
-      <div className="skill-box">
+      <div className="skill-box" key={`skill-${index}`}>
         <img
           height="50"
           alt="Showcase of my personal projects"
@@ -35,7 +35,7 @@ const Skillset = ({ tooltip, handleTooltip }) => {
       </div>
     );
   });
-  return <div className="skillset">{people}</div>;
+  return <div className="skillset">{skills}</div>;
 };
 
 export default withState('tooltip', 'handleTooltip', '')(Skillset);
