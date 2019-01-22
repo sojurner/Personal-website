@@ -24,6 +24,7 @@
   background: #5284b1f0;
   box-shadow: 1px 1px 1px 1px #fafdff2b;
   display: grid;
+  position: relative;
   grid-template-columns: 22rem 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 93rem;
@@ -37,7 +38,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  z-index: -1;
 }
 
 .resume-header {
@@ -308,6 +308,21 @@
 .resume-span::before {
   top: -5px;
   left: -25px;
+}
+
+.resume-official-link {
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: rgb(110, 191, 254);
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.resume-official-link:hover {
+  color: rgb(146, 194, 230);
 }
 
 @keyframes morphingLogo {

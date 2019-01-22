@@ -33,6 +33,15 @@ class Resume extends Component {
         <h3 className="resume-header-title">Resume</h3>
         <main className="resume-page">
           <ResumeHeader />
+          <i
+            className="fas fa-link resume-official-link"
+            onClick={() =>
+              window.open(
+                'https://drive.google.com/file/d/1anbv6eDYMmSOrqo2xnDf0jVa1caoEIK2/view',
+                '_blank'
+              )
+            }
+          />
           <ResumeSkills />
           <ResumeAbout />
           <ResumeInterests />
