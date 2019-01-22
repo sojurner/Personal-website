@@ -18,7 +18,7 @@ const ProjectModal = ({ show, handleClose, project }) => {
       </Modal.Header>
       <Modal.Body>
         <img
-          alt="Project Image Modal"
+          alt="Project screen shot"
           className="modal-project-image"
           src={require(`../../assets/Images/project-ss/${project.title}.png`)}
         />
