@@ -32,7 +32,6 @@
 .resume-header-title {
   font-size: 6rem;
   color: #92adbd;
-  scroll-snap-align: start;
   position: absolute;
   top: -12rem;
   left: 0;

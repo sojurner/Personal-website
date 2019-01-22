@@ -1,7 +1,5 @@
 .main-page-jumbo {
   align-self: start;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 h1 {

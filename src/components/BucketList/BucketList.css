@@ -10,7 +10,7 @@
 .bucket-items h3 {
   font-size: 7rem;
   color: #8ac9ff;
-  margin-bottom: 7rem;
+  margin: 20rem 0 7rem 0;
 }
 
 .bucket-items ul {
@@ -25,7 +25,8 @@
 .bucket-items ul li {
   text-align: start;
   font-size: 2rem;
-  margin: 1.5rem 0;
+  margin: 7rem 0;
+  font-weight: bold;
 }
 
 .bucket-items ul li:nth-child(odd) {

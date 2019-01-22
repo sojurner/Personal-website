@@ -1,6 +1,6 @@
 .jumbo-experience-section {
-  width: max-content;
-  margin-right: 10rem;
+  margin-left: 15rem;
+  max-width: 50rem;
 }
 
 .jumbo-experience-section ul li {
@@ -27,4 +27,10 @@
   background-color: rgb(1, 56, 104);
   position: absolute;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  .jumbo-experience-section {
+    margin-left: 10rem;
+  }
 }

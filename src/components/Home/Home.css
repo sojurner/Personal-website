@@ -102,7 +102,6 @@ ion-icon .icon-inner {
 }
 
 .contact-aside-half {
-  /* transform: translate3d(5.8rem, 25.5rem, 0); */
   border-top: 13px solid rgb(28, 84, 133);
   height: 0rem;
   opacity: 0;
@@ -134,14 +133,11 @@ ion-icon .icon-inner {
 .string-full {
   height: 4rem;
   position: absolute;
-
   transform: translate3d(0rem, 13.7rem, 0);
-
   width: 26.5rem;
   border: 7px solid rgb(28, 84, 133);
   border-left: 0;
   color: rgb(139, 192, 216);
-  /* border-right: 0; */
   z-index: 0;
   background-color: #0f3f5d;
   display: flex;
