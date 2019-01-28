@@ -6,11 +6,15 @@ class Navigation extends Component {
   state = {
     previous: 0,
     current: 0,
-    key: 1
+    key: 1,
+    navDisplay: false
   };
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, true);
+    setTimeout(() => {
+      this.setState({ navDisplay: true });
+    }, 2000);
   }
 
   componentWillUnmount() {
@@ -34,7 +38,7 @@ class Navigation extends Component {
   };
 
   render() {
-    const { current, previous } = this.state;
+    const { current, previous, navDisplay } = this.state;
     return (
       <header
         className={current > previous ? 'nav-header-hide' : 'nav-header-show'}
@@ -47,7 +51,13 @@ class Navigation extends Component {
           src={require(`../../assets/Images/Paul-kim-logo.png`)}
         />
         <nav
-          className={current > previous ? 'nav-links-hide' : 'nav-links-show'}
+          className={
+            !navDisplay
+              ? 'nav-render'
+              : current > previous
+              ? 'nav-links-hide'
+              : 'nav-links-show'
+          }
         >
           <NavLink className="projects-tab" exact to="/">
             <i className="fas fa-home" />
