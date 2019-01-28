@@ -65,7 +65,6 @@ ion-icon .icon-inner {
 }
 
 .home-container {
-  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 16rem 1fr 15fr;
   height: 100%;
@@ -130,7 +129,8 @@ ion-icon .icon-inner {
 }
 
 .string-half,
-.string-full {
+.string-full,
+.string-hide {
   height: 4rem;
   position: absolute;
   transform: translate3d(0rem, 13.7rem, 0);
@@ -143,6 +143,10 @@ ion-icon .icon-inner {
   display: flex;
   padding: 0;
   transition: 0.4s ease-in-out;
+}
+
+.string-hide {
+  transform: translate3d(-27rem, 13.7rem, 0);
 }
 
 .string-half {

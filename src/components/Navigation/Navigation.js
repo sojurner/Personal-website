@@ -36,7 +36,9 @@ class Navigation extends Component {
   render() {
     const { current, previous } = this.state;
     return (
-      <header className="nav-header-show">
+      <header
+        className={current > previous ? 'nav-header-hide' : 'nav-header-show'}
+      >
         <img
           alt="Paul Kim Signature"
           height="60"

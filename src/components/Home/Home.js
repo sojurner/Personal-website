@@ -4,7 +4,7 @@ import { iconContent } from '../../assets/ProfessionalData';
 import { withState } from 'recompose';
 import './Home.css';
 
-const Home = ({ toggleContact, contactDisplay }) => {
+const Home = ({ toggleContact, contactDisplay, contact }) => {
   const redirectLink = link => {
     const newTab = window.open(link, '_blank');
     newTab.focus();
@@ -37,7 +37,13 @@ const Home = ({ toggleContact, contactDisplay }) => {
       </aside>
       <div
         onClick={() => toggleContact(!contactDisplay)}
-        className={contactDisplay ? 'string-full' : 'string-half'}
+        className={
+          !contact
+            ? 'string-hide'
+            : contactDisplay
+            ? 'string-full'
+            : 'string-half'
+        }
       >
         <section className="contact-string-icon">
           <p className="contact-string">Contact</p>

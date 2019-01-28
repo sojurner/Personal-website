@@ -128,7 +128,8 @@
   right: 0;
 }
 
-.nav-header-show {
+.nav-header-show,
+.nav-header-hide {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -136,6 +137,14 @@
   width: 100vw;
   padding: 3rem;
   align-content: center;
+  background: rgba(9, 59, 95, 0.733);
+  opacity: 0;
+  transition: 0.3s linear;
+  box-shadow: 1px 1px rgba(58, 57, 57, 0.281);
+}
+
+.nav-header-show {
+  opacity: 1;
 }
 
 .logo-show {

@@ -13,15 +13,23 @@ import './App.css';
 class App extends Component {
   state = {
     opaque: true,
-    weather: null
+    weather: null,
+    contact: false
   };
 
   componentDidMount() {
     const opaque = false;
     setTimeout(() => {
       this.setState({ opaque });
+      this.delayContact();
     }, 500);
   }
+
+  delayContact = () => {
+    setTimeout(() => {
+      this.setState({ contact: true });
+    }, 1500);
+  };
 
   // fetchWeather = () => {
   //   navigator.geolocation.getCurrentPosition(async location => {
@@ -32,7 +40,7 @@ class App extends Component {
   // };
 
   render() {
-    const { opaque } = this.state;
+    const { opaque, contact } = this.state;
     return (
       <Router>
         <div className={opaque ? 'root-hide' : 'root-show'}>
@@ -42,7 +50,7 @@ class App extends Component {
             }
           >
             <Navigation />
-            <Home />
+            <Home contact={contact} />
             {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
           <Route exact path="/" component={JumboMumbo} />
