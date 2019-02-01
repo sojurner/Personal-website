@@ -8,27 +8,6 @@
   scroll-snap-align: start;
 }
 
-.audio-location {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.audio-hide {
-  width: 6rem !important;
-
-  overflow: hidden;
-  transition: 0.4s linear;
-  margin: 0 2rem 0 0;
-}
-
-.audio-show {
-  width: 23rem !important;
-  transition: 0.4s linear;
-  overflow: hidden;
-
-  margin: 0 2rem 0 0;
-}
-
 .flex {
   background-color: rgba(190, 190, 190, 0) !important;
   border-radius: 1rem;
@@ -100,7 +79,7 @@
 .image-cover-initial {
   position: absolute;
   height: 100%;
-  background: rgb(58, 63, 73);
+  background: rgb(34, 78, 92);
   z-index: 10;
   width: 0;
 }
@@ -110,7 +89,6 @@
   position: absolute;
   height: 100%;
   background: rgb(47, 60, 85);
-
   z-index: 10;
   transition: 0.5s linear;
   transform: translate3d(0, 0, 0);

@@ -1,0 +1,18 @@
+.audio-location {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.audio-hide {
+  width: 6rem !important;
+  overflow: hidden;
+  transition: 0.4s linear;
+  margin: 0 2rem 0 0;
+}
+
+.audio-show {
+  width: 23rem !important;
+  transition: 0.4s linear;
+  overflow: hidden;
+  margin: 0 2rem 0 0;
+}

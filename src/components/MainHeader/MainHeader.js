@@ -8,17 +8,18 @@ class MainHeader extends React.Component {
     imageLoad: 'image-cover-initial',
     imageDisplay: false
   };
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ imageLoad: 'image-cover-body' });
       this.setEnd();
-    }, 1000);
+    }, 700);
   }
 
   setEnd = () => {
     setTimeout(() => {
       this.setState({ imageLoad: 'image-cover-end', imageDisplay: true });
-    }, 1000);
+    }, 700);
   };
 
   render() {
@@ -35,7 +36,6 @@ class MainHeader extends React.Component {
             src={require(`../../assets/Images/family-cropped.jpg`)}
           />
         </div>
-
         <header className="job-location">
           <h1 className="job-title"> Software Developer</h1>
           <section className="audio-location">
@@ -50,4 +50,5 @@ class MainHeader extends React.Component {
     );
   }
 }
+
 export default MainHeader;

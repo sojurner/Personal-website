@@ -94,7 +94,7 @@ ion-icon .icon-inner {
   background-color: #0f3f5d;
   -webkit-animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: translate3d(5.8rem, 21.5rem, 0);
+  transform: translate3d(5.8rem, 23.5rem, 0);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transition: 0.5s ease-in-out;
@@ -113,7 +113,7 @@ ion-icon .icon-inner {
   height: 5.8rem;
   position: fixed;
   width: 3rem;
-  transform: translate3d(13rem, 17rem, 0);
+  transform: translate3d(13rem, 19rem, 0);
   border: 7px solid rgb(28, 84, 133);
   border-bottom: 0;
   border-top: 0;
@@ -133,7 +133,7 @@ ion-icon .icon-inner {
 .string-hide {
   height: 4rem;
   position: absolute;
-  transform: translate3d(0rem, 13.7rem, 0);
+  transform: translate3d(0rem, 15.7rem, 0);
   width: 26.5rem;
   border: 7px solid rgb(28, 84, 133);
   border-left: 0;
@@ -146,11 +146,11 @@ ion-icon .icon-inner {
 }
 
 .string-hide {
-  transform: translate3d(-27rem, 13.7rem, 0);
+  transform: translate3d(-27rem, 15.7rem, 0);
 }
 
 .string-half {
-  transform: translate3d(-13rem, 13.7rem, 0);
+  transform: translate3d(-13rem, 15.7rem, 0);
   transition-delay: 0.5s;
 }
 

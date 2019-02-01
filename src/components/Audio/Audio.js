@@ -1,7 +1,8 @@
 import React from 'react';
-
 import AudioPlayer from 'react-h5-audio-player';
 import { withState } from 'recompose';
+
+import './Audio.css';
 
 const Audio = ({ handlePlay, displayAudio }) => {
   return (
