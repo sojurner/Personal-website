@@ -34,7 +34,7 @@ class Resume extends Component {
         <main className="resume-page">
           <ResumeHeader />
           <i
-            className="fas fa-link resume-official-link"
+            className="fas fa-download resume-official-link"
             onClick={() =>
               window.open(
                 'https://drive.google.com/file/d/1anbv6eDYMmSOrqo2xnDf0jVa1caoEIK2/view',

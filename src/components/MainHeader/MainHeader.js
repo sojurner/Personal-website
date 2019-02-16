@@ -28,13 +28,13 @@ class MainHeader extends React.Component {
       <div className="header-job-family">
         <div className="image-container">
           <div className={this.state.imageLoad} />
-          <img
+          {/* <img
             className={imageDisplay ? 'family-img-show' : 'family-img-hide'}
             alt="family"
             height="450"
             width="380"
             src={require(`../../assets/Images/family-cropped.jpg`)}
-          />
+          /> */}
         </div>
         <header className="job-location">
           <h1 className="job-title"> Software Developer</h1>

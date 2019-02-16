@@ -7,7 +7,7 @@ export const BucketList = () => {
   return (
     <section className="bucket-items-section">
       <section className="bucket-items">
-        <h3>One Day I Will...</h3>
+        <h3>Goals...</h3>
         <ul>
           <Slide left>
             <li>Build a site of great ideas</li>
