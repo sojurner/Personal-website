@@ -59,15 +59,15 @@ class Navigation extends Component {
               : 'nav-links-show'
           }
         >
-          <NavLink className="projects-tab" exact to="/">
+          <NavLink title="navbar" className="projects-tab" exact to="/">
             <i className="fas fa-home" />
             Home
           </NavLink>
-          <NavLink className="projects-tab" to="/projects/React">
+          <NavLink title="navbar" className="projects-tab" to="/projects/React">
             <i className="fas fa-project-diagram" />
             Projects
           </NavLink>
-          <NavLink className="projects-tab" to="/resume">
+          <NavLink title="navbar" className="projects-tab" to="/resume">
             <i className="fas fa-scroll" />
             Resume
           </NavLink>

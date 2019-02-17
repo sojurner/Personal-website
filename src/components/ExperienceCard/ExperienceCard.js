@@ -14,8 +14,8 @@ const ExperienceCard = ({ detailDisplay, handleHover }) => {
         <span />
         <p className="jumbo-experience-job-title">{item.career}</p>
         <section className="jumbo-experience-time-period">
-          <p className="jumbo-experience-time-end">{item.end}</p>
-          <p className="jumbo-experience-time-start">{item.start} </p>
+          <p className="jumbo-experience-time-end">{item.start}</p>
+          <p className="jumbo-experience-time-start">{item.end} </p>
         </section>
         {detailDisplay === item.career && (
           <section className="detail-popup">{item.details}</section>

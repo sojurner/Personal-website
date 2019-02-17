@@ -56,13 +56,15 @@
 .jumbo-education-header,
 .jumbo-experience-header {
   font-size: 5rem;
+  display: flex;
+  font-weight: bold;
   color: rgb(114, 228, 232);
 }
 
 .jumbo-experience-header i,
 .jumbo-education-header i {
-  font-size: 2.5rem;
-  padding-bottom: 0.8rem;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .jumbo-experience-time-period,

@@ -2,13 +2,13 @@
   position: absolute;
   top: 30%;
   display: flex;
-  left: 6rem;
+  left: 2rem;
   height: 40rem;
   width: max-content;
   z-index: 0;
   flex-direction: column;
   justify-content: right;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .projects-title {
@@ -32,12 +32,16 @@
 
 .nav-link {
   font-size: 3.5rem;
-  margin: 1rem 0;
-  color: rgb(154, 211, 255);
+  font-weight: bold;
+  margin: 2rem 1rem;
+  color: rgb(94, 163, 216);
   padding: 0rem 1rem;
   width: max-content;
   height: max-content;
   transition: 0.2s linear;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -45,7 +49,6 @@
   color: rgb(63, 223, 218);
   background: rgb(35, 143, 143);
   padding: 0rem 1rem;
-
   border-radius: 0.7rem;
 }
 
@@ -60,9 +63,15 @@
 .project-navbar .active {
   color: rgb(0, 255, 247);
   border-left: 4px solid rgb(35, 143, 143);
-  padding: 0rem 1rem;
+  padding: 0rem 1.5rem;
+  -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .React,

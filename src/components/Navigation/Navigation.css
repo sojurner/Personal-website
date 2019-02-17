@@ -65,6 +65,8 @@
   transform: translate3d(0, 0, 0);
   transition: 0.8s ease;
   opacity: 1;
+  display: flex;
+  align-items: flex-end;
 }
 
 .nav-links-hide {
@@ -144,7 +146,7 @@
   width: 100vw;
   padding: 3rem;
   align-content: center;
-  background: rgba(7, 27, 41, 0.95);
+  background: rgba(7, 27, 41, 0.762);
   opacity: 0;
   transition: 0.3s linear;
   box-shadow: 1px 1px rgba(58, 57, 57, 0.281);

@@ -77,6 +77,7 @@ export const iconContent = [
         <strong>Github</strong>
       </Tooltip>
     ),
+    position: 'right',
     name: 'logo-github',
     url: 'https://www.github.com/sojurner'
   },
@@ -87,6 +88,8 @@ export const iconContent = [
       </Tooltip>
     ),
     name: 'logo-linkedin',
+    position: 'left',
+
     url: 'https://www.linkedin.com/in/paulkim-sojurner/'
   },
   {
@@ -96,6 +99,7 @@ export const iconContent = [
       </Tooltip>
     ),
     name: 'mail',
+    position: 'right',
     url: 'https://www.github.com/sojurner'
   },
   {
@@ -105,16 +109,17 @@ export const iconContent = [
       </Tooltip>
     ),
     name: 'call',
+    position: 'bottom',
     url: ''
   }
 ];
 
 export const experienceInfo = [
   {
-    career: 'Developer',
-    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, webpack, git',
-    start: 2017,
-    end: 'Now'
+    career: 'File Clerk',
+    details: 'Giardi & Keese: File management and storage',
+    start: 2009,
+    end: 2011
   },
   {
     career: 'Combat Medic',
@@ -124,10 +129,10 @@ export const experienceInfo = [
     end: 2017
   },
   {
-    career: 'File Clerk',
-    details: 'Giardi & Keese: File management and storage',
-    start: 2009,
-    end: 2011
+    career: 'Developer',
+    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, webpack, git',
+    start: 2017,
+    end: 'Now'
   }
 ];
 

@@ -5,7 +5,7 @@
   transform: translate3d(0, 0, 0);
   opacity: 1;
   transform: 0.7s linear;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .icons-hide {
@@ -20,10 +20,15 @@
   transform: rotate3d(4, 2, 30, 30deg);
   padding: 0;
   border-radius: 1rem;
-  margin: 0.5rem 2.3rem;
+  margin: 0.5rem 1rem;
   transition: 0.4s linear;
   height: max-content;
   padding: 0.2rem 0.4rem 0rem 0.1rem;
+}
+
+.ion-icon-wrap-1,
+.ion-icon-wrap-3 {
+  margin: 0.5rem 0 0.5rem 8rem;
 }
 
 .ion-icon-wrap:hover {
@@ -94,7 +99,7 @@ ion-icon .icon-inner {
   background-color: #0f3f5d;
   -webkit-animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: translate3d(5.8rem, 23.5rem, 0);
+  transform: translate3d(5.8rem, 24rem, 0);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transition: 0.5s ease-in-out;
@@ -113,7 +118,7 @@ ion-icon .icon-inner {
   height: 5.8rem;
   position: fixed;
   width: 3rem;
-  transform: translate3d(13rem, 19rem, 0);
+  transform: translate3d(13rem, 19.5rem, 0);
   border: 7px solid rgb(28, 84, 133);
   border-bottom: 0;
   border-top: 0;
@@ -131,7 +136,7 @@ ion-icon .icon-inner {
 .string-half,
 .string-full,
 .string-hide {
-  height: 4rem;
+  height: 4.5rem;
   position: absolute;
   transform: translate3d(0rem, 15.7rem, 0);
   width: 26.5rem;
@@ -150,7 +155,7 @@ ion-icon .icon-inner {
 }
 
 .string-half {
-  transform: translate3d(-13rem, 15.7rem, 0);
+  transform: translate3d(-11rem, 15.7rem, 0);
   transition-delay: 0.5s;
 }
 
@@ -159,7 +164,7 @@ ion-icon .icon-inner {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-content: start;
+  align-content: flex-start;
   z-index: 10000;
   cursor: pointer;
 }
@@ -179,7 +184,7 @@ ion-icon .icon-inner {
 
 .contact-string {
   font-size: 2.7rem;
-  margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0;
   align-self: center;
 }
 
@@ -213,7 +218,7 @@ ion-icon .icon-inner {
   position: absolute;
   opacity: 1;
   /* bottom: 3px; */
-  bottom: -14%;
+  bottom: -16%;
   left: -1rem;
   border-right: 87.5px solid #0f3f5d;
   border-left: 87.5px solid #0f3f5d;

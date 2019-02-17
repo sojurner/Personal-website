@@ -21,10 +21,10 @@ const Home = ({ toggleContact, contactDisplay, contact }) => {
             return (
               <OverlayTrigger
                 key={`overlay-${index}`}
-                placement="right"
+                placement={icon.position}
                 overlay={icon.tooltip}
               >
-                <div className="ion-icon-wrap">
+                <div className={`ion-icon-wrap ion-icon-wrap-${index}`}>
                   <ion-icon
                     name={icon.name}
                     onClick={redirectLink.bind(null, icon.url)}
