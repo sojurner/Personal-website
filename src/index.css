@@ -8,6 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.root {
+  height: 100vh;
+  width: 100vw;
+}
+
 .root-hide {
   overflow-y: scroll;
   height: 100vh;
@@ -17,13 +22,14 @@ body {
 
 .root-show {
   overflow-y: scroll;
+  width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-color: #0714219e;
   background-image: url(./assets/Images/night-gazing-2.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-  width: 100vw;
+
   opacity: 1;
   transition: 0.1s linear;
 }

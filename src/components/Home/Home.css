@@ -26,9 +26,16 @@
   padding: 0.2rem 0.4rem 0rem 0.1rem;
 }
 
-.ion-icon-wrap-1,
+.ion-icon-wrap-1 {
+  margin: 0 0 0.5rem 8rem;
+}
+
 .ion-icon-wrap-3 {
-  margin: 0.5rem 0 0.5rem 8rem;
+  margin: 1rem 0 0 8rem;
+}
+
+.ion-icon-wrap-2 {
+  margin: 0.2rem 1rem;
 }
 
 .ion-icon-wrap:hover {
@@ -49,7 +56,6 @@ ion-icon {
   cursor: pointer;
   padding: 5px;
   transform: rotate3d(4, 2, 30, -30deg);
-  /* transform: perspective(1000px); */
   height: 5rem;
   transition: 0.4s;
   width: 5rem;
@@ -157,6 +163,7 @@ ion-icon .icon-inner {
 .string-half {
   transform: translate3d(-11rem, 15.7rem, 0);
   transition-delay: 0.5s;
+  position: fixed;
 }
 
 .contact-string-icon {

@@ -1,6 +1,7 @@
 .skill-icons {
   margin: 2rem !important;
-  filter: invert(0.95);
+  animation: invert 10s linear infinite;
+  filter: invert(1);
 }
 
 .skillset {
@@ -47,4 +48,22 @@
 
 .Git {
   left: 26%;
+}
+
+@keyframes invert {
+  0% {
+    filter: invert(1);
+  }
+  25% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(1);
+  }
+  75% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
 }
