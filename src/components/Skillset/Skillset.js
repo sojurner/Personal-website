@@ -10,6 +10,7 @@ const Skillset = ({ tooltip, handleTooltip }) => {
     'Redux',
     'Jest',
     'Vue',
+    'Ruby',
     'Node',
     'HTML',
     'CSS',

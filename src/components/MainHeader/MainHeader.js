@@ -36,7 +36,6 @@ class MainHeader extends React.Component {
             <Audio />
             <h2 className="location-title"> Denver, CO</h2>
           </section>
-          <Skillset />
         </header>
       </div>
     );

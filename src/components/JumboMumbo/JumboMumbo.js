@@ -20,7 +20,7 @@ class JumboMumbo extends React.Component {
   scrollTo = (event, ref, title) => {
     event.preventDefault();
     ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    this.setState({ active: title });
+    this.setState({ active: title, show: false });
   };
 
   toggleScrollNav = () => {
@@ -41,9 +41,10 @@ class JumboMumbo extends React.Component {
             onClick={this.toggleScrollNav}
           />
           <ul className={this.state.show ? 'scroll-nav' : 'scroll-nav-hide'}>
-            {scrollNav.map(item => {
+            {scrollNav.map((item, index) => {
               return (
                 <li
+                  key={`jumbo-${index}`}
                   className={
                     this.state.active === item['title']
                       ? 'scroll-active scroll-item'

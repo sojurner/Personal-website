@@ -117,20 +117,24 @@ export const iconContent = [
 export const experienceInfo = [
   {
     career: 'File Clerk',
-    details: 'Giardi & Keese: File management and storage',
+    company: 'Giardi & Keese',
+    details: 'Responsible for file management and storage',
     start: 2009,
-    end: 2011
+    end: 2011,
+    img: 'gk.png'
   },
   {
     career: 'Combat Medic',
+    company: 'US Army',
     details:
-      '168th MMB Camp Walker, Korea; Lyster Army Health Clinic Fort Rucker, AL',
+      '168th MMB Camp Walker, Daegu, Republic of Korea\n Lyster Army Health Clinic Fort Rucker, AL',
     start: 2013,
-    end: 2017
+    end: 2017,
+    img: '65med-patch.png'
   },
   {
     career: 'Developer',
-    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, webpack, git',
+    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, Webpack, Git',
     start: 2017,
     end: 'Now'
   }
@@ -142,12 +146,14 @@ export const educationInfo = [
     details:
       'Front-end engineering Program; Emphasis on React, Redux, JavaScript, HTML and CSS',
     start: 2018,
-    end: 'Now'
+    end: 'Now',
+    img: 'turing.png'
   },
   {
     institution: 'Pacific Union College',
     details: 'Majored in Biology with emphasis on medicine',
     start: 2009,
-    end: 2013
+    end: 2013,
+    img: 'puc-logo.png'
   }
 ];
