@@ -17,6 +17,10 @@
   transition: 0.2s linear;
 }
 
+.toggle-play-wrapper {
+  flex: 1 0 65px !important;
+}
+
 .toggle-play-button i {
   border-left: 20px solid rgb(16, 47, 51) !important;
   transition: 0.2s linear;
@@ -107,9 +111,11 @@
   color: rgb(71, 227, 227);
   font-size: 3.5rem;
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 .job-title {
+  margin-top: 10rem;
   font-size: 7rem;
   color: #8ac9ff;
 }

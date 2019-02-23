@@ -42,7 +42,6 @@
 
 .header-container-hide {
   position: absolute;
-  z-index: 1;
   height: 9rem;
   display: flex;
   flex-direction: column;
@@ -52,7 +51,6 @@
 
 .header-container-show {
   position: absolute;
-  z-index: 1;
   height: 9rem;
   display: flex;
   flex-direction: column;

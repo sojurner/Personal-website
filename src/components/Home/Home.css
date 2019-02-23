@@ -128,8 +128,8 @@ ion-icon .icon-inner {
   border: 7px solid rgb(28, 84, 133);
   border-bottom: 0;
   border-top: 0;
+  z-index: 100;
   background-color: #0f3f5d;
-  z-index: 1000;
   transition: 0.4s ease-in-out;
 }
 
@@ -137,6 +137,11 @@ ion-icon .icon-inner {
   height: 0;
   width: 0;
   transition-delay: 0.25s;
+}
+
+.string-half,
+.string-full {
+  z-index: 10;
 }
 
 .string-half,
