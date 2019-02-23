@@ -29,7 +29,6 @@ body {
   background-image: url(./assets/Images/night-gazing-2.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-
   opacity: 1;
   transition: 0.1s linear;
 }

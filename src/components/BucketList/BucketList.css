@@ -10,7 +10,7 @@
 .bucket-items h3 {
   font-size: 7rem;
   color: #8ac9ff;
-  margin: 20rem 0 7rem 0;
+  margin: 1.5rem 0 4rem 0;
 }
 
 .bucket-items ul {
@@ -25,14 +25,13 @@
 .bucket-items ul li {
   text-align: start;
   font-size: 2rem;
-  margin: 7rem 0;
+  margin: 4rem 0;
   font-weight: bold;
 }
 
 .bucket-items ul li:nth-child(odd) {
   font-size: 3.3rem;
   color: rgb(148, 213, 243);
-
   text-align: left;
 }
 
@@ -44,10 +43,6 @@
 
 .live-simply {
   color: rgb(110, 224, 255);
-}
-
-.bucket-items-section {
-  scroll-snap-align: start;
 }
 
 .journey-items {

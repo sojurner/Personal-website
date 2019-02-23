@@ -4,10 +4,10 @@ import Zoom from 'react-reveal/Zoom';
 import ExperienceCard from '../ExperienceCard/ExperienceCard';
 import EducationCard from '../EducationCard/EducationCard';
 
-export default () => {
+const AboutTimeline = ({ aboutRef }) => {
   return (
     <Zoom>
-      <section className="jumbo-experience-education">
+      <section className="jumbo-experience-education" ref={aboutRef}>
         <section className="resume-experience-education">
           <ExperienceCard />
           <EducationCard />
@@ -16,3 +16,5 @@ export default () => {
     </Zoom>
   );
 };
+
+export default AboutTimeline;

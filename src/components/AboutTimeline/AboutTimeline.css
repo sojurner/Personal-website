@@ -1,7 +1,6 @@
 .jumbo-experience-education {
   display: flex;
   flex-direction: row;
-  scroll-snap-align: start;
 }
 
 .jumbo-experience-education .resume-experience-education {

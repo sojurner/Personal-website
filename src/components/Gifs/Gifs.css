@@ -43,10 +43,6 @@
   font-size: 2.5rem;
 }
 
-.gif-container {
-  scroll-snap-align: start;
-}
-
 #scrolling {
   margin: auto 1rem auto auto;
   overflow-y: auto;

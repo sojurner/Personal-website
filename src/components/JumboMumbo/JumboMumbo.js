@@ -1,18 +1,70 @@
 import React from 'react';
 import AboutTimeline from '../AboutTimeline/AboutTimeline';
 import MainHeader from '../MainHeader/MainHeader';
-import { BucketList } from '../BucketList/BucketList';
+import BucketList from '../BucketList/BucketList';
 
 import './JumboMumbo.css';
 
-const JumboMumbo = () => {
-  return (
-    <section className="main-page-jumbo">
-      <MainHeader />
-      <AboutTimeline />
-      <BucketList />
-    </section>
-  );
-};
+class JumboMumbo extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      active: '',
+      show: false
+    };
+    this.mainRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.bucketRef = React.createRef();
+  }
+
+  scrollTo = (event, ref, title) => {
+    event.preventDefault();
+    ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    this.setState({ active: title });
+  };
+
+  toggleScrollNav = () => {
+    this.setState({ show: !this.state.show });
+  };
+
+  render() {
+    const scrollNav = [
+      { title: 'Main', ref: this.mainRef },
+      { title: 'Experience', ref: this.aboutRef },
+      { title: 'Goals', ref: this.bucketRef }
+    ];
+    return (
+      <section className="main-page-container">
+        <aside className={'scroll-navigation'}>
+          <i
+            className={!this.state.show ? 'fas fa-ellipsis-v' : 'fas fa-times'}
+            onClick={this.toggleScrollNav}
+          />
+          <ul className={this.state.show ? 'scroll-nav' : 'scroll-nav-hide'}>
+            {scrollNav.map(item => {
+              return (
+                <li
+                  className={
+                    this.state.active === item['title']
+                      ? 'scroll-active scroll-item'
+                      : 'scroll-item'
+                  }
+                  onClick={event =>
+                    this.scrollTo(event, item['ref'], item['title'])
+                  }
+                >
+                  {item['title']}
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+        <MainHeader mainRef={ref => (this.mainRef = ref)} />
+        <AboutTimeline aboutRef={ref => (this.aboutRef = ref)} />
+        <BucketList bucketRef={ref => (this.bucketRef = ref)} />
+      </section>
+    );
+  }
+}
 
 export default JumboMumbo;

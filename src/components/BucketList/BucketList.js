@@ -3,9 +3,9 @@ import Slide from 'react-reveal/Slide';
 
 import './BucketList.css';
 
-export const BucketList = () => {
+const BucketList = ({ bucketRef }) => {
   return (
-    <section className="bucket-items-section">
+    <section className="bucket-items-section" ref={bucketRef}>
       <section className="bucket-items">
         <h3>Goals...</h3>
         <ul>
@@ -44,3 +44,4 @@ export const BucketList = () => {
     </section>
   );
 };
+export default BucketList;
