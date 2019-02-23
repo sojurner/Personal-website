@@ -140,11 +140,6 @@ ion-icon .icon-inner {
 }
 
 .string-half,
-.string-full {
-  z-index: 10;
-}
-
-.string-half,
 .string-full,
 .string-hide {
   height: 4.5rem;
@@ -159,6 +154,11 @@ ion-icon .icon-inner {
   display: flex;
   padding: 0;
   transition: 0.4s ease-in-out;
+}
+
+.string-half,
+.string-full {
+  z-index: 10;
 }
 
 .string-hide {
