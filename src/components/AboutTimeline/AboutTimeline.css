@@ -30,11 +30,11 @@
   cursor: pointer;
   border-radius: 0.5rem;
   transition: 0.3s linear;
-  color: rgb(11, 116, 160);
+  color: #d2cfcf;
 }
 
 .about-tab-active {
-  color: #d2cfcf;
+  color: rgb(11, 116, 160);
 }
 
 .about-tab:hover {

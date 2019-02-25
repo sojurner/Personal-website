@@ -52,8 +52,9 @@ class AboutTimeline extends React.Component {
       <section className="jumbo-experience-education" ref={aboutRef}>
         <aside className="timeline-bar">
           <nav className="experience-education-nav">
-            {aboutTabs.map(tab => (
+            {aboutTabs.map((tab, index) => (
               <span
+                key={`experience-education-nav-${index}`}
                 className={
                   this.state.activeTimeline === tab
                     ? 'about-tab-active about-tab'
@@ -101,7 +102,7 @@ class AboutTimeline extends React.Component {
             sortedInfo.map((item, index) => {
               return (
                 <section
-                  key={`experience-${item.career}`}
+                  key={`${item.career}-${index}`}
                   id={item.career}
                   className="about-item-content"
                   ref={ref => (this.experienceContentRefs[index] = ref)}
