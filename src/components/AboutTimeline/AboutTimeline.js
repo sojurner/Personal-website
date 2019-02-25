@@ -115,6 +115,7 @@ class AboutTimeline extends React.Component {
                   {item.career === 'Developer' && <Skillset />}
                   {item.career !== 'Developer' && (
                     <img
+                      alt="professional emblem"
                       height={100}
                       src={require(`../../assets/Images/professional/${
                         item.img
@@ -126,20 +127,21 @@ class AboutTimeline extends React.Component {
             })}
           {this.state.activeTimeline === 'Education' &&
             sortedEducation.map((item, index) => {
+              const { institution, details, img } = item;
               return (
                 <section
-                  key={`education-${item.instutition}`}
-                  id={item.institution}
+                  key={`${institution}-${index}`}
+                  id={institution}
                   className="about-item-content"
                   ref={ref => (this.educationContentRefs[index] = ref)}
                 >
                   <header>
-                    <h2>{item.institution}</h2>
+                    <h2>{institution}</h2>
                   </header>
-                  <p>{item.details}</p>
+                  <p>{details}</p>
                   <img
                     alt={`Education logo`}
-                    src={require(`../../assets/Images/education/${item.img}`)}
+                    src={require(`../../assets/Images/education/${img}`)}
                   />
                 </section>
               );

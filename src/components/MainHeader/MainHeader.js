@@ -1,6 +1,5 @@
 import React from 'react';
 import Audio from '../Audio/Audio';
-import Skillset from '../Skillset/Skillset';
 import './MainHeader.css';
 
 class MainHeader extends React.Component {
@@ -26,7 +25,6 @@ class MainHeader extends React.Component {
   };
 
   render() {
-    const { imageDisplay } = this.state;
     const { mainRef } = this.props;
     return (
       <div ref={mainRef} className="header-job-family">
