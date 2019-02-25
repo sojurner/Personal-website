@@ -18,7 +18,7 @@ class JumboMumbo extends React.Component {
   }
 
   scrollTo = (event, ref, title) => {
-    event.preventDefault();
+    event.stopPropagation();
     ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
     this.setState({ active: title, show: false });
   };

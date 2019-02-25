@@ -141,9 +141,9 @@
   display: flex;
   z-index: -100;
   justify-content: space-between;
-  height: 12rem;
+  height: 11rem;
   width: 100vw;
-  padding: 3rem;
+  padding: 3rem 3rem 1.5rem 3rem;
   align-content: center;
   background: rgb(7, 27, 41);
   opacity: 0;
