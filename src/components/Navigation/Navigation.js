@@ -22,15 +22,18 @@ class Navigation extends Component {
   }
 
   handleScroll = event => {
-    const { scrollTop } = event.srcElement;
-    this.setState(prevState => {
-      if (prevState.current !== scrollTop) {
-        return {
-          previous: prevState.current,
-          current: scrollTop
-        };
-      }
-    });
+    const { className } = event.target;
+    if (className === 'root-show' || className === 'root-hide') {
+      const { scrollTop } = event.srcElement;
+      this.setState(prevState => {
+        if (prevState.current !== scrollTop) {
+          return {
+            previous: prevState.current,
+            current: scrollTop
+          };
+        }
+      });
+    }
   };
 
   handleSelect = key => {

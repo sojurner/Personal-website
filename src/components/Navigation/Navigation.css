@@ -192,6 +192,7 @@
   height: 12rem;
   width: 100vw;
   padding: 3rem;
+  overflow: hidden;
   align-content: center;
   background: rgba(7, 27, 41, 0.762);
   opacity: 0;
