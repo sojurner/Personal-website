@@ -73,7 +73,6 @@
 
   opacity: 1;
 }
-
 /* .projects-tab::before {
   background-color: rgb(42, 76, 99);
   content: '';
@@ -96,6 +95,26 @@
   border-radius: 50%;
 }
 
+.resume-tab.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 15px solid rgb(7, 27, 41);
+  border-left: 15px solid #0c2454;
+  width: 0;
+}
+
+.resume-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 15px solid rgb(7, 27, 41);
+  border-right: 15px solid #0c2454;
+  width: 0;
+}
+
 .projects-tab:hover {
   text-decoration: none !important;
   color: rgb(49, 185, 244);
@@ -110,7 +129,7 @@
   text-decoration: none !important;
   color: rgb(143, 221, 255) !important;
   background: #0c2454;
-  transform: translate3d(0, 1.5rem, 0);
+  transform: translate3d(0, 2rem, 0);
   transition: 0.3s linear;
 }
 
