@@ -22,18 +22,15 @@ class Navigation extends Component {
   }
 
   handleScroll = event => {
-    const { className } = event.target;
-    if (className === 'root-show' || className === 'root-hide') {
-      const { scrollTop } = event.srcElement;
-      this.setState(prevState => {
-        if (prevState.current !== scrollTop) {
-          return {
-            previous: prevState.current,
-            current: scrollTop
-          };
-        }
-      });
-    }
+    const { scrollTop } = event.srcElement;
+    this.setState(prevState => {
+      if (prevState.current !== scrollTop) {
+        return {
+          previous: prevState.current,
+          current: scrollTop
+        };
+      }
+    });
   };
 
   handleSelect = key => {
@@ -62,17 +59,36 @@ class Navigation extends Component {
               : 'nav-links-show'
           }
         >
-          <NavLink title="navbar" className="projects-tab" exact to="/">
-            <i className="fas fa-home" />
-            Home
+          <NavLink
+            title="navbar"
+            className="projects-tab home-tab"
+            exact
+            to="/"
+          >
+            <div className="tab-item-container">
+              <i className="fas fa-home" />
+              <p className="nav-text">Home</p>
+            </div>
           </NavLink>
-          <NavLink title="navbar" className="projects-tab" to="/projects/React">
-            <i className="fas fa-project-diagram" />
-            Projects
+          <NavLink
+            title="navbar"
+            className="projects-tab project-tab"
+            to="/projects/React"
+          >
+            <div className="tab-item-container">
+              <i className="fas fa-project-diagram" />
+              <p className="nav-text">Projects</p>
+            </div>
           </NavLink>
-          <NavLink title="navbar" className="projects-tab" to="/resume">
-            <i className="fas fa-scroll" />
-            Resume
+          <NavLink
+            title="navbar"
+            className="projects-tab resume-tab"
+            to="/resume"
+          >
+            <div className="tab-item-container">
+              <i className="fas fa-scroll" />
+              <p className="nav-text">Resume</p>
+            </div>
           </NavLink>
         </nav>
         {/* <NavLink
