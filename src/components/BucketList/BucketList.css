@@ -27,39 +27,19 @@
   font-size: 2rem;
   margin: 4rem 0;
   font-weight: bold;
+  font-size: 3.3rem;
 }
 
 .bucket-items ul li:nth-child(odd) {
-  font-size: 3.3rem;
   color: rgb(148, 213, 243);
   text-align: left;
 }
 
 .bucket-items ul li:nth-child(even) {
-  font-size: 3.3rem;
   color: rgb(144, 255, 236);
   text-align: right;
 }
 
 .live-simply {
   color: rgb(110, 224, 255);
-}
-
-.journey-items {
-  display: flex;
-
-  margin: auto;
-}
-
-.journey-items ul {
-  margin: auto;
-}
-
-.journey-items ul li {
-  text-align: start;
-  margin: 2rem 0;
-}
-
-.about-items p strong {
-  color: rgb(209, 249, 241);
 }

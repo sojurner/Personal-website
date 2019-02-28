@@ -1,19 +1,4 @@
 @font-face {
-  font-family: burls;
-  src: url(../../Fonts/Burls.ttf);
-}
-
-@font-face {
-  font-family: nunito;
-  src: url(../../Fonts/Nunito-Regular.ttf);
-}
-
-@font-face {
-  font-family: badscript;
-  src: url(../../Fonts/Badscript.ttf);
-}
-
-@font-face {
   font-family: codec;
   src: url(../../Fonts/codec.ttf);
 }

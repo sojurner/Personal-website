@@ -2,6 +2,7 @@ import React from 'react';
 import AboutTimeline from '../AboutTimeline/AboutTimeline';
 import MainHeader from '../MainHeader/MainHeader';
 import BucketList from '../BucketList/BucketList';
+import PageScroll from '../PageScroll/PageScroll';
 
 import './JumboMumbo.css';
 
@@ -28,6 +29,7 @@ class JumboMumbo extends React.Component {
   };
 
   render() {
+    const { show, active } = this.state;
     const scrollNav = [
       { title: 'Main', ref: this.mainRef },
       { title: 'Experience', ref: this.aboutRef },
@@ -37,27 +39,18 @@ class JumboMumbo extends React.Component {
       <section className="main-page-container">
         <aside className={'scroll-navigation'}>
           <i
-            className={!this.state.show ? 'fas fa-ellipsis-v' : 'fas fa-times'}
+            className={!show ? 'fas fa-ellipsis-v' : 'fas fa-times'}
             onClick={this.toggleScrollNav}
           />
-          <ul className={this.state.show ? 'scroll-nav' : 'scroll-nav-hide'}>
-            {scrollNav.map((item, index) => {
-              return (
-                <li
-                  key={`jumbo-${index}`}
-                  className={
-                    this.state.active === item['title']
-                      ? 'scroll-active scroll-item'
-                      : 'scroll-item'
-                  }
-                  onClick={event =>
-                    this.scrollTo(event, item['ref'], item['title'])
-                  }
-                >
-                  {item['title']}
-                </li>
-              );
-            })}
+          <ul className={show ? 'scroll-nav' : 'scroll-nav-hide'}>
+            {scrollNav.map((item, index) => (
+              <PageScroll
+                scrollTo={this.scrollTo}
+                index={index}
+                active={active}
+                item={item}
+              />
+            ))}
           </ul>
         </aside>
         <MainHeader mainRef={ref => (this.mainRef = ref)} />
