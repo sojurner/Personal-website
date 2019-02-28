@@ -91,28 +91,16 @@
   transform: translate3d(-1rem, 3rem, 0);
 } */
 
+.project-tab {
+  height: 6rem;
+  padding-top: 1rem;
+}
 .project-tab.active {
   border-radius: 50%;
 }
 
-.resume-tab.active::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 15px solid rgb(7, 27, 41);
-  border-left: 15px solid #0c2454;
-  width: 0;
-}
-
-.resume-tab.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-bottom: 15px solid rgb(7, 27, 41);
-  border-right: 15px solid #0c2454;
-  width: 0;
+.resume-tab.active {
+  border-radius: 1rem;
 }
 
 .projects-tab:hover {
@@ -131,6 +119,7 @@
   background: #0c2454;
   transform: translate3d(0, 2rem, 0);
   transition: 0.3s linear;
+  border: 1.5px solid darkgreen;
 }
 
 .nav-links-hide,
@@ -146,6 +135,7 @@
   justify-content: space-evenly;
   background: #0c2454;
   border-radius: 1rem;
+  border: 1.5px solid darkgreen;
   width: 25rem;
   height: 5rem;
 }
