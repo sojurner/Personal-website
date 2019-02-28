@@ -119,7 +119,7 @@
   background: #0c2454;
   transform: translate3d(0, 2rem, 0);
   transition: 0.3s linear;
-  border: 1.5px solid darkgreen;
+  border: 1.5px solid #14467a;
 }
 
 .nav-links-hide,
@@ -135,7 +135,7 @@
   justify-content: space-evenly;
   background: #0c2454;
   border-radius: 1rem;
-  border: 1.5px solid darkgreen;
+  border: 1.5px solid #1e4064b3;
   width: 25rem;
   height: 5rem;
 }
