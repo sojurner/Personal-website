@@ -40,7 +40,7 @@ const BucketList = ({ bucketRef }) => {
             <li>Build a site of great ideas</li>
           </Fade>
           <Fade bottom>
-            <li>Encounter a bear and survive</li>
+            <li>Survive a Bear Encounter</li>
           </Fade>
         </ul>
       </section>
