@@ -1,6 +1,5 @@
 .skill-icons {
   margin: 2rem !important;
-  animation: invert 10s linear infinite;
   filter: invert(1);
 }
 
@@ -19,8 +18,8 @@
 
 .skill-tool-tip {
   position: absolute;
-  top: 7.5rem;
-  left: 20%;
+  top: 3.2rem;
+  left: 18%;
   font-size: 2rem;
   color: rgb(162, 189, 213);
   padding: 0.1rem 1rem;
