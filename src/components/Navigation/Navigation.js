@@ -76,7 +76,11 @@ class Navigation extends Component {
           <NavLink
             title="navbar"
             className="projects-tab project-tab"
-            to="/projects/React"
+            exact
+            to={`/projects/${'React' ||
+              'Vue' ||
+              'JavaScript' ||
+              'Compositions'}`}
           >
             <div className="tab-item-container">
               <i className="fas fa-project-diagram" />

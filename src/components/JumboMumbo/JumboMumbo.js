@@ -23,12 +23,8 @@ class JumboMumbo extends React.Component {
     this.setState({ active: title, show: false });
   };
 
-  toggleScrollNav = () => {
-    this.setState({ show: !this.state.show });
-  };
-
   render() {
-    const { show, active } = this.state;
+    const { active } = this.state;
     const scrollNav = [
       { title: '', ref: this.mainRef },
       { title: '', ref: this.aboutRef },
