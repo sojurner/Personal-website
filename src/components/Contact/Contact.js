@@ -2,16 +2,16 @@ import React from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
 import { iconContent } from '../../assets/ProfessionalData';
 import { withState } from 'recompose';
-import './Home.css';
+import './Contact.css';
 
-const Home = ({ toggleContact, contactDisplay, contact }) => {
+const Contact = ({ toggleContact, contactDisplay, contact }) => {
   const redirectLink = link => {
     const newTab = window.open(link, '_blank');
     newTab.focus();
   };
 
   return (
-    <div className="home-container">
+    <>
       <div className={contactDisplay ? 'full-rope' : 'part-rope'} />
       <aside
         className={contactDisplay ? 'contact-aside' : 'contact-aside-half'}
@@ -54,8 +54,8 @@ const Home = ({ toggleContact, contactDisplay, contact }) => {
           />
         </section>
       </div>
-    </div>
+    </>
   );
 };
 
-export default withState('contactDisplay', 'toggleContact', false)(Home);
+export default withState('contactDisplay', 'toggleContact', false)(Contact);

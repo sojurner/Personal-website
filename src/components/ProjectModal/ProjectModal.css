@@ -3,24 +3,54 @@
 }
 
 .modal-project-image {
-  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(31, 31, 82);
+  box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.159);
+  width: 90%;
+  filter: brightness(0.8);
 }
 
-.modal-footer {
+.styles_modal__gNwvD {
+  background-color: rgb(33, 53, 87);
+  border: 2px solid rgb(52, 75, 96);
+  border-radius: 0.5rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.modal-section-links {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.modal-content {
-  background-color: rgb(77, 99, 136);
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e522;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 0;
+}
+
+.modal-header h1 {
+  color: rgb(201, 220, 240);
+  font-weight: bold;
+  font-size: 4rem;
 }
 
 .project-modal-description,
 #contained-modal-title {
   font-family: codec;
   line-height: 5rem;
+  width: 58%;
   color: rgb(171, 209, 241);
-  font-size: 29px;
+  font-size: 19px;
   margin: 0;
 }
 
@@ -44,12 +74,15 @@
 
 .imgs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 0;
+  align-self: center;
 }
 
 .modal-tech {
-  margin: 0 2rem;
+  margin: 1rem;
   filter: invert(0.95);
 }
 
@@ -57,7 +90,7 @@
 .fa-laptop-code {
   cursor: pointer;
   font-size: 3rem;
-  margin: 0 3rem;
+  margin: 2rem;
   color: rgb(171, 209, 241);
 }
 
@@ -66,5 +99,9 @@ i:hover {
 }
 
 .icon-links {
-  margin: auto;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  border-left: 2px solid rgba(20, 20, 48, 0.193);
 }

@@ -10,25 +10,36 @@ class JumboMumbo extends React.Component {
   constructor() {
     super();
     this.state = {
-      show: false
+      show: false,
+      mainRef: null,
+      aboutRef: null,
+      bucketRef: null
     };
-    this.mainRef = React.createRef();
-    this.aboutRef = React.createRef();
-    this.bucketRef = React.createRef();
   }
 
-  scrollTo = (event, ref, title) => {
+  setMainRef = mainRef => {
+    this.setState({ mainRef });
+  };
+
+  setAboutRef = aboutRef => {
+    this.setState({ aboutRef });
+  };
+
+  setBucketRef = bucketRef => {
+    this.setState({ bucketRef });
+  };
+
+  scrollTo = (event, ref) => {
     event.stopPropagation();
     ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    this.setState({ active: title, show: false });
   };
 
   render() {
-    const { active } = this.state;
+    const { active, mainRef, aboutRef, bucketRef } = this.state;
     const scrollNav = [
-      { title: '', ref: this.mainRef },
-      { title: '', ref: this.aboutRef },
-      { title: '', ref: this.bucketRef }
+      { title: '', ref: mainRef },
+      { title: '', ref: aboutRef },
+      { title: '', ref: bucketRef }
     ];
     return (
       <section className="main-page-container">
@@ -36,6 +47,7 @@ class JumboMumbo extends React.Component {
           <ul className="scroll-nav">
             {scrollNav.map((item, index) => (
               <PageScroll
+                key={`scroll-${index}`}
                 scrollTo={this.scrollTo}
                 index={index}
                 active={active}
@@ -44,9 +56,9 @@ class JumboMumbo extends React.Component {
             ))}
           </ul>
         </aside>
-        <MainHeader mainRef={ref => (this.mainRef = ref)} />
-        <AboutTimeline aboutRef={ref => (this.aboutRef = ref)} />
-        <BucketList bucketRef={ref => (this.bucketRef = ref)} />
+        <MainHeader mainRef={this.setMainRef} />
+        <AboutTimeline aboutRef={this.setAboutRef} />
+        <BucketList bucketRef={this.setBucketRef} />
       </section>
     );
   }

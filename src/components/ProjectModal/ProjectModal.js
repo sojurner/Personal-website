@@ -1,33 +1,23 @@
 import React from 'react';
-import { Modal } from 'react-bootstrap';
 import './ProjectModal.css';
+import Modal from 'react-responsive-modal';
 
 const ProjectModal = ({ show, handleClose, project }) => {
+  console.log(project);
   const redirect = link => {
     const newTab = window.open(link, '_blank');
     newTab.focus();
   };
   return (
-    <Modal
-      show={show}
-      onHide={handleClose}
-      aria-labelledby="contained-modal-title"
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title">{project.title}</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <img
-          alt="Project screen shot"
-          className="modal-project-image"
-          src={require(`../../assets/Images/project-ss/${project.title}.png`)}
-        />
+    <Modal open={show} onClose={handleClose}>
+      <header className="modal-header">
+        <h1>{project.title}</h1>
         <div className="imgs">
           {project.technologies.map((tech, index) => {
             return (
               <img
                 key={`tech-${index}`}
-                height="40"
+                height="30"
                 alt="Technology stack skills"
                 className="modal-tech"
                 name={tech}
@@ -36,10 +26,15 @@ const ProjectModal = ({ show, handleClose, project }) => {
             );
           })}
         </div>
+      </header>
 
-        <h1 className="project-modal-description">{project.description}</h1>
-      </Modal.Body>
-      <Modal.Footer>
+      <img
+        alt="Project screen shot"
+        className="modal-project-image"
+        src={require(`../../assets/Images/project-ss/${project.title}.png`)}
+      />
+      <section className="modal-section-links">
+        <p className="project-modal-description">{project.description}</p>
         <div className="icon-links">
           <i
             className="fab fa-github-alt"
@@ -50,7 +45,7 @@ const ProjectModal = ({ show, handleClose, project }) => {
             onClick={redirect.bind(null, project.githubPages)}
           />
         </div>
-      </Modal.Footer>
+      </section>
     </Modal>
   );
 };

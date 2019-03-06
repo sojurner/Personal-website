@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 import Projects from '../Projects/Projects';
 import JumboMumbo from '../JumboMumbo/JumboMumbo';
-
-import Home from '../Home/Home';
+import Contact from '../Contact/Contact';
 import Resume from '../Resume/Resume';
 // import Gifs from '../Gifs/Gifs';
 // import { getWeather } from '../../utilities/apiCalls';
@@ -50,7 +49,7 @@ class App extends Component {
             }
           >
             <Navigation />
-            <Home contact={contact} />
+            <Contact contact={contact} />
             {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
           <Route exact path="/" component={JumboMumbo} />

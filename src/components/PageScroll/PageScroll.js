@@ -6,7 +6,7 @@ const PageScroll = ({ index, active, item, scrollTo }) => (
     className={
       active === item['title'] ? 'scroll-active scroll-item' : 'scroll-item'
     }
-    onClick={event => scrollTo(event, item['ref'], item['title'])}
+    onClick={event => scrollTo(event, item['ref'])}
   >
     {item['title']}
   </li>
