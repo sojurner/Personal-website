@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProjectModal.css';
 import Modal from 'react-responsive-modal';
+import './ProjectModal.css';
 
 const ProjectModal = ({ show, handleClose, project }) => {
   console.log(project);
