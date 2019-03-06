@@ -4,7 +4,7 @@
 }
 
 .bar {
-  fill: #88b9d3;
+  fill: #94d6fc;
 }
 
 .bar:hover > .skill-bar-show {
@@ -13,13 +13,13 @@
 }
 
 .bar:hover > .bar-text {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .bar-text {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  transition: 0.2s linear;
+  transition: 0.1s linear;
 }
 
 .skill-bar-show {

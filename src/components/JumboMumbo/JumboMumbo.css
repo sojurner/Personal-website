@@ -23,7 +23,6 @@
 
 .scroll-nav,
 .scroll-nav-hide {
-  background: black;
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
