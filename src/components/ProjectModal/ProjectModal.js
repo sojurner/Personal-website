@@ -3,7 +3,6 @@ import Modal from 'react-responsive-modal';
 import './ProjectModal.css';
 
 const ProjectModal = ({ show, handleClose, project }) => {
-  console.log(project);
   const redirect = link => {
     const newTab = window.open(link, '_blank');
     newTab.focus();
