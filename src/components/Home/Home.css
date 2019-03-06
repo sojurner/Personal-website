@@ -225,9 +225,10 @@ ion-icon .icon-inner {
 }
 
 .contact-string {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   margin: 0.5rem 0;
   align-self: center;
+  font-weight: bold;
 }
 
 @keyframes flipInY {
