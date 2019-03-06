@@ -1,6 +1,5 @@
 import React from 'react';
-import Slide from 'react-reveal/Slide';
-
+import Fade from 'react-reveal/Fade';
 import './BucketList.css';
 
 const BucketList = ({ bucketRef }) => {
@@ -9,18 +8,25 @@ const BucketList = ({ bucketRef }) => {
       <section className="bucket-items">
         <h3>Goals...</h3>
         <ul>
-          <Slide left>
-            <li>Build a site of great ideas</li>
-          </Slide>
-          <Slide right>
-            <li>Work at Reddit</li>
-          </Slide>
-          <Slide left>
+          <Fade top>
+            <li
+              onClick={() =>
+                window.open(
+                  'https://www.reddit.com/r/Showerthoughts/',
+                  '_blank'
+                )
+              }
+            >
+              Work at Reddit
+            </li>
+          </Fade>
+          <li className="checked-item">Serve in the Military</li>
+          <Fade top>
             <li>Live somewhere with no mosquitoes</li>
-          </Slide>
-          <Slide right>
+          </Fade>
+          <Fade bottom>
             <li>
-              Find all the{' '}
+              Find the{' '}
               <a
                 className="live-simply"
                 href="https://www.google.com/search?biw=1309&bih=725&tbm=isch&sa=1&ei=dhMKXIbADdD8jwT6yYCADw&q=live+simply+hats+patagonia&oq=live+simply+hats+patagonia&gs_l=img.3...17247.18825..18935...0.0..0.110.953.8j2......1....1..gws-wiz-img.ltS2TXTSZcc"
@@ -29,16 +35,13 @@ const BucketList = ({ bucketRef }) => {
               </a>{' '}
               hats
             </li>
-          </Slide>
-          <Slide left>
-            <li>Encounter a bear and survive</li>
-          </Slide>
-          <Slide right>
-            <li>Try Franklin's BBQ</li>
-          </Slide>
-          <Slide left>
-            <li>Experience true level</li>
-          </Slide>
+          </Fade>
+          <Fade bottom>
+            <li>Build a site of great ideas</li>
+          </Fade>
+          <Fade bottom>
+            <li>Survive a Bear Encounter</li>
+          </Fade>
         </ul>
       </section>
     </section>

@@ -14,32 +14,73 @@
 }
 
 .bucket-items ul {
-  justify-self: center;
+  justify-self: end;
   list-style-type: none;
   position: relative;
-  width: 70vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60vw;
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
 
 .bucket-items ul li {
-  text-align: start;
-  font-size: 2rem;
+  overflow: hidden;
+  justify-self: center;
+  min-width: 26rem;
+  max-width: 26rem;
+  padding: 2.2rem;
+  min-height: 18rem;
+  font-size: 2.2rem;
   margin: 4rem 0;
   font-weight: bold;
-  font-size: 3.3rem;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #00000078;
 }
 
 .bucket-items ul li:nth-child(odd) {
   color: rgb(148, 213, 243);
-  text-align: left;
+  border-right: 10px groove rgb(46, 91, 147);
+  border-top: 10px double rgb(68, 130, 184);
+  border-left: 10px groove rgb(46, 91, 147);
+  border-bottom: 10px double rgb(68, 130, 184);
 }
 
 .bucket-items ul li:nth-child(even) {
   color: rgb(144, 255, 236);
-  text-align: right;
+  transform: translate3d(0, 55px, 0);
+  border-top: 10px groove rgb(46, 91, 147);
+  border-left: 10px double rgb(68, 130, 184);
+  border-bottom: 10px groove rgb(46, 91, 147);
+  border-right: 10px double rgb(68, 130, 184);
 }
+
+/* .bucket-items li:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  right: -2rem;
+  height: 2rem;
+  width: 10rem;
+  background-color: aqua;
+} */
 
 .live-simply {
   color: rgb(110, 224, 255);
+}
+
+.checked-item {
+  filter: invert(0.2);
+  background-color: rgba(16, 10, 10, 0.187) !important;
+  background-image: url('https://png.pngtree.com/svg/20150104/0038a72e9e.png');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  font-weight: bold;
 }

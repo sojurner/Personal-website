@@ -1,6 +1,5 @@
 .skill-icons {
   margin: 2rem !important;
-  animation: invert 10s linear infinite;
   filter: invert(1);
 }
 
@@ -19,15 +18,16 @@
 
 .skill-tool-tip {
   position: absolute;
-  top: 7.5rem;
-  left: 20%;
+  top: 3.2rem;
+  left: 18%;
   font-size: 2rem;
-  color: rgb(162, 189, 213);
+  color: rgb(205, 225, 244);
   padding: 0.1rem 1rem;
   background-color: rgb(61, 99, 118);
   z-index: 12;
   border-radius: 1rem;
   letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .Redux {
