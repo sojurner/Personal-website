@@ -175,7 +175,7 @@ ion-icon .icon-inner {
   height: 4.5rem;
   position: absolute;
   transform: translate3d(0rem, 15.7rem, 0);
-  width: 26.5rem;
+  width: 25.5rem;
   border: 7px solid rgb(28, 84, 133);
   border-left: 0;
   color: rgb(139, 192, 216);
@@ -196,7 +196,7 @@ ion-icon .icon-inner {
 }
 
 .string-half {
-  transform: translate3d(-11rem, 15.7rem, 0);
+  transform: translate3d(-12rem, 15.7rem, 0);
   transition-delay: 0.5s;
   position: fixed;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import ProjectContent from '../ProjectContent/ProjectContent';
-import { allProjects } from '../../assets/ProjectData';
+import { allProjects } from '../../assets/data/ProjectData';
 
 const ProjectRoutes = ({ routes }) => {
   return routes.map((route, index) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { allProjects } from '../../assets/ProjectData';
+import { allProjects } from '../../assets/data/ProjectData';
 import ProjectModal from '../ProjectModal/ProjectModal';
 
 class ResumeWork extends React.Component {

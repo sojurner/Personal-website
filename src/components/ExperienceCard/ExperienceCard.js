@@ -1,5 +1,5 @@
 import React from 'react';
-import { experienceInfo } from '../../assets/ProfessionalData';
+import { experienceInfo } from '../../assets/data/ProfessionalData';
 import { withState } from 'recompose';
 import './ExperienceCard.css';
 

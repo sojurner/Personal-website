@@ -1,8 +1,7 @@
 import React from 'react';
-
+import { data } from '../../assets/data/ProfessionalData';
 import { SkillBars } from '../SkillBars/SkillBars';
 import './SVGContainer.css';
-import { data } from '../../assets/ProfessionalData';
 
 class SVGContainer extends React.Component {
   state = {
