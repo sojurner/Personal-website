@@ -2,7 +2,7 @@
   position: absolute;
   top: 30%;
   display: flex;
-  left: 2rem;
+  left: 4rem;
   height: 40rem;
   width: max-content;
   z-index: 0;
@@ -31,7 +31,7 @@
 }
 
 .nav-link {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 2rem 1rem;
   color: rgb(94, 163, 216);
@@ -39,7 +39,7 @@
   width: max-content;
   height: max-content;
   transition: 0.2s linear;
-  height: 4rem;
+
   display: flex;
   align-items: center;
 }
