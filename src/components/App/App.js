@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Navigation from '../Navigation/Navigation';
 import Projects from '../Projects/Projects';
 import JumboMumbo from '../JumboMumbo/JumboMumbo';
 import Contact from '../Contact/Contact';
 import Resume from '../Resume/Resume';
+import Header from '../Header/Header';
 // import Gifs from '../Gifs/Gifs';
 // import { getWeather } from '../../utilities/apiCalls';
 import './App.css';
@@ -48,7 +48,7 @@ class App extends Component {
               opaque ? 'header-container-hide' : 'header-container-show'
             }
           >
-            <Navigation />
+            <Header />
             <Contact contact={contact} />
             {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
