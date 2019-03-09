@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutTimeline from '../AboutTimeline/AboutTimeline';
-import MainHeader from '../MainHeader/MainHeader';
+import MainLanding from '../MainLanding/MainLanding';
 import PageScroll from '../PageScroll/PageScroll';
 import BucketList from '../BucketList/BucketList';
 
@@ -56,7 +56,7 @@ class JumboMumbo extends React.Component {
             ))}
           </ul>
         </aside>
-        <MainHeader mainRef={this.setMainRef} />
+        <MainLanding mainRef={this.setMainRef} />
         <AboutTimeline aboutRef={this.setAboutRef} />
         <BucketList bucketRef={this.setBucketRef} />
       </section>
