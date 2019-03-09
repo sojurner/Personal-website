@@ -14,18 +14,28 @@
 }
 
 .bucket-items button {
-  background-color: rgba(223, 137, 25, 0.673);
+  background-color: rgba(126, 74, 6, 0.893);
   height: 6rem;
   width: 6rem;
   transition: 0.2s ease-out;
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 0.5rem;
 }
 
 .bucket-items button:focus {
   outline: none;
 }
 
+.bucket-items button:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.bucket-items button:nth-child(2) {
+  margin-left: 1rem;
+}
 .bucket-btn-active {
-  background-color: rgba(244, 187, 113, 0.673) !important;
+  background-color: rgba(242, 168, 71, 0.673) !important;
+  color: #8ac9ff;
 }
 
 .bucket-code,
@@ -38,56 +48,72 @@
 
 .bucket-items button:hover {
   background-color: rgb(63, 28, 28);
+  border-radius: 1rem;
 }
 .bucket-items button:hover > i {
   color: rgb(179, 169, 169) !important;
 }
 
-.bucket-items ul {
-  justify-self: end;
-  list-style-type: none;
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 60vw;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-}
-
-.bucket-items ul li {
-  overflow: hidden;
-  justify-self: center;
-  min-width: 26rem;
-  max-width: 26rem;
-  padding: 2.2rem;
-  min-height: 18rem;
-  font-size: 2.2rem;
-  margin: 4rem 0;
-  font-weight: bold;
-  text-align: center;
-  display: -webkit-flex;
+.bucket-content {
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  background-color: #00000078;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 5rem;
+  justify-content: space-around;
 }
 
-.bucket-items ul li:nth-child(odd) {
-  color: rgb(148, 213, 243);
-  border-right: 10px groove rgb(46, 91, 147);
-  border-top: 10px double rgb(68, 130, 184);
-  border-left: 10px groove rgb(46, 91, 147);
-  border-bottom: 10px double rgb(68, 130, 184);
+.bucket-items table {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(1, 1, 1, 0.125);
+  min-width: 460px;
 }
 
-.bucket-items ul li:nth-child(even) {
-  color: rgb(144, 255, 236);
-  transform: translate3d(0, 55px, 0);
-  border-top: 10px groove rgb(46, 91, 147);
-  border-left: 10px double rgb(68, 130, 184);
-  border-bottom: 10px groove rgb(46, 91, 147);
-  border-right: 10px double rgb(68, 130, 184);
+.bucket-items table td {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+.bucket-items table .bucket-completed {
+  text-decoration-line: line-through;
+}
+
+.bucket-items table .bucket-in-progress {
+  color: rgb(255, 196, 0);
+}
+
+.bucket-items table .bucket-incomplete {
+  color: rgb(191, 191, 191);
+}
+
+td {
+  padding: 0 1rem;
+}
+
+.bucket-type {
+  color: white;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.family-img,
+.army-img {
+  height: 380px;
+  width: 310px;
+  opacity: 0.9;
+  filter: hue-rotate(20deg);
+  box-shadow: 0 0 100px #c63f0ed2, inset 0 0 8px #c98c67b9;
+}
+
+.army-img {
+  height: 380px;
+
+  box-shadow: 0 0 100px #80d0ffd2, inset 0 0 8px #67bfc9db;
 }
 
 /* .bucket-items li:nth-child(4)::before {
