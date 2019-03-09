@@ -1,6 +1,7 @@
 export const bucketList = [
   {
     type: 'personal',
+    in_progress: true,
     completed: false,
     description: 'Try Franklins BBQ',
     img_url:
@@ -8,30 +9,43 @@ export const bucketList = [
   },
   {
     type: 'personal',
+    in_progress: false,
     completed: false,
     description: 'Survive a bear encounter',
     img_url:
       'https://www.pngarts.com/files/3/Bear-PNG-Image-with-Transparent-Background.png'
   },
   {
+    type: 'personal',
+    in_progress: true,
+    completed: false,
+    description: 'Live in a mosquito free country',
+    img_url:
+      'https://www.pngarts.com/files/3/Bear-PNG-Image-with-Transparent-Background.png'
+  },
+  {
     type: 'professional',
+    in_progress: false,
     completed: true,
     description: 'Serve in the military',
     img_url: 'https://wallpaperaccess.com/full/169519.png'
   },
   {
     type: 'personal',
+    in_progress: true,
     completed: false,
     description: "Find all the 'Live Simply' hats"
   },
   {
     type: 'professional',
+    in_progress: true,
     completed: false,
     description: 'Work at Reddit',
     img_url: 'http://imgur.com/5BxLu.png'
   },
   {
     type: 'personal',
+    in_progress: false,
     completed: false,
     description: 'Eat at Sukiyabashi Jiro',
     img_url:
@@ -39,6 +53,7 @@ export const bucketList = [
   },
   {
     type: 'professional',
+    in_progress: false,
     completed: false,
     description: 'Create a site that brings great minds togethers',
     img_url:
@@ -46,6 +61,7 @@ export const bucketList = [
   },
   {
     type: 'personal',
+    in_progress: false,
     completed: false,
     description: 'Live off grid for a month',
     img_url:
@@ -53,6 +69,7 @@ export const bucketList = [
   },
   {
     type: 'professional',
+    in_progress: true,
     completed: false,
     description: 'Work remotely',
     img_url:
@@ -60,6 +77,7 @@ export const bucketList = [
   },
   {
     type: 'personal',
+    in_progress: false,
     completed: true,
     description: 'Meet relatives for the first time',
     img_url: 'family_cropped.png'
