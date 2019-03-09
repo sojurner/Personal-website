@@ -196,7 +196,7 @@
   padding: 3rem;
   overflow: hidden;
   align-content: center;
-  background: rgba(7, 27, 41, 0.632);
+  background: none;
   /* opacity: 0; */
   filter: blur(5px);
   transition: 0.3s linear;
@@ -204,6 +204,7 @@
 }
 
 .nav-header-show {
+  background: rgba(7, 27, 41, 0.632);
   filter: blur(0);
   z-index: 10;
 }
