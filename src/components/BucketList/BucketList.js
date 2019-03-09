@@ -45,11 +45,44 @@ class BucketList extends Component {
             <i className="fas fa-laptop-code bucket-code" />
           </button>
         </div>
-        <ul>
-          {selectedItems.map((item, index) => {
-            return <li>{item.description}</li>;
-          })}
-        </ul>
+        <content className="bucket-content">
+          <div>
+            <h4 className="bucket-type">{listType}</h4>
+            <table>
+              <tbody>
+                {selectedItems.map((item, index) => {
+                  return (
+                    <tr key={`bucket-${index}`}>
+                      <td>
+                        {item.in_progress ? '》' : item.completed ? '✓' : '~'}
+                      </td>
+                      <td
+                        className={
+                          item.in_progress
+                            ? 'bucket-in-progress'
+                            : item.completed
+                            ? 'bucket-completed'
+                            : 'bucket-incomplete'
+                        }
+                      >
+                        {item.description}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+          <img
+            alt="family relatives"
+            src={
+              listType === 'personal'
+                ? require(`../../assets/Images/family-cropped.jpg`)
+                : require(`../../assets/Images/professional/army_photo.jpg`)
+            }
+            className={listType === 'personal' ? 'family-img' : 'army-img'}
+          />
+        </content>
       </section>
     );
   }
