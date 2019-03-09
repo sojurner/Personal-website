@@ -1,5 +1,5 @@
 import React from 'react';
-import { educationInfo } from '../../assets/ProfessionalData';
+import { educationInfo } from '../../assets/data/ProfessionalData';
 import { withState } from 'recompose';
 import './EducationCard.css';
 

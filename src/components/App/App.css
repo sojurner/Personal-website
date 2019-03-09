@@ -36,7 +36,6 @@
 
 .header-container-show {
   position: absolute;
-  height: 9rem;
   display: flex;
   flex-direction: column;
   width: 100vw;

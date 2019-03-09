@@ -1,6 +1,6 @@
 import React from 'react';
 import { OverlayTrigger } from 'react-bootstrap';
-import { iconContent } from '../../assets/ProfessionalData';
+import { iconContent } from '../../assets/data/ProfessionalData';
 import { withState } from 'recompose';
 import './Contact.css';
 

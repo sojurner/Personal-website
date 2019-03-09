@@ -1,0 +1,24 @@
+.fa-stream {
+  color: rgb(80, 197, 244);
+  font-size: 2.6rem;
+}
+
+.menu-container:hover {
+  background-color: rgb(7, 154, 154);
+}
+
+.menu-container:hover > .fa-stream {
+  color: rgb(133, 215, 213);
+}
+.menu-container {
+  cursor: pointer;
+  align-self: center;
+  padding: 0.7rem 0.7rem 0.7rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgb(81, 156, 227);
+}
+
+.menu-container,
+.fa-stream {
+  transition: 0.2s linear;
+}
