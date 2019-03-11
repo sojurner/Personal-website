@@ -22,7 +22,7 @@ class BucketList extends Component {
     const selectedItems = bucketList.filter(item => item.type === listType);
     return (
       <section className="bucket-items" ref={bucketRef}>
-        <h3>Goals...</h3>
+        <h3>Goals</h3>
         <div>
           <button
             className={
