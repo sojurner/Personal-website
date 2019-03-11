@@ -62,16 +62,21 @@
 
 .project-navbar .active {
   color: rgb(0, 255, 247);
-  border-left: 4px solid rgb(35, 143, 143);
   padding: 0rem 1.5rem;
-  -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  height: 3rem;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.project-navbar .active::before {
+  border-left: 10px solid rgb(35, 143, 143);
+  position: absolute;
+  content: '';
+  top: 1.7rem;
+  left: 0rem;
+  height: 0.4rem;
 }
 
 .React,
