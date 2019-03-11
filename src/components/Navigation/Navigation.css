@@ -206,7 +206,7 @@
 .nav-header-show {
   background: rgba(7, 27, 41, 0.632);
   filter: blur(0);
-  z-index: 10;
+  z-index: 102;
 }
 
 .logo-show {
