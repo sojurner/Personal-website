@@ -15,10 +15,15 @@
 }
 
 .audio-lists-panel-header .title {
+  font-weight: bold;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.351);
 }
 
 .audio-item {
   background-color: #000000 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.player-name {
+  font-weight: bold;
 }
