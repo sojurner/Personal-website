@@ -26,8 +26,8 @@ const options = {
     }
   ],
   defaultPosition: {
-    left: '15px',
-    bottom: '35px'
+    right: '20px',
+    bottom: '15px'
   },
   autoPlay: false
 };
