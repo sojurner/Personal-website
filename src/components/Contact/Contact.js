@@ -24,10 +24,16 @@ const Contact = ({ toggleContact, contactDisplay, contact }) => {
                 placement={icon.position}
                 overlay={icon.tooltip}
               >
-                <div className={`ion-icon-wrap ion-icon-wrap-${index}`}>
-                  <ion-icon
-                    name={icon.name}
-                    onClick={redirectLink.bind(null, icon.url)}
+                <div
+                  onClick={redirectLink.bind(null, icon.url)}
+                  className={`ion-icon-wrap ion-icon-wrap-${index}`}
+                >
+                  <img
+                    className="icon-itself"
+                    alt="contact-icons"
+                    src={`https://res.cloudinary.com/paulkim/image/upload/v1552415216/images/icons/${
+                      icon.name
+                    }.svg`}
                   />
                 </div>
               </OverlayTrigger>

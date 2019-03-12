@@ -78,7 +78,7 @@ export const iconContent = [
       </Tooltip>
     ),
     position: 'right',
-    name: 'logo-github',
+    name: 'github',
     url: 'https://www.github.com/sojurner'
   },
   {
@@ -87,7 +87,7 @@ export const iconContent = [
         <strong>LinkedIn</strong>
       </Tooltip>
     ),
-    name: 'logo-linkedin',
+    name: 'linkedin',
     position: 'left',
 
     url: 'https://www.linkedin.com/in/paulkim-sojurner/'
@@ -98,7 +98,7 @@ export const iconContent = [
         <strong>E-Mail</strong>
       </Tooltip>
     ),
-    name: 'mail',
+    name: 'email',
     position: 'right',
     url: 'https://www.github.com/sojurner'
   },
@@ -108,7 +108,7 @@ export const iconContent = [
         <strong>562-483-9937</strong>
       </Tooltip>
     ),
-    name: 'call',
+    name: 'phone',
     position: 'bottom',
     url: ''
   }

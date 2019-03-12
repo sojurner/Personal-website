@@ -5,7 +5,7 @@
   transform: translate3d(0, 0, 0);
   opacity: 1;
   transform: 0.7s linear;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .icons-hide {
@@ -15,15 +15,17 @@
 }
 
 .ion-icon-wrap {
-  width: max-content;
+  height: 6.5rem;
+  width: 6.5rem;
   /* background-color: rgb(14, 85, 85); */
   transform: rotate3d(4, 2, 30, 30deg);
   padding: 0;
   border-radius: 1rem;
   margin: 0.5rem 1rem;
   transition: 0.4s linear;
-  height: max-content;
-  padding: 0.2rem 0.4rem 0rem 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ion-icon-wrap-1 {
@@ -45,24 +47,22 @@
   border-radius: 50%;
 }
 
-.ion-icon-wrap:hover > ion-icon {
+.ion-icon-wrap:hover > .icon-itself {
   color: rgb(133, 206, 206);
   transform: rotate(0deg);
 }
 
-ion-icon {
-  font-size: 4rem;
-  color: rgb(138, 186, 186);
+.icon-itself {
   cursor: pointer;
-  padding: 5px;
+  filter: invert(0.75);
   transform: rotate3d(4, 2, 30, -30deg);
-  height: 5rem;
+  height: 4.5rem;
   transition: 0.4s;
-  width: 5rem;
+  width: 4.5rem;
 }
 
 ion-icon .icon-inner {
-  transform: rotate(-20deg) !important;
+  /* transform: rotate(-20deg) !important; */
 }
 
 .tooltip {
