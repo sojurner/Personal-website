@@ -77,8 +77,8 @@ class BucketList extends Component {
             alt="family relatives"
             src={
               listType === 'personal'
-                ? require(`../../assets/Images/family-cropped.jpg`)
-                : require(`../../assets/Images/professional/army_photo.jpg`)
+                ? 'https://res.cloudinary.com/paulkim/image/upload/v1552394092/images/misc/family-cropped.jpg'
+                : 'https://res.cloudinary.com/paulkim/image/upload/v1552393702/images/professional/army_photo.jpg'
             }
             className={listType === 'personal' ? 'family-img' : 'army-img'}
           />

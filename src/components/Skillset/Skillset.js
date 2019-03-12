@@ -28,7 +28,7 @@ const Skillset = ({ tooltip, handleTooltip }) => {
           name={description}
           onMouseEnter={() => handleTooltip(description)}
           onMouseLeave={() => handleTooltip('')}
-          src={require(`../../assets/Images/skill-icons/${description.toLowerCase()}.png`)}
+          src={`https://res.cloudinary.com/paulkim/image/upload/v1552393705/images/skills/${description.toLowerCase()}.png`}
         />
         {tooltip === description && (
           <p className={`skill-tool-tip ${description}`}>{tooltip}</p>

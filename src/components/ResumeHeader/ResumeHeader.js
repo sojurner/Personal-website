@@ -6,7 +6,7 @@ export default () => (
       alt="Paul Kim Signature"
       height="60"
       width="180"
-      src={require(`../../assets/Images/Paul-kim-logo.png`)}
+      src="https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png"
       className="signature"
     />
     <span className="resume-job-title">
