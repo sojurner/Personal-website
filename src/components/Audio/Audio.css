@@ -13,3 +13,12 @@
   width: 60px;
   height: 60px;
 }
+
+.audio-lists-panel-header .title {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.351);
+}
+
+.audio-item {
+  background-color: #000000 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+}

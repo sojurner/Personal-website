@@ -23,6 +23,12 @@ const options = {
       singer: 'Bojet',
       musicSrc:
         'https://res.cloudinary.com/paulkim/video/upload/v1552367840/I_need_you.mp3'
+    },
+    {
+      name: 'Too Real',
+      singer: 'JCHL',
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552416689/Too_Real.mp3'
     }
   ],
   defaultPosition: {
