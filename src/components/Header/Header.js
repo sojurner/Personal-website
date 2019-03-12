@@ -9,16 +9,16 @@ class Header extends React.Component {
     navDisplay: false
   };
 
-  componentDidMount() {
+  componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll, true);
     setTimeout(() => {
       this.setState({ navDisplay: true });
     }, 2000);
-  }
+  };
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     window.removeEventListener('scroll', this.handleScroll, true);
-  }
+  };
 
   handleScroll = event => {
     const { className } = event.target;
