@@ -21,6 +21,10 @@
 }
 
 .project-navigation-show {
+  background-image: url('https://res.cloudinary.com/paulkim/image/upload/v1552422157/images/backgrounds/tree_night.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.55);
   opacity: 1;
   height: 100vh;
   transition: 0.4s linear;
