@@ -49,7 +49,7 @@ class ResumeWork extends React.Component {
                       : `recent-work-gif recent-work-gif-${index}`
                   }
                   name={item}
-                  src={require(`../../assets/Images/project-ss/${item}.png`)}
+                  src={`https://res.cloudinary.com/paulkim/image/upload/v1552394727/images/projects/${item}.png`}
                   onMouseEnter={this.handleHover.bind(null, item)}
                   onMouseLeave={this.handleHover.bind(null, '')}
                   onClick={this.handleOpen.bind(null, item)}

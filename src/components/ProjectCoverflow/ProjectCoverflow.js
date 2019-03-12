@@ -18,7 +18,7 @@ const ProjectCoverflow = ({
         onMouseLeave={() => handleHover('')}
         style={{ display: 'block', width: '100%' }}
         alt={project.title === hoveredProject ? 'Click to view' : project.title}
-        src={require(`../../assets/Images/project-ss/${project.title}.png`)}
+        src={project.img_url}
       />
     );
   });

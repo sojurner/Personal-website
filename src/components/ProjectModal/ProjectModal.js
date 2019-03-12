@@ -20,7 +20,7 @@ const ProjectModal = ({ show, handleClose, project }) => {
                 alt="Technology stack skills"
                 className="modal-tech"
                 name={tech}
-                src={require(`../../assets/Images/skill-icons/${tech}.png`)}
+                src={`https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/skills/${tech}.png`}
               />
             );
           })}
@@ -30,7 +30,7 @@ const ProjectModal = ({ show, handleClose, project }) => {
       <img
         alt="Project screen shot"
         className="modal-project-image"
-        src={require(`../../assets/Images/project-ss/${project.title}.png`)}
+        src={project.img_url}
       />
       <section className="modal-section-links">
         <p className="project-modal-description">{project.description}</p>

@@ -9,17 +9,20 @@ const options = {
     {
       name: '17',
       singer: 'Ocean',
-      musicSrc: require('../../assets/music/Ocean-17.mp3')
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552367822/Ocean-17.mp3'
     },
     {
       name: 'Side B',
       singer: 'jhFly',
-      musicSrc: require('../../assets/music/Side_b.mp3')
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552367849/Side_b.mp3'
     },
     {
       name: 'I Need You',
       singer: 'Bojet',
-      musicSrc: require('../../assets/music/I_need_you.mp3')
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552367840/I_need_you.mp3'
     }
   ],
   defaultPosition: {

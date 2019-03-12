@@ -120,9 +120,9 @@ class AboutTimeline extends React.Component {
                     <img
                       alt="professional emblem"
                       height={100}
-                      src={require(`../../assets/Images/professional/${
+                      src={`https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
                         item.img
-                      }`)}
+                      }`}
                     />
                   )}
                 </section>
@@ -144,7 +144,7 @@ class AboutTimeline extends React.Component {
                   <p>{details}</p>
                   <img
                     alt={`Education logo`}
-                    src={require(`../../assets/Images/education/${img}`)}
+                    src={`https://res.cloudinary.com/paulkim/image/upload/v1552394010/images/education/${img}`}
                   />
                 </section>
               );

@@ -46,7 +46,7 @@ class Header extends React.Component {
           height="60"
           className={current > previous ? 'logo-hide' : 'logo-show'}
           width="240"
-          src={require(`../../assets/Images/Paul-kim-logo.png`)}
+          src="https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png"
         />
         <Navigation {...this.state} />
       </header>
