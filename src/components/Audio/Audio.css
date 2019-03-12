@@ -4,6 +4,11 @@
   color: #31c0c2;
 }
 
+.react-jinke-music-player .music-player-controller {
+  border: 2px solid rgb(105, 133, 135);
+  color: rgb(102, 165, 171);
+}
+
 .music-player-panel {
   background-color: rgba(7, 27, 41, 0.632);
 }
