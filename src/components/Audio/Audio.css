@@ -1,20 +1,12 @@
-.audio-location {
-  display: flex;
-  justify-content: flex-end;
+.react-jinke-music-player {
+  width: 60px;
+  height: 60px;
 }
 
-.audio-hide {
-  width: 6rem !important;
-  overflow: hidden;
-  transition: 0.4s linear;
-  position: absolute;
-  left: 28rem;
+.music-player-panel {
+  background-color: rgba(7, 27, 41, 0.632);
 }
 
-.audio-show {
-  position: absolute;
-  width: 23rem !important;
-  transition: 0.4s linear;
-  overflow: hidden;
-  left: 28rem;
+#music-player-controller {
+  background-color: rgb(57, 57, 85);
 }

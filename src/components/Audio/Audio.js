@@ -1,19 +1,36 @@
 import React from 'react';
-import AudioPlayer from 'react-h5-audio-player';
-import { withState } from 'recompose';
+import ReactJkMusicPlayer from 'react-jinke-music-player';
+import 'react-jinke-music-player/assets/index.css';
 
 import './Audio.css';
 
-const Audio = ({ handlePlay, displayAudio }) => {
-  return (
-    <AudioPlayer
-      className={!displayAudio ? 'audio-hide' : 'audio-show'}
-      src={require(`../../assets/music/Ocean-17.mp3`)}
-      controls={true}
-      onPlay={() => handlePlay(!displayAudio)}
-      onPause={() => handlePlay(!displayAudio)}
-    />
-  );
+const options = {
+  audioLists: [
+    {
+      name: '17',
+      singer: 'Ocean',
+      musicSrc: require('../../assets/music/Ocean-17.mp3')
+    },
+    {
+      name: 'Side B',
+      singer: 'jhFly',
+      musicSrc: require('../../assets/music/Side_b.mp3')
+    },
+    {
+      name: 'I Need You',
+      singer: 'Bojet',
+      musicSrc: require('../../assets/music/I_need_you.mp3')
+    }
+  ],
+  defaultPosition: {
+    left: '15px',
+    bottom: '35px'
+  },
+  autoPlay: false
 };
 
-export default withState('displayAudio', 'handlePlay', false)(Audio);
+const Audio = () => {
+  return <ReactJkMusicPlayer {...options} />;
+};
+
+export default Audio;

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
-import Audio from '../Audio/Audio';
 import './Header.css';
 
 class Header extends React.Component {
@@ -49,8 +48,6 @@ class Header extends React.Component {
           width="240"
           src={require(`../../assets/Images/Paul-kim-logo.png`)}
         />
-        <Audio />
-
         <Navigation {...this.state} />
       </header>
     );
