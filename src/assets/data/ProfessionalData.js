@@ -100,7 +100,7 @@ export const iconContent = [
     ),
     name: 'email',
     position: 'right',
-    url: 'https://www.github.com/sojurner'
+    url: 'paul.kim0591@gmail.com'
   },
   {
     tooltip: (

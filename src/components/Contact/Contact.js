@@ -10,6 +10,10 @@ const Contact = ({ toggleContact, contactDisplay, contact }) => {
     newTab.focus();
   };
 
+  const openEmail = url => {
+    window.location.href = `mailto:${url}`;
+  };
+
   return (
     <>
       <div className={contactDisplay ? 'full-rope' : 'part-rope'} />
@@ -25,7 +29,11 @@ const Contact = ({ toggleContact, contactDisplay, contact }) => {
                 overlay={icon.tooltip}
               >
                 <div
-                  onClick={redirectLink.bind(null, icon.url)}
+                  onClick={
+                    icon.name === 'email'
+                      ? openEmail.bind(null, icon.url)
+                      : redirectLink.bind(null, icon.url)
+                  }
                   className={`ion-icon-wrap ion-icon-wrap-${index}`}
                 >
                   <img
