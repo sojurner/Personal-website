@@ -33,17 +33,17 @@ export const allProjects = [
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
     githubPages: 'https://sojurner.github.io/Static-Comp-3/'
   },
-  {
-    title: 'Stravant',
-    projectType: 'React',
-    technologies: ['react', 'redux', 'jest', 'router'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393881/images/projects/Stravant.png',
-    description:
-      'Checkout out your fitness Activity from Strava and track your Pomodoros',
-    githubURL: 'https://github.com/sojurner/Stravant',
-    githubPages: 'https://stravant.herokuapp.com/'
-  },
+  // {
+  //   title: 'Stravant',
+  //   projectType: 'React',
+  //   technologies: ['react', 'redux', 'jest', 'router'],
+  //   img_url:
+  //     'https://res.cloudinary.com/paulkim/image/upload/v1552393881/images/projects/Stravant.png',
+  //   description:
+  //     'Checkout out your fitness Activity from Strava and track your Pomodoros',
+  //   githubURL: 'https://github.com/sojurner/Stravant',
+  //   githubPages: 'https://stravant.herokuapp.com/'
+  // },
   {
     title: 'Fantasy-futbol',
     projectType: 'React',

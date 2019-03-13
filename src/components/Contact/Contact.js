@@ -32,7 +32,9 @@ const Contact = ({ toggleContact, contactDisplay, contact }) => {
                   onClick={
                     icon.name === 'email'
                       ? openEmail.bind(null, icon.url)
-                      : redirectLink.bind(null, icon.url)
+                      : icon.name !== 'phone'
+                      ? redirectLink.bind(null, icon.url)
+                      : null
                   }
                   className={`ion-icon-wrap ion-icon-wrap-${index}`}
                 >

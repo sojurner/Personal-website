@@ -95,7 +95,9 @@ export const iconContent = [
   {
     tooltip: (
       <Tooltip id="mail">
-        <strong>E-Mail</strong>
+        <strong>paul.kim0591</strong>
+        <br />
+        <strong>@gmail</strong>
       </Tooltip>
     ),
     name: 'email',

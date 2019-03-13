@@ -53,16 +53,12 @@
 }
 
 .icon-itself {
-  cursor: pointer;
   filter: invert(0.75);
   transform: rotate3d(4, 2, 30, -30deg);
   height: 4.5rem;
   transition: 0.4s;
   width: 4.5rem;
-}
-
-ion-icon .icon-inner {
-  /* transform: rotate(-20deg) !important; */
+  cursor: pointer;
 }
 
 .tooltip {
