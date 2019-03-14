@@ -19,6 +19,18 @@ const options = {
         'https://res.cloudinary.com/paulkim/video/upload/v1552367849/Side_b.mp3'
     },
     {
+      name: 'Arurian Dance',
+      singer: 'Nujabes',
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552566100/Nujabes_-_Aruarian_Dance.mp3'
+    },
+    {
+      name: 'Natural Cause',
+      singer: 'Emancipator',
+      musicSrc:
+        'https://res.cloudinary.com/paulkim/video/upload/v1552566112/Emancipator_-_Natural_Cause.mp3'
+    },
+    {
       name: 'I Need You',
       singer: 'Bojet',
       musicSrc:

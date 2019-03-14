@@ -29,6 +29,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
 }
 
+.audio-title {
+  font-weight: bold;
+}
+
 .player-name {
   font-weight: bold;
 }

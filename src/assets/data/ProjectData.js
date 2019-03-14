@@ -33,17 +33,6 @@ export const allProjects = [
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
     githubPages: 'https://sojurner.github.io/Static-Comp-3/'
   },
-  // {
-  //   title: 'Stravant',
-  //   projectType: 'React',
-  //   technologies: ['react', 'redux', 'jest', 'router'],
-  //   img_url:
-  //     'https://res.cloudinary.com/paulkim/image/upload/v1552393881/images/projects/Stravant.png',
-  //   description:
-  //     'Checkout out your fitness Activity from Strava and track your Pomodoros',
-  //   githubURL: 'https://github.com/sojurner/Stravant',
-  //   githubPages: 'https://stravant.herokuapp.com/'
-  // },
   {
     title: 'Fantasy-futbol',
     projectType: 'React',
@@ -109,28 +98,6 @@ export const allProjects = [
     githubURL: 'https://github.com/sojurner/game-time-1',
     githubPages: 'https://michaelyons.github.io/game-time/',
     gif: '../../tron.gif'
-  },
-  {
-    title: 'Number-guesser',
-    projectType: 'JavaScript',
-    technologies: ['node', 'html', 'css'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393876/images/projects/Number-guesser.png',
-    description:
-      'Guess a Number!  Whether its too high or too low, Number-guesser will let you know.',
-    githubURL: 'https://github.com/sojurner/Number-Guesser',
-    githubPages: 'https://sojurner.github.io/Number-Guesser/'
-  },
-  {
-    title: 'Linked-list',
-    projectType: 'JavaScript',
-    technologies: ['node', 'html', 'css'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393876/images/projects/Linked-list.png',
-    description:
-      'Manage your favorite links.  Add links, check them off after reading, and remove them from your linked-list',
-    githubURL: 'https://github.com/sojurner/linked-list',
-    githubPages: 'https://sojurner.github.io/linked-list/'
   },
   {
     title: '2Do-box',

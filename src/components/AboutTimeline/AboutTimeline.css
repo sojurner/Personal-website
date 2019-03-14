@@ -117,7 +117,8 @@
 
 .about-content p {
   margin: 4rem 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .year-section .year-item-active::before {
