@@ -4,7 +4,6 @@ import {
   experienceInfo,
   educationInfo
 } from '../../assets/data/ProfessionalData';
-import Skillset from '../Skillset/Skillset';
 
 class AboutTimeline extends React.Component {
   constructor() {

@@ -10,10 +10,12 @@ class BucketList extends Component {
     };
   }
 
-  setType = listType => {
-    return this.state.listType !== listType
-      ? this.setState({ listType })
-      : null;
+  setType = () => {
+    this.setState(prev => {
+      return prev.listType === 'personal'
+        ? (prev.listType = 'professional')
+        : (prev.listType = 'personal');
+    });
   };
 
   render() {
@@ -23,25 +25,19 @@ class BucketList extends Component {
     return (
       <section className="bucket-items" ref={bucketRef}>
         <h3>Goals</h3>
-        <div>
-          <button
+        <div className="bucket-tabs">
+          <div
+            onClick={this.setType}
             className={
               listType === 'personal'
-                ? 'bucket-btn bucket-btn-active'
-                : 'bucket-btn'
+                ? 'bucket-toggle bucket-toggle-personal'
+                : 'bucket-toggle bucket-toggle-professional'
             }
-            onClick={this.setType.bind(null, 'personal')}
-          >
+          />
+          <button className="bucket-btn">
             <i className="fas fa-user-circle bucket-user" />
           </button>
-          <button
-            className={
-              listType === 'professional'
-                ? 'bucket-btn bucket-btn-active'
-                : 'bucket-btn'
-            }
-            onClick={this.setType.bind(null, 'professional')}
-          >
+          <button className="bucket-btn">
             <i className="fas fa-laptop-code bucket-code" />
           </button>
         </div>

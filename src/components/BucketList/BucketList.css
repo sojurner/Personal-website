@@ -13,45 +13,71 @@
   margin: 1.5rem 0 4rem 0;
 }
 
+.bucket-tabs {
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+  padding: 0;
+  border: 2px solid #8c8c8c;
+}
+
 .bucket-items button {
   background-color: rgba(126, 74, 6, 0.893);
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5.5rem;
   transition: 0.2s ease-out;
-  border: 2px solid rgb(201, 201, 201);
-  border-radius: 0.5rem;
+  cursor: inherit;
+  border: none;
 }
 
 .bucket-items button:focus {
   outline: none;
 }
 
-.bucket-items button:nth-child(1) {
-  margin-right: 1rem;
+.bucket-btn {
+  position: relative;
 }
 
-.bucket-items button:nth-child(2) {
-  margin-left: 1rem;
+.bucket-toggle {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-color: rgb(154, 112, 22);
+  transition: 0.2s linear;
+  z-index: 2;
+  cursor: pointer;
+  border: 2px solid rgb(75, 75, 75);
 }
-.bucket-btn-active {
-  background-color: rgba(242, 168, 71, 0.673) !important;
-  color: #8ac9ff;
+
+.bucket-toggle:hover {
+  background-color: rgb(174, 140, 4);
+}
+
+.bucket-toggle-personal {
+  transform: translate3d(5.9rem, 0rem, 0);
+}
+
+.bucket-toggle-professional {
+  transform: translate3d(0rem, 0rem, 0);
 }
 
 .bucket-code,
 .bucket-user {
-  font-size: 3rem;
+  font-size: 2.7rem !important;
   color: rgb(53, 29, 29) !important;
   margin: 0 !important;
   transition: 0.2s ease-out;
 }
 
-.bucket-items button:hover {
-  background-color: rgb(63, 28, 28);
-  border-radius: 1rem;
+.bucket-user {
+  transform: translate3d(-0.2rem, 0, 0);
 }
-.bucket-items button:hover > i {
-  color: rgb(179, 169, 169) !important;
+
+.bucket-code {
+  transform: translate3d(0rem, 0, 0);
 }
 
 .bucket-content {
