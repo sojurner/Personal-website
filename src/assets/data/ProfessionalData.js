@@ -135,10 +135,11 @@ export const experienceInfo = [
     img: '65med-patch.png'
   },
   {
-    career: 'Developer',
+    career: 'Front-End Developer',
     details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, Webpack, Git',
     start: 2017,
-    end: 'Now'
+    end: 'Now',
+    img: 'catalyst-logo.png'
   }
 ];
 

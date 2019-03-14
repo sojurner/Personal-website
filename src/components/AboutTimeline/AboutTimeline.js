@@ -115,16 +115,13 @@ class AboutTimeline extends React.Component {
                     <h4>{item.company}</h4>
                   </header>
                   <p>{item.details}</p>
-                  {item.career === 'Developer' && <Skillset />}
-                  {item.career !== 'Developer' && (
-                    <img
-                      alt="professional emblem"
-                      height={100}
-                      src={`https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
-                        item.img
-                      }`}
-                    />
-                  )}
+                  <img
+                    alt="professional emblem"
+                    height={100}
+                    src={`https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
+                      item.img
+                    }`}
+                  />
                 </section>
               );
             })}
