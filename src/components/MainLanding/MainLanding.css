@@ -117,6 +117,15 @@
 }
 
 .job-title {
+  filter: blur(10px);
+  margin-top: 10rem;
+  font-size: 7rem;
+  color: #8ac9ff;
+}
+
+.job-title-show {
+  filter: blur(0);
+  transition: 1s linear;
   margin-top: 10rem;
   font-size: 7rem;
   color: #8ac9ff;
