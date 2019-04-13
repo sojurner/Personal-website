@@ -13,8 +13,15 @@ class JumboMumbo extends React.Component {
       show: false,
       mainRef: null,
       aboutRef: null,
-      bucketRef: null
+      bucketRef: null,
+      title: false
     };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ title: true });
+    }, 1000);
   }
 
   setMainRef = mainRef => {
@@ -35,7 +42,7 @@ class JumboMumbo extends React.Component {
   };
 
   render() {
-    const { active, mainRef, aboutRef, bucketRef } = this.state;
+    const { active, mainRef, aboutRef, bucketRef, title } = this.state;
     const scrollNav = [
       { title: '', ref: mainRef },
       { title: '', ref: aboutRef },
@@ -56,7 +63,7 @@ class JumboMumbo extends React.Component {
             ))}
           </ul>
         </aside>
-        <MainLanding mainRef={this.setMainRef} />
+        <MainLanding titleClass={title} mainRef={this.setMainRef} />
         <AboutTimeline aboutRef={this.setAboutRef} />
         <BucketList bucketRef={this.setBucketRef} />
       </section>
