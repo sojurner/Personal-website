@@ -21,8 +21,8 @@
 }
 
 .about-tab {
-  margin: 0 1rem;
-  font-size: 1.8rem;
+  margin: 0 1rem 0 0.5rem;
+  font-size: 1.6rem;
   height: 1.5rem;
   padding: 0.5rem;
   border-bottom: none;
@@ -134,7 +134,7 @@
 }
 
 .jumbo-experience-education .resume-experience-education {
-  width: 100vw;
+  /* width: 100vw; */
   margin-top: 10rem;
 }
 
