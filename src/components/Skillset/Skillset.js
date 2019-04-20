@@ -14,14 +14,16 @@ const Skillset = ({ tooltip, handleTooltip }) => {
     'Node',
     'HTML',
     'CSS',
-    'Git'
+    'Git',
+    'material-ui',
+    'Typescript'
   ];
   const skills = descriptions.map((description, index) => {
     const styles = { margin: '0 5px' };
     return (
       <div className="skill-box" key={`skill-${index}`}>
         <img
-          height="50"
+          height="30"
           alt="Showcase of my personal projects"
           style={styles}
           className="skill-icons"
