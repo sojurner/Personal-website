@@ -122,6 +122,8 @@
   border-right: 0;
   border-left: 0;
   border-bottom: 0;
+  border-right: 80.5px solid #0f3f5d;
+  border-left: 80.5px solid #0f3f5d;
   transition-delay: 0.2s;
 }
 
