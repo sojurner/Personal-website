@@ -1,11 +1,13 @@
 .icons {
   animation: flipInY 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transform: translate3d(0, 0, 0);
   opacity: 1;
   transform: 0.7s linear;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .icons-hide {
@@ -17,27 +19,23 @@
 .ion-icon-wrap {
   height: 6.5rem;
   width: 6.5rem;
-  /* background-color: rgb(14, 85, 85); */
   transform: rotate3d(4, 2, 30, 30deg);
   padding: 0;
   border-radius: 1rem;
-  margin: 0.5rem 1rem;
   transition: 0.4s linear;
   display: flex;
   justify-content: center;
+  margin-bottom: 2.5rem;
   align-items: center;
 }
 
 .ion-icon-wrap-1 {
-  margin: 0 0 0.5rem 8rem;
 }
 
 .ion-icon-wrap-3 {
-  margin: 1rem 0 0 8rem;
 }
 
 .ion-icon-wrap-2 {
-  margin: 0.2rem 1rem;
 }
 
 .ion-icon-wrap:hover {
@@ -55,14 +53,14 @@
 .icon-itself {
   filter: invert(0.75);
   transform: rotate3d(4, 2, 30, -30deg);
-  height: 4.5rem;
+  height: 4rem;
   transition: 0.4s;
-  width: 4.5rem;
+  width: 4rem;
   cursor: pointer;
 }
 
 .tooltip {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 5px;
 }
 
@@ -90,8 +88,8 @@
 
 .contact-aside,
 .contact-aside-half {
-  height: 38rem;
-  width: 12.5em;
+  height: 24rem;
+  width: 11.5em;
   justify-self: center;
   position: fixed;
   border-top: 13px solid rgb(28, 84, 133);
@@ -99,7 +97,7 @@
   background-color: #0f3f5d;
   -webkit-animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation: slideInLeft 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: translate3d(5.8rem, 24rem, 0);
+  transform: translate3d(6.2rem, 24rem, 0);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   transition: 0.5s ease-in-out;
@@ -119,7 +117,7 @@
   display: block;
   position: absolute;
   opacity: 0;
-  bottom: -14%;
+  bottom: -26%;
   left: -1rem;
   border-right: 0;
   border-left: 0;
@@ -134,10 +132,10 @@
   display: block;
   position: absolute;
   opacity: 1;
-  bottom: -16%;
+  bottom: -26%;
   left: -1rem;
-  border-right: 87.5px solid #0f3f5d;
-  border-left: 87.5px solid #0f3f5d;
+  border-right: 80.5px solid #0f3f5d;
+  border-left: 80.5px solid #0f3f5d;
   border-bottom: 60px solid transparent;
   transition-delay: 0.2s;
   transition: 0.4s linear;
@@ -169,7 +167,7 @@
 .string-full,
 .string-hide {
   height: 4.5rem;
-  position: absolute;
+  position: fixed;
   transform: translate3d(0rem, 15.7rem, 0);
   width: 25.5rem;
   border: 7px solid rgb(28, 84, 133);
@@ -221,7 +219,7 @@
 }
 
 .contact-string {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin: 0.5rem 0;
   align-self: center;
   font-weight: bold;
