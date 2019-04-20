@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainLanding.css';
+import Skillset from '../Skillset/Skillset';
 
 const MainLanding = ({ mainRef, titleClass }) => {
   return (
@@ -10,7 +11,7 @@ const MainLanding = ({ mainRef, titleClass }) => {
           Software Developer
         </h1>
         <section className="audio-location">
-          <h2 className="location-title"> Denver, CO</h2>
+          <Skillset />
         </section>
       </header>
     </div>
