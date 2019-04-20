@@ -6,15 +6,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-.root {
+#root {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .root-hide {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
   height: 100vh;
   width: 100vw;
   opacity: 0;
