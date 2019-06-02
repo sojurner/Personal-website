@@ -14,7 +14,8 @@ class JumboMumbo extends React.Component {
       mainRef: null,
       aboutRef: null,
       bucketRef: null,
-      title: false
+      title: false,
+      activeLi: 0
     };
   }
 
@@ -38,11 +39,12 @@ class JumboMumbo extends React.Component {
 
   scrollTo = (event, ref) => {
     event.stopPropagation();
+    this.setState({ activeLi: event.currentTarget.tabIndex });
     ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   render() {
-    const { active, mainRef, aboutRef, bucketRef, title } = this.state;
+    const { activeLi, mainRef, aboutRef, bucketRef, title } = this.state;
     const scrollNav = [
       { title: '', ref: mainRef },
       { title: '', ref: aboutRef },
@@ -57,7 +59,7 @@ class JumboMumbo extends React.Component {
                 key={`scroll-${index}`}
                 scrollTo={this.scrollTo}
                 index={index}
-                active={active}
+                activeLi={activeLi}
                 item={item}
               />
             ))}
