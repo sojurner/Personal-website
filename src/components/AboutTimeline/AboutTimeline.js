@@ -38,9 +38,11 @@ class AboutTimeline extends React.Component {
   setTimeline = activeTimeline => {
     if (this.state.activeTimeline !== activeTimeline) {
       let activeInfo;
-      activeTimeline === 'education'
-        ? (activeInfo = educationInfo[1])
+      activeTimeline === 'Education'
+        ? (activeInfo = educationInfo[0])
         : (activeInfo = experienceInfo[0]);
+
+      console.log({ activeInfo, activeTimeline });
       this.setState({ activeTimeline, activeInfo });
     }
   };
