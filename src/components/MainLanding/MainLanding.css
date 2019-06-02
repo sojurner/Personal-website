@@ -4,6 +4,15 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  position: relative;
+}
+
+.residence {
+  position: absolute;
+  bottom: 3rem;
+  right: 0.5rem;
+  transform: rotate(-45deg);
+  font-weight: bold;
 }
 
 .flex {
@@ -118,15 +127,32 @@
 
 .landing-content-hide {
   filter: blur(10px);
-  margin-top: 20rem;
   color: #8ac9ff;
+  margin: auto;
+  padding: 1rem 4rem 2rem 4rem;
+  background: #33333396;
 }
 
 .landing-content-show {
   filter: blur(0);
+  border-radius: 4rem;
   transition: 1s linear;
-  margin-top: 20rem;
   color: #8ac9ff;
+  margin: auto;
+  padding: 1rem 4rem 2rem 4rem;
+  background: #33333396;
+  box-shadow: 0 0 20px 10px rgb(51, 51, 51),
+    0 0 50px 20px rgba(4, 45, 155, 0.219), 0 0 80px 30px rgb(21, 63, 63);
+}
+
+.landing-content-show:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 120px solid rgb(51, 51, 51);
+  border-left: 120px solid rgba(0, 0, 0, 0.281);
+  width: 0;
 }
 
 .job-title {
