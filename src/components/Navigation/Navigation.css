@@ -95,10 +95,9 @@
   height: 6rem;
   padding-top: 1rem;
 }
-.project-tab.active {
-  border-radius: 50%;
-}
 
+.home-tab.active,
+.project-tab.active,
 .resume-tab.active {
   border-radius: 1rem;
 }
