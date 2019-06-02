@@ -157,4 +157,8 @@
 
 .job-title {
   font-size: 6.5rem;
+  background: #00000038;
+  padding: 1rem 3rem;
+  border-radius: 8rem;
+  border: 2px solid #69696959;
 }
