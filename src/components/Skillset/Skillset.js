@@ -15,21 +15,25 @@ const Skillset = ({ tooltip, handleTooltip }) => {
     'HTML',
     'CSS',
     'Git',
-    'material-ui',
+    'Material-ui',
     'Typescript'
   ];
   const skills = descriptions.map((description, index) => {
     const styles = { margin: '0 5px' };
     return (
-      <div className="skill-box" key={`skill-${index}`}>
+      <div
+        className="skill-box"
+        key={`skill-${index}`}
+        onMouseEnter={() => handleTooltip(description)}
+        onMouseLeave={() => handleTooltip('')}
+      >
         <img
           height="30"
+          width="35"
           alt="Showcase of my personal projects"
           style={styles}
           className="skill-icons"
           name={description}
-          onMouseEnter={() => handleTooltip(description)}
-          onMouseLeave={() => handleTooltip('')}
           src={`https://res.cloudinary.com/paulkim/image/upload/v1552393705/images/skills/${description.toLowerCase()}.png`}
         />
         {tooltip === description && (
