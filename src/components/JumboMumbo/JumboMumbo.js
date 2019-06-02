@@ -3,7 +3,8 @@ import AboutTimeline from '../AboutTimeline/AboutTimeline';
 import MainLanding from '../MainLanding/MainLanding';
 import PageScroll from '../PageScroll/PageScroll';
 import BucketList from '../BucketList/BucketList';
-
+import { getWeather } from '../../utilities/apiCalls';
+import Footer from '../Footer/Footer';
 import './JumboMumbo.css';
 
 class JumboMumbo extends React.Component {
@@ -23,7 +24,17 @@ class JumboMumbo extends React.Component {
     setTimeout(() => {
       this.setState({ title: true });
     }, 1000);
+
+    this.fetchWeather();
   }
+
+  fetchWeather = () => {
+    navigator.geolocation.getCurrentPosition(async location => {
+      const { latitude, longitude } = location.coords;
+      const weather = await getWeather(latitude, longitude);
+      await this.setState({ weather });
+    });
+  };
 
   setMainRef = mainRef => {
     this.setState({ mainRef });
@@ -68,6 +79,11 @@ class JumboMumbo extends React.Component {
         <MainLanding titleClass={title} mainRef={this.setMainRef} />
         <AboutTimeline aboutRef={this.setAboutRef} />
         <BucketList bucketRef={this.setBucketRef} />
+
+        <footer className="copyright">
+          <h5>© 2019 Paul Kim</h5>
+          {this.state.weather && <Footer weather={this.state.weather} />}
+        </footer>
       </section>
     );
   }

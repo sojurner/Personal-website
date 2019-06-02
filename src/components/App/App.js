@@ -8,7 +8,6 @@ import Header from '../Header/Header';
 import Audio from '../Audio/Audio';
 
 // import Gifs from '../Gifs/Gifs';
-// import { getWeather } from '../../utilities/apiCalls';
 import './App.css';
 
 class App extends Component {
@@ -32,14 +31,6 @@ class App extends Component {
     }, 1500);
   };
 
-  // fetchWeather = () => {
-  //   navigator.geolocation.getCurrentPosition(async location => {
-  //     const { latitude, longitude } = location.coords;
-  //     const weather = await getWeather(latitude, longitude);
-  //     await this.setState({ weather });
-  //   });
-  // };
-
   render() {
     const { opaque, contact } = this.state;
     return (
@@ -52,7 +43,6 @@ class App extends Component {
           >
             <Header />
             <Contact contact={contact} />
-            {/* {this.state.weather && <Footer weather={this.state.weather} />} */}
           </div>
           <Route exact path="/" component={JumboMumbo} />
           <Route path="/projects" component={Projects} />

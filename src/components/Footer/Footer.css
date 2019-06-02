@@ -15,44 +15,20 @@
   bottom: 1.7rem;
   left: 50%;
   margin: 0 0 0 -33rem;
-  background-color: rgb(1, 126, 126);
+  /* background-color: rgb(1, 126, 126); */
   z-index: -1;
 }
-
-.rope-2 {
-  position: absolute;
-  bottom: 4.1rem;
-  height: 16rem;
-  width: 3rem;
-  left: 11rem;
-  border: 7px solid rgb(57, 125, 184);
-  border-top: 0;
-  background-color: #0f3f5db8;
-}
-
 .high-low {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 0 1rem 0;
-}
-
-.double-lines::before {
-  content: '';
-  position: absolute;
-  height: 3rem;
-  border-bottom: 7px solid rgb(57, 125, 184);
-  border-top: 7px solid rgb(57, 125, 184);
-  background-color: #0f3f5db8;
-  top: 2.9rem;
-  left: 13.3rem;
-  width: 18%;
-  z-index: 1;
 }
 
 .weather-high,
 .weather-low {
   margin: 1rem 2rem 0 2rem;
-  font-size: 3.3rem;
+  font-size: 2.5rem;
 }
 
 .weather {
@@ -61,9 +37,12 @@
 
 .weather-low {
   color: rgb(150, 206, 249);
+  margin: 1rem;
 }
 
 .weather-high {
+  margin: 1rem;
+
   color: rgb(210, 142, 142);
 }
 
@@ -78,9 +57,15 @@
 }
 
 .weather-summary {
-  font-size: 3rem;
-  color: rgb(183, 216, 245);
-  /* margin: 0 0 3rem 0; */
+  align-self: center;
+  padding: 1rem 2rem;
+  text-align: left;
+  width: 30rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background: rgba(71, 71, 71, 0.24);
 }
 
 @font-face {
@@ -91,44 +76,15 @@
 .weather-info {
   font-weight: 100;
   color: #666;
-  background-image: linear-gradient(to right, #0f3f5d, rgb(110, 146, 174));
+  /* background-image: linear-gradient(to right, #0f3f5d, rgb(110, 146, 174)); */
   padding: 0 20px;
   font-size: 20px;
   line-height: 40px;
   max-width: 90vw;
+  margin-top: 2rem;
   width: max-content;
   position: relative;
   text-align: center;
   height: 10rem;
-
-  filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.1));
-  border-right: 2px solid #0f3f5d;
-  border-left: 2px solid rgb(110, 146, 174);
-}
-
-.weather-info:after,
-.weather-info:before {
-  content: '';
-  position: absolute;
-  display: block;
-  bottom: 0;
-  border: 50px solid #0f3f5d;
-}
-
-.weather-info:after {
-  border: 50px solid rgb(110, 146, 174);
-}
-
-.weather-info:before {
-  left: -50px;
-  border-right-width: 10px;
-  border-left-color: transparent;
-  filter: drop-shadow(-6px 6px 3px rgba(0, 0, 0, 0.04));
-}
-
-.weather-info:after {
-  right: -50px;
-  border-left-width: 10px;
-  border-right-color: transparent;
-  filter: drop-shadow(6px 6px 3px rgba(0, 0, 0, 0.04));
+  display: flex;
 }
