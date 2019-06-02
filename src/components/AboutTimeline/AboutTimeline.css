@@ -2,12 +2,12 @@
   position: absolute;
   right: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.564);
+  background-color: rgba(0, 0, 0, 0.51);
   color: white;
   width: 40%;
   height: 100vh;
   border-radius: 30% 0 0 30%;
-  box-shadow: 5px 5px 55px 30px rgba(0, 0, 0, 0.538);
+  box-shadow: 5px 5px 55px 30px rgba(0, 0, 0, 0.67);
 }
 
 .experience-education-nav {
