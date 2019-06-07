@@ -4,7 +4,7 @@
 }
 
 .bar {
-  fill: #94d6fc;
+  stroke: #94d6fc;
 }
 
 .bar:hover > .skill-bar-show {
