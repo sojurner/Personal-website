@@ -1,73 +1,67 @@
 import React from 'react';
 import { Tooltip } from 'react-bootstrap';
 
+const height = '10';
+const x = '100';
+
 export const data = {
   skills: {
     JavaScript: {
-      width: '330',
-      height: '8',
-      x: '95',
+      width: '350',
+      height,
+      x,
       y: '25',
       tooltip: 'ES7, REST API, JSON'
     },
     React: {
-      width: '350',
-      height: '8',
-      x: '95',
+      width: '400',
+      height,
+      x,
       y: '50',
       tooltip: 'React-Router, MapboxGL, React-Charts'
     },
-    'Vue.JS': {
-      width: '200',
-      height: '8',
-      x: '95',
+    TypeScript: {
+      width: '300',
+      height,
+      x,
       y: '75',
       tooltip: 'Vuex, VueCLI'
     },
-    'Node.JS': {
-      width: '180',
-      height: '8',
-      x: '95',
+    'Material-UI': {
+      width: '290',
+      height,
+      x,
       y: '100',
       tooltip: 'Express, Nightmare, Knex, '
     },
     Redux: {
       width: '350',
-      height: '8',
-      x: '95',
+      height,
+      x,
       y: '125',
       tooltip: ''
     },
     HTML5: {
       width: '330',
-      height: '8',
-      x: '95',
+      height,
+      x,
       y: '150',
       tooltip: ''
     },
     CSS3: {
-      width: '280',
-      height: '8',
-      x: '95',
-      y: '175',
-      tooltip: ''
+      width: '310',
+      height,
+      x,
+      y: '175'
     },
     Jest: {
       width: '350',
-      height: '8',
-      x: '95',
-      y: '200',
-      tooltip: ''
-    },
-    Enzyme: {
-      width: '330',
-      height: '8',
-      x: '95',
-      y: '225',
-      tooltip: ''
+      height,
+      x,
+      y: '200'
     }
   },
-  tools: ['VS Code', 'Git', 'GitHub', 'Heroku', 'PostgreSQL']
+  tools: ['VS Code', 'Git', '', 'StoryBook', 'PostgreSQL']
 };
 
 export const iconContent = [
