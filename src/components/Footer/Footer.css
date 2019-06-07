@@ -27,23 +27,26 @@
 
 .weather-high,
 .weather-low {
-  margin: 1rem 2rem 0 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .weather {
   font-family: antaro;
 }
 
+.weather-high,
 .weather-low {
-  color: rgb(150, 206, 249);
-  margin: 1rem;
+  color: rgb(210, 142, 142);
+  border: 1px solid gray;
+  border-right: 0;
+  margin: 0rem -15px 0rem 0px;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 1.25rem 2rem 1.25rem 1.5rem;
+  z-index: 0;
 }
 
-.weather-high {
-  margin: 1rem;
-
-  color: rgb(210, 142, 142);
+.weather-low {
+  color: rgb(150, 206, 249);
 }
 
 .weather-icon-left,
@@ -60,14 +63,15 @@
   align-self: center;
   padding: 1rem 2rem;
   text-align: left;
+  z-index: 1;
   width: max-content;
   max-width: 25rem;
   border-radius: 2rem;
   font-size: 2rem;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  background: rgba(71, 71, 71, 0.24);
-  border: 1px solid rgba(73, 73, 73, 0.445);
+  background: rgb(39, 39, 39);
+  border: 1px solid rgba(158, 158, 158, 0.445);
 }
 
 @font-face {
