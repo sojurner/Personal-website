@@ -138,6 +138,7 @@
   filter: blur(0);
   border-radius: 4rem;
   transition: 1s linear;
+  border: 1px solid rgba(51, 134, 155, 0.247);
   color: #8ac9ff;
   margin: auto;
   padding: 1rem 4rem 2rem 4rem;
