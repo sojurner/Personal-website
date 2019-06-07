@@ -1,6 +1,7 @@
 .project-navbar {
   display: flex;
-  height: 100%;
+  height: max-content;
+  margin: auto 0;
   width: max-content;
   z-index: 0;
   flex-direction: column;
@@ -28,7 +29,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  transition: 0.4s linear;
+  transition: 0.6s linear;
 }
 
 .project-navigation-hide {
@@ -38,23 +39,25 @@
 .nav-link {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 2rem 1rem;
+  margin: 0.5rem;
   color: rgb(94, 163, 216);
-  padding: 0rem 1rem;
+  padding: 0.5rem 1rem;
   width: max-content;
   height: max-content;
   transition: 0.2s linear;
 
   display: flex;
   align-items: center;
+  border: 1.5px solid rgba(0, 0, 0, 0);
 }
 
 .nav-link:hover {
   text-decoration: none;
-  color: rgb(63, 223, 218);
+  color: rgb(176, 228, 226);
   background: rgb(35, 143, 143);
-  padding: 0rem 1rem;
-  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  border: 1.5px solid rgb(45, 76, 112);
 }
 
 .active:focus {
@@ -67,7 +70,6 @@
 
 .project-navbar .active {
   color: rgb(0, 255, 247);
-  padding: 0rem 1.5rem;
   transition: 0.2s linear;
   width: max-content;
   display: flex;
@@ -75,12 +77,17 @@
   position: relative;
 }
 
+.project-navbar .active:hover {
+  color: rgb(184, 184, 184);
+}
+
 .project-navbar .active::before {
   border-left: 10px solid rgb(35, 143, 143);
   position: absolute;
   content: '';
-  top: 1.7rem;
-  left: 0rem;
+  top: 2rem;
+  left: -1.3rem;
+
   height: 0.4rem;
 }
 
