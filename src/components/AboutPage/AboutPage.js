@@ -15,6 +15,9 @@ class AboutPage extends React.Component {
           color: 'white'
         }}
       >
+        <h1 style={{ paddingTop: '15rem', zIndex: 1000000 }}>
+          Work In Progress
+        </h1>
         <ResourceCards />
       </div>
     );

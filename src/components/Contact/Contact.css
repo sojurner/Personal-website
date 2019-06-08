@@ -96,6 +96,7 @@
 .contact-aside-half {
   height: 0rem;
   z-index: -2;
+  opacity: 0;
 }
 
 .contact-aside-half::before {
