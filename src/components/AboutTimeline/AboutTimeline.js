@@ -42,7 +42,6 @@ class AboutTimeline extends React.Component {
         ? (activeInfo = educationInfo[0])
         : (activeInfo = experienceInfo[0]);
 
-      console.log({ activeInfo, activeTimeline });
       this.setState({ activeTimeline, activeInfo });
     }
   };
@@ -87,48 +86,58 @@ class AboutTimeline extends React.Component {
               ))}
             {this.state.activeTimeline === 'Education' &&
               educationInfo.map(item => (
-                <span
-                  key={`about-${item.institution}`}
-                  className={
-                    this.state.activeInfo.start === item.start
-                      ? 'year-item year-item-active'
-                      : 'year-item'
-                  }
-                  onClick={this.showYearInfo.bind(null, item, 'education')}
-                >
-                  {item.start} - {item.end}
-                </span>
+                <>
+                  <span
+                    key={`about-${item.institution}`}
+                    className={
+                      this.state.activeInfo.start === item.start
+                        ? 'year-item year-item-active'
+                        : 'year-item'
+                    }
+                    onClick={this.showYearInfo.bind(null, item, 'education')}
+                  >
+                    {item.start} - {item.end}
+                  </span>
+                </>
               ))}
           </section>
+          <img
+            alt="professional emblem"
+            className="professional-emblem"
+            src={
+              this.state.activeTimeline === 'Experience'
+                ? `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
+                    this.state.activeInfo.img
+                  }`
+                : `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/education/${
+                    this.state.activeInfo.img
+                  }`
+            }
+          />
         </aside>
         <main ref={ref => (this.parentRef = ref)} className="about-content">
           {this.state.activeTimeline === 'Experience' &&
             sortedInfo.map((item, index) => {
               return (
-                <section
-                  key={`${item.career}-${index}`}
-                  id={item.career}
-                  className="about-item-content"
-                  ref={ref => (this.experienceContentRefs[index] = ref)}
-                >
-                  <header>
-                    <h2>{item.career}</h2>
-                    <h4>{item.company}</h4>
-                  </header>
-                  <p>{item.details}</p>
-                  <img
-                    alt="professional emblem"
-                    height={100}
-                    src={`https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
-                      item.img
-                    }`}
-                  />
-                </section>
+                <>
+                  <section
+                    key={`${item.career}-${index}`}
+                    id={item.career}
+                    className="about-item-content"
+                    ref={ref => (this.experienceContentRefs[index] = ref)}
+                  >
+                    <header>
+                      <h2>{item.career}</h2>
+                      <h4>{item.company}</h4>
+                    </header>
+                    <p>{item.details}</p>
+                  </section>
+                </>
               );
             })}
           {this.state.activeTimeline === 'Education' &&
             sortedEducation.map((item, index) => {
-              const { institution, details, img } = item;
+              const { institution, details } = item;
               return (
                 <section
                   key={`${institution}-${index}`}
@@ -140,10 +149,6 @@ class AboutTimeline extends React.Component {
                     <h2>{institution}</h2>
                   </header>
                   <p>{details}</p>
-                  <img
-                    alt={`Education logo`}
-                    src={`https://res.cloudinary.com/paulkim/image/upload/v1552394010/images/education/${img}`}
-                  />
                 </section>
               );
             })}
