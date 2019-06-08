@@ -5,11 +5,6 @@ import './Footer.css';
 const Footer = ({ weather }) => {
   return (
     <footer className="footer">
-      {/* <img
-        alt="Weather icon"
-        className="weather-icon-left"
-        src={require(`../../assets/Images/weather/${weather.icon}.png`)}
-      /> */}
       <div className="weather-info">
         <div className="high-low">
           <h1 className="weather weather-high">
@@ -21,13 +16,15 @@ const Footer = ({ weather }) => {
             {weather.low}°F
           </h1>
         </div>
-        <p className="weather weather-summary">{weather.summary}</p>
+        <div className="weather-desc-img">
+          <img
+            alt="Weather icon"
+            className="weather-icon-left"
+            src={require(`../../assets/weather/${weather.icon}.svg`)}
+          />
+          <p className="weather weather-summary">{weather.summary}</p>
+        </div>
       </div>
-      {/* <img
-        className="weather-icon-right"
-        alt="Weather icon"
-        src={require(`../../assets/Images/weather/${weather.icon}.png`)}
-      /> */}
     </footer>
   );
 };
