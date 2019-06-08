@@ -45,7 +45,7 @@ const ResourceCard = ({ handleHover }) => {
   });
 
   return (
-    <section style={{ width: 'max-content', margin: '20rem auto' }}>
+    <section style={{ width: 'max-content', margin: '10rem auto' }}>
       <cards className="resource-cards">{resourceCard}</cards>
     </section>
   );
