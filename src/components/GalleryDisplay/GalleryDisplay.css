@@ -1,0 +1,90 @@
+.wrapper {
+  margin: 0 10rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  max-width: 1440px;
+  font-size: 0;
+}
+
+.night-gazer,
+.standard-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-item {
+  display: inline-block;
+  min-height: 400px;
+  width: 50%;
+  filter: saturate(90%) contrast(120%) brightness(0.8);
+  transition: 0.3s linear;
+}
+.news-item:hover {
+  filter: saturate(100%) contrast(100%) brightness(1);
+}
+
+.night-gazer {
+  background-image: url('https://res.cloudinary.com/paulkim/image/upload/v1552394093/images/misc/night-gazing-2.jpg');
+  background-position: bottom center;
+  box-shadow: inset 0 0 100px #1c72a3;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.standard-item:nth-child(2) {
+  background-image: url('https://fsb.zobj.net/crop.php?r=hCMStlCSUomtKDZzdNz_TgVCZKr-L82WpR5-YdI01AWVcr9XsIxMnvPUn_U14Cihu216NkO0zO-uVI6BbFNmp8k-d_NBGEagN90olJwy7vYvsd3QX6niCL-fETao2wZgmHujKK2HMV-fYH15919nTFHzdm9-tmOhVHzk8yY2J0980kvtavpZludWUsg');
+  box-shadow: inset 0 0 100px black;
+}
+
+.standard-item:nth-child(3) {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/79253b3f-be63-40cb-8f17-352e5796676e/d4bplcy-34a4924d-330d-4e2d-a4ce-067788f395c8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5MjUzYjNmLWJlNjMtNDBjYi04ZjE3LTM1MmU1Nzk2Njc2ZVwvZDRicGxjeS0zNGE0OTI0ZC0zMzBkLTRlMmQtYTRjZS0wNjc3ODhmMzk1YzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XvBt1oq1pWK3XPCiZ27A2oB3qv3UEOz2kcKqLW8hkdo');
+  box-shadow: inset 0 0 100px black;
+  background-size: cover;
+}
+
+.standard-item:nth-child(4) {
+  background-image: url('http://i.imgur.com/aYk6D.jpg');
+}
+
+@supports (display: grid) {
+  .news-item {
+    width: auto;
+    min-height: 0;
+  }
+
+  .night-gazer {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 50;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+  }
+
+  .standard-item:nth-child(2) {
+    grid-column: 1 / span 1;
+    grid-row: 50 / 100;
+    -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    margin-top: -73px;
+  }
+
+  .standard-item:nth-child(3) {
+    grid-column: 2 / span 1;
+    grid-row: 50 / 100;
+    -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    margin-top: -73px;
+    margin-left: -15%;
+    margin-bottom: 18px;
+  }
+
+  .standard-item:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 100 / 150;
+    -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    margin-top: -107px;
+  }
+}
