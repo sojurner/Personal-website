@@ -6,6 +6,7 @@ import Contact from '../Contact/Contact';
 import Resume from '../Resume/Resume';
 import Header from '../Header/Header';
 import Audio from '../Audio/Audio';
+import About from '../AboutPage/AboutPage';
 
 // import Gifs from '../Gifs/Gifs';
 import './App.css';
@@ -47,6 +48,7 @@ class App extends Component {
           <Route exact path="/" component={JumboMumbo} />
           <Route path="/projects" component={Projects} />
           <Route path="/resume" component={Resume} />
+          <Route path="/about" component={About} />
           <Audio />
         </div>
       </Router>
