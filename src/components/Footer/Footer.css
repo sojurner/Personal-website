@@ -50,21 +50,26 @@
 }
 
 .weather-desc-img {
-  height: 10rem;
+  height: max-content;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
-  background: rgb(19, 17, 17);
+  background: #131111;
   border-radius: 5rem;
-  padding: 1rem 2rem;
-  border: 1px solid white;
+  padding: 0.5rem 2rem 1rem 2rem;
+  border: 1px solid #fff;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
   max-width: max-content;
   z-index: 1;
+  margin-top: 1rem;
 }
 
 .weather-summary {
   align-self: center;
   text-align: left;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
   font-weight: bold;
