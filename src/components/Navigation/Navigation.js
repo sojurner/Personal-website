@@ -36,6 +36,13 @@ const Navigation = ({ current, previous, navDisplay }) => {
           <p className="nav-text">Resume</p>
         </div>
       </NavLink>
+
+      <NavLink title="navbar" className="projects-tab resume-tab" to="/about">
+        <div className="tab-item-container">
+          <i className="fas fa-user-astronaut" />
+          <p className="nav-text">About</p>
+        </div>
+      </NavLink>
     </nav>
   );
 };
