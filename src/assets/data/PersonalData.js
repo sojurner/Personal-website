@@ -83,3 +83,54 @@ export const bucketList = [
     img_url: 'family_cropped.png'
   }
 ];
+
+const hashrocketUrl = 'https://til.hashrocket.com/';
+const devHintsUrl = 'https://devhints.io/';
+export const resourceList = [
+  {
+    link: hashrocketUrl,
+    name: 'Hash Rocket',
+    description: 'Random Programming Facts',
+    subLinks: [
+      {
+        link: `${hashrocketUrl}/html-css`,
+        name: ['HTML', 'CSS']
+      },
+      {
+        link: `${hashrocketUrl}/javascript`,
+        name: 'Javascript'
+      },
+      {
+        link: `${hashrocketUrl}/react`,
+        name: 'React'
+      },
+      {
+        link: `${hashrocketUrl}/ruby`,
+        name: 'Ruby'
+      }
+    ]
+  },
+  {
+    link: devHintsUrl,
+    name: 'Dev Hints',
+    description: 'Collection of Cheatsheets by Rico',
+    subLinks: [
+      {
+        link: `${devHintsUrl}/awesome-redux`,
+        name: 'Redux'
+      },
+      {
+        link: `${devHintsUrl}/react`,
+        name: 'React'
+      },
+      {
+        link: `${devHintsUrl}/jest`,
+        name: 'Jest'
+      },
+      {
+        link: `${devHintsUrl}/typescript`,
+        name: 'TypeScript'
+      }
+    ]
+  }
+];
