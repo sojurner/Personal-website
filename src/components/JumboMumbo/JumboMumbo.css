@@ -1,6 +1,7 @@
 .jumbo-experience-education {
   height: 100vh;
   width: 100vw;
+  display: flex;
   justify-content: flex-end;
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.194);

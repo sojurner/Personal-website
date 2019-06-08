@@ -1,0 +1,81 @@
+.resource-cards {
+  display: flex;
+  height: 20rem;
+  width: max-content;
+  justify-content: space-betteen;
+  align-items: space-around;
+  flex-direction: row;
+}
+
+.resource-subtitle-section {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  justify-content: flex-start;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.resource-subtitle-section li {
+  margin: 1rem;
+}
+
+.resource-content-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.resource-description-section {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.resource-description-section p {
+  width: 10rem;
+  font-size: 1.6rem;
+}
+
+.divider {
+  border: 1px solid rgba(56, 79, 85, 0.507);
+}
+
+.resource-card {
+  margin: 2rem;
+  border: 1px solid rgb(51, 78, 90);
+  position: relative;
+  background: rgba(66, 66, 66, 0.24);
+  height: max-content;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.resource-title,
+.resource-subtitle {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.resource-title {
+  position: absolute;
+  top: -4.5rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+  background: rgb(6, 33, 70);
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgb(119, 149, 158);
+}
+
+@media screen and (max-width: 1100px) {
+  .jumbo-education-section {
+    margin-left: 27rem;
+    margin-top: 10rem;
+  }
+}
