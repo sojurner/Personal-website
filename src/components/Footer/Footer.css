@@ -69,7 +69,7 @@
 .weather-summary {
   align-self: center;
   text-align: left;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
   font-weight: bold;
