@@ -114,7 +114,7 @@ export const experienceInfo = [
   {
     career: 'File Clerk',
     company: 'Giardi & Keese',
-    details: 'Responsible for file management and storage',
+    details: 'File management and storage',
     start: 2009,
     end: 2011,
     img: 'gk.png'
@@ -130,7 +130,7 @@ export const experienceInfo = [
   },
   {
     career: 'Front-End Developer',
-    details: 'React, Redux, React-Router, Jest, HTML5, CSS3, Vue, Webpack, Git',
+    details: 'React, Material-Ui, Redux, Jest, Typescript, Webpack',
     start: 2017,
     end: 'Now',
     img: 'catalyst-logo.png'
