@@ -33,6 +33,13 @@ class GalleryDisplay extends React.Component {
           state: { photos }
         });
         return;
+      case 'Minecraft':
+        photos = await fetchPhotos(title, category);
+        this.props.history.push({
+          pathname: '/about/games',
+          state: { photos }
+        });
+        return;
       default:
         photos = await fetchPhotos(title, category);
         this.props.history.push({
