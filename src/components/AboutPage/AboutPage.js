@@ -7,6 +7,7 @@ class AboutPage extends React.Component {
     super();
     this.state = {};
   }
+
   render() {
     return (
       <div

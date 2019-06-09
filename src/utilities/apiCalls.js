@@ -7,8 +7,8 @@ export const getWeather = async (lat, lng) => {
     `&date=${moment().format()}`;
   const response = await fetch(url);
   const result = await response.json();
-  result['high'] = Math.round(result['high']);
-  result['low'] = Math.round(result['low']);
+  result.high = Math.round(result.high);
+  result.low = Math.round(result.low);
   return result;
 };
 
@@ -21,4 +21,19 @@ export const getGifs = async query => {
   } catch (e) {
     throw e;
   }
+};
+
+export const fetchPhotos = async (query, category) => {
+  const url = `https://weatherlee-server.herokuapp.com/api/pixabay?q=${query}&category=${category}`;
+  return scraper(await (await fetch(url)).json());
+};
+
+const scraper = data => {
+  return data.hits.map(datum => {
+    return {
+      src: datum.webformatURL,
+      width: datum.webformatWidth,
+      height: '300px'
+    };
+  });
 };

@@ -24,21 +24,3 @@
   background-image: linear-gradient(to bottom right, #26b5fc, #2d5960);
   height: 20rem;
 }
-
-.header-container-hide {
-  position: absolute;
-  height: 9rem;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  opacity: 0;
-}
-
-.header-container-show {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  opacity: 1;
-  transition: 1s linear;
-}
