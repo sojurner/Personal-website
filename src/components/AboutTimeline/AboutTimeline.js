@@ -17,17 +17,19 @@ class AboutTimeline extends React.Component {
     this.educationContentRefs = educationInfo.map(_ => React.createRef());
   }
 
-  showYearInfo = (activeInfo, section) => {
+  componentDidMount() {
+    const activeInfo = experienceInfo.sort((a, b) => {
+      return b.start - a.start;
+    })[0];
+    console.log(this.experienceContentRefs);
+    console.log(this.educationContentRefs);
+    this.setState({ activeInfo });
+  }
+
+  showYearInfo = activeInfo => {
     if (activeInfo !== this.state.activeInfo) {
       this.setState({ activeInfo });
-      let targetRef;
-      section === 'experience'
-        ? (targetRef = this.experienceContentRefs.find(
-            ref => ref.id === activeInfo.career
-          ))
-        : (targetRef = this.educationContentRefs.find(
-            ref => ref.id === activeInfo.institution
-          ));
+      const targetRef = this.locateRef(activeInfo, this.state.activeTimeline);
       this.parentRef.scrollTo({
         left: targetRef.offsetLeft,
         behavior: 'smooth'
@@ -35,13 +37,32 @@ class AboutTimeline extends React.Component {
     }
   };
 
+  locateRef = (activeInfo, activeTimeline) => {
+    if (activeTimeline === 'Experience') {
+      return this.experienceContentRefs.find(
+        ref => ref.id === activeInfo.career
+      );
+    } else {
+      return this.educationContentRefs.find(
+        ref => ref.id === activeInfo.institution
+      );
+    }
+  };
+
   setTimeline = activeTimeline => {
     if (this.state.activeTimeline !== activeTimeline) {
+      const targetRef = this.locateRef(
+        this.state.activeInfo,
+        this.state.activeTimeline
+      );
       let activeInfo;
       activeTimeline === 'Education'
         ? (activeInfo = educationInfo[0])
         : (activeInfo = experienceInfo[0]);
-
+      this.parentRef.scrollTo({
+        left: targetRef.offsetLeft,
+        behavior: 'smooth'
+      });
       this.setState({ activeTimeline, activeInfo });
     }
   };
@@ -79,7 +100,7 @@ class AboutTimeline extends React.Component {
                       ? 'year-item year-item-active'
                       : 'year-item'
                   }
-                  onClick={this.showYearInfo.bind(null, item, 'experience')}
+                  onClick={this.showYearInfo.bind(null, item)}
                 >
                   {item.start} - {item.end}
                 </span>
@@ -94,7 +115,7 @@ class AboutTimeline extends React.Component {
                         ? 'year-item year-item-active'
                         : 'year-item'
                     }
-                    onClick={this.showYearInfo.bind(null, item, 'education')}
+                    onClick={this.showYearInfo.bind(null, item)}
                   >
                     {item.start} - {item.end}
                   </span>
