@@ -1,14 +1,37 @@
 .gallery-img-container {
-  padding: 0;
-  margin: auto;
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.514);
+  transition: 0.3s linear;
 }
 
-.gallery-img-container img {
-  box-shadow: inset 0 0 100px 100px black;
+.gallery-img-container:hover {
+  box-shadow: 0 0 0 0;
+  transform: scale(1.1);
 }
 
 .gallery-img-wrapper {
   margin: auto;
+  margin-top: 10rem;
+  grid-column-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.back-btn p {
+  width: max-content;
+  padding: 1rem 2rem;
+  color: white;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10rem;
+  border: 2px double rgba(0, 0, 255, 0);
+  transition: 0.2s linear;
+}
+
+.back-btn p:hover {
+  border: 2px double rgb(6, 39, 82);
+  color: black;
+  background: rgb(73, 106, 119);
 }

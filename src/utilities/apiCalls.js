@@ -31,9 +31,14 @@ export const fetchPhotos = async (query, category) => {
 const scraper = data => {
   return data.hits.map(datum => {
     return {
-      src: datum.webformatURL,
-      width: datum.webformatWidth,
-      height: '300px'
+      style: {
+        backgroundImage: `url('${datum.webformatURL}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        width: `400px`,
+        height: '300px'
+      }
     };
   });
 };
