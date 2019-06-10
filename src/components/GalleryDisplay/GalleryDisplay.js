@@ -18,33 +18,38 @@ class GalleryDisplay extends React.Component {
 
   handleClick = async (title, category) => {
     let photos;
+    let queries;
     switch (title) {
       case 'scifi':
-        photos = await fetchPhotos('movies', category);
+        queries = { q: 'movies', category, editors_choice: true, per_page: 40 };
+        photos = await fetchPhotos(queries);
         this.props.history.push({
           pathname: '/about/movies',
-          state: { photos }
+          state: { ...photos, queries }
         });
         return;
       case 'Nujabes RIP':
-        photos = await fetchPhotos('hip hop', category);
+        queries = { q: 'hip hip', category, per_page: 40 };
+        photos = await fetchPhotos(queries);
         this.props.history.push({
           pathname: '/about/music',
-          state: { photos }
+          state: { ...photos, queries }
         });
         return;
       case 'Minecraft':
-        photos = await fetchPhotos(title, category);
+        queries = { q: title, category, per_page: 40 };
+        photos = await fetchPhotos(queries);
         this.props.history.push({
           pathname: '/about/games',
-          state: { photos }
+          state: { ...photos, queries }
         });
         return;
       default:
-        photos = await fetchPhotos(title, category);
+        queries = { q: title, category, per_page: 40 };
+        photos = await fetchPhotos(queries);
         this.props.history.push({
           pathname: `/about/${category}`,
-          state: { photos }
+          state: { ...photos, queries }
         });
         return;
     }

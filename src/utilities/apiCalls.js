@@ -23,22 +23,33 @@ export const getGifs = async query => {
   }
 };
 
-export const fetchPhotos = async (query, category) => {
-  const url = `https://weatherlee-server.herokuapp.com/api/pixabay?q=${query}&category=${category}`;
-  return scraper(await (await fetch(url)).json());
+export const fetchPhotos = async queries => {
+  const url = `https://weatherlee-server.herokuapp.com/api/pixabay?`;
+  const interpolateQueries = (url, queries) =>
+    Object.keys(queries).reduce((queriedUrl, param, index) => {
+      if (!index) {
+        queriedUrl = `${queriedUrl}${param}=${queries[param]}`;
+      } else {
+        queriedUrl = `${queriedUrl}&${param}=${queries[param]}`;
+      }
+      return queriedUrl;
+    }, url);
+  console.log(interpolateQueries(url, queries));
+  return scraper(await (await fetch(interpolateQueries(url, queries))).json());
 };
 
 const scraper = data => {
-  return data.hits.map(datum => {
+  let photos = data.hits.map(datum => {
     return {
+      pageURL: datum.pageURL,
       style: {
         backgroundImage: `url('${datum.webformatURL}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        width: `400px`,
         height: '300px'
       }
     };
   });
+  return { totalHits: data.totalHits, photos };
 };
