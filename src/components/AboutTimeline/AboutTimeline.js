@@ -21,8 +21,6 @@ class AboutTimeline extends React.Component {
     const activeInfo = experienceInfo.sort((a, b) => {
       return b.start - a.start;
     })[0];
-    console.log(this.experienceContentRefs);
-    console.log(this.educationContentRefs);
     this.setState({ activeInfo });
   }
 

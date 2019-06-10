@@ -1,28 +1,26 @@
-import JumboMumbo from '../../components/JumboMumbo/JumboMumbo';
-import Projects from '../../components/Projects/Projects';
-import Resume from '../../components/Resume/Resume';
-import About from '../../components/AboutPage/AboutPage';
-import GalleryInfiniteScroll from '../../components/GalleryInfiniteScroll/GalleryInfiniteScroll';
+import { lazy } from 'react';
 
 export const mainRoutes = [
   {
     path: '/',
-    component: JumboMumbo
+    component: lazy(() => import('../../components/JumboMumbo/JumboMumbo'))
   },
   {
     path: '/projects',
-    component: Projects
+    component: lazy(() => import('../../components/Projects/Projects'))
   },
   {
     path: '/resume',
-    component: Resume
+    component: lazy(() => import('../../components/Resume/Resume'))
   },
   {
     path: '/about',
-    component: About
+    component: lazy(() => import('../../components/AboutPage/AboutPage'))
   },
   {
     path: '/about/:category',
-    component: GalleryInfiniteScroll
+    component: lazy(() =>
+      import('../../components/GalleryInfiniteScroll/GalleryInfiniteScroll')
+    )
   }
 ];
