@@ -22,8 +22,7 @@ const Navigation = ({ current, previous, navDisplay }) => {
       <NavLink
         title="navbar"
         className="projects-tab project-tab"
-        exact
-        to={`/projects/${'React' || 'Vue' || 'JavaScript' || 'Compositions'}`}
+        to={`/projects`}
       >
         <div className="tab-item-container">
           <i className="fas fa-project-diagram" />
