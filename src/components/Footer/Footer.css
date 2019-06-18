@@ -46,7 +46,7 @@
 .weather-icon-left {
   filter: invert(1);
   height: 60px;
-  margin: 0;
+  margin: -1rem 0 0 0;
 }
 
 .weather-desc-img {
@@ -57,7 +57,7 @@
   flex-direction: row;
   background: #131111;
   border-radius: 5rem;
-  padding: 0.5rem 2rem 1rem 2rem;
+  padding: 1rem 2rem 1rem 1rem;
   border: 1px solid #fff;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;

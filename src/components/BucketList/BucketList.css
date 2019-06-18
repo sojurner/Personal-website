@@ -130,6 +130,8 @@ td {
 .family-img,
 .army-img {
   height: 380px;
+  border: 1px groove black;
+  border-radius: 15rem;
   width: 310px;
   opacity: 0.9;
   filter: hue-rotate(20deg);
