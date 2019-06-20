@@ -14,11 +14,16 @@
 }
 
 .bucket-tabs {
+  cursor: pointer;
   position: relative;
   border-radius: 3rem;
   overflow: hidden;
   padding: 0;
   border: 2px solid #8c8c8c;
+}
+
+.bucket-tabs:hover > .bucket-toggle {
+  background-color: rgb(174, 140, 4);
 }
 
 .bucket-items button {
@@ -52,16 +57,12 @@
   border: 2px solid rgb(75, 75, 75);
 }
 
-.bucket-toggle:hover {
-  background-color: rgb(174, 140, 4);
-}
-
 .bucket-toggle-personal {
-  transform: translate3d(3.9rem, 0rem, 0);
+  transform: translate3d(3.95rem, 0.11rem, 0);
 }
 
 .bucket-toggle-professional {
-  transform: translate3d(0rem, 0rem, 0);
+  transform: translate3d(0rem, 0.11rem, 0);
 }
 
 .bucket-code,

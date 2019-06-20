@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '../Routes/Routes';
 import ContactHeader from '../ContactHeader/ContactHeader';
 import Audio from '../Audio/Audio';
-import styles from './App.css';
+import './App.css';
 import AppTemplate from '../Template/Template';
 // import Gifs from '../Gifs/Gifs';
 
