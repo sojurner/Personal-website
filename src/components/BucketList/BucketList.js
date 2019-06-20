@@ -25,9 +25,8 @@ class BucketList extends Component {
     return (
       <section className="bucket-items" ref={bucketRef}>
         <h3>Goals</h3>
-        <div className="bucket-tabs">
+        <div onClick={this.setType} className="bucket-tabs">
           <div
-            onClick={this.setType}
             className={
               listType === 'personal'
                 ? 'bucket-toggle bucket-toggle-personal'
