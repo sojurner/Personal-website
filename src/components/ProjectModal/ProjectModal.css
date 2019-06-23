@@ -12,13 +12,17 @@
 }
 
 .styles_modal__gNwvD {
-  background-color: rgb(33, 53, 87);
-  border: 2px solid rgb(52, 75, 96);
+  background-color: rgb(47, 54, 66);
+  box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 0;
+}
+
+.styles_overlay__CLSq- {
+  background: rgba(0, 0, 0, 0.164);
 }
 
 .modal-section-links {
