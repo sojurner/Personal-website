@@ -6,7 +6,7 @@
   width: 40%;
   height: 100vh;
   border-radius: 30% 0 0 30%;
-  box-shadow: 5px 5px 55px 30px rgba(0, 0, 0, 0.67);
+  box-shadow: 5px 5px 133px 58px rgba(0, 0, 0, 0.67);
 }
 
 .experience-education-nav {
@@ -110,10 +110,10 @@
 
 .professional-emblem {
   position: absolute;
-  top: 20rem;
-  left: -1rem;
-  opacity: 0.5;
-  height: 250px;
+  top: 0rem;
+  left: 8rem;
+  opacity: 0.7;
+  height: 180px;
   z-index: 0;
   filter: blur(3px) brightness(0.7);
   border-radius: 4rem;
