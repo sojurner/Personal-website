@@ -1,5 +1,4 @@
 import React from 'react';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { fetchPhotos } from '../../utilities/apiCalls';
 import './GalleryInfiniteScroll.css';
 import Loading from '../Loading/Loading';
