@@ -24,7 +24,6 @@ class JumboMumbo extends React.Component {
     setTimeout(() => {
       this.setState({ title: true });
     }, 1000);
-
     this.fetchWeather();
   }
 
