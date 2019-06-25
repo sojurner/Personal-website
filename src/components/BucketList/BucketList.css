@@ -81,12 +81,19 @@
   transform: translate3d(0rem, 0, 0);
 }
 
-.bucket-content {
+.bucket-content,
+.bucket-content-hide {
   display: flex;
   flex-direction: row;
   width: 80%;
   margin-top: 5rem;
   justify-content: space-around;
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.bucket-content-hide {
+  opacity: 0;
 }
 
 .bucket-items table {

@@ -6,9 +6,24 @@ class BucketList extends Component {
   constructor() {
     super();
     this.state = {
-      listType: 'personal'
+      listType: 'personal',
+      visible: false
     };
+    this.contentRef = React.createRef();
   }
+
+  componentDidMount = () => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry);
+        this.setState({ visible: entry.isIntersecting });
+      },
+      { rootMargin: '-300px' }
+    );
+    if (this.contentRef) {
+      observer.observe(this.contentRef);
+    }
+  };
 
   setType = () => {
     this.setState(prev => {
@@ -40,7 +55,12 @@ class BucketList extends Component {
             <i className="fas fa-laptop-code bucket-code" />
           </button>
         </div>
-        <content className="bucket-content">
+        <content
+          ref={ref => (this.contentRef = ref)}
+          className={
+            this.state.visible ? 'bucket-content' : 'bucket-content-hide'
+          }
+        >
           <div>
             <h4 className="bucket-type">{listType}</h4>
             <table>
