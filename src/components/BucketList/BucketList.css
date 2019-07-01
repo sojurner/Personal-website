@@ -138,18 +138,16 @@ td {
 .family-img,
 .army-img {
   height: 380px;
-  border: 1px groove black;
   border-radius: 15rem;
   width: 310px;
   opacity: 0.9;
   filter: hue-rotate(20deg);
-  box-shadow: 0 0 100px #c63f0ed2, inset 0 0 8px #c98c67b9;
+  box-shadow: 0 0 100px #c63f0ed2, 0 0 20px rgba(95, 46, 46, 0.664);
 }
 
 .army-img {
   height: 380px;
-
-  box-shadow: 0 0 100px #80d0ffd2, inset 0 0 8px #67bfc9db;
+  box-shadow: 0 0 100px #8dd5ffd2, 0 0 30px #288892db;
 }
 
 /* .bucket-items li:nth-child(4)::before {
