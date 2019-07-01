@@ -102,8 +102,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(1, 1, 1, 0.125);
+  background-color: rgba(175, 175, 175, 0.06);
   min-width: 460px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.76);
+  border-radius: 1rem;
 }
 
 .bucket-items table td {
@@ -132,7 +134,31 @@ td {
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: bold;
-  margin-bottom: 3rem;
+  width: max-content;
+}
+
+.bucket-horizontal-divider {
+  width: 100%;
+  transition-delay: 1s;
+  transition: 1.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.bucket-horizontal-divider-hide {
+  width: 0;
+}
+
+.bucket-vertical-divider {
+  height: 100%;
+  transition-delay: 2s;
+  transition: 1s linear;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+.bucket-vertical-divider-hide {
+  height: 0;
 }
 
 .family-img,
@@ -145,9 +171,14 @@ td {
   box-shadow: 0 0 100px #c63f0ed2, 0 0 20px rgba(95, 46, 46, 0.664);
 }
 
+.family-img {
+  animation: glowy-fam-pic 3s linear infinite;
+}
+
 .army-img {
   height: 380px;
   box-shadow: 0 0 100px #8dd5ffd2, 0 0 30px #288892db;
+  animation: glowy-army-pic 3s linear infinite;
 }
 
 /* .bucket-items li:nth-child(4)::before {
@@ -173,4 +204,40 @@ td {
   background-size: 75%;
   background-position: center;
   font-weight: bold;
+}
+
+@keyframes glowy-fam-pic {
+  0% {
+    box-shadow: 0 0 100px #c63f0ed2, 0 0 30px rgba(95, 46, 46, 0.664);
+  }
+  25% {
+    box-shadow: 0 0 50px #6e321bd2, 0 0 30px rgba(95, 46, 46, 0.664);
+  }
+  50% {
+    box-shadow: 0 0 10px #6e321bd2, 0 0 30px rgba(95, 46, 46, 0.664);
+  }
+  75% {
+    box-shadow: 0 0 50px #6e321bd2, 0 0 30px rgba(95, 46, 46, 0.664);
+  }
+  100% {
+    box-shadow: 0 0 100px #c63f0ed2, 0 0 30px rgba(95, 46, 46, 0.664);
+  }
+}
+
+@keyframes glowy-army-pic {
+  0% {
+    box-shadow: 0 0 100px #8dd5ffd2, 0 0 30px #288892db;
+  }
+  25% {
+    box-shadow: 0 0 50px #8dd5ffd2, 0 0 30px #288892db;
+  }
+  50% {
+    box-shadow: 0 0 10px #8dd5ffd2, 0 0 30px #288892db;
+  }
+  75% {
+    box-shadow: 0 0 50px #8dd5ffd2, 0 0 30px #288892db;
+  }
+  100% {
+    box-shadow: 0 0 100px #8dd5ffd2, 0 0 30px #288892db;
+  }
 }

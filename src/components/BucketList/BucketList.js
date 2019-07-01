@@ -35,7 +35,7 @@ class BucketList extends Component {
 
   render() {
     const { bucketRef } = this.props;
-    const { listType } = this.state;
+    const { listType, visible } = this.state;
     const selectedItems = bucketList.filter(item => item.type === listType);
     return (
       <section className="bucket-items" ref={bucketRef}>
@@ -57,12 +57,17 @@ class BucketList extends Component {
         </div>
         <content
           ref={ref => (this.contentRef = ref)}
-          className={
-            this.state.visible ? 'bucket-content' : 'bucket-content-hide'
-          }
+          className={visible ? 'bucket-content' : 'bucket-content-hide'}
         >
           <div>
             <h4 className="bucket-type">{listType}</h4>
+            <hr
+              className={
+                visible
+                  ? 'bucket-horizontal-divider'
+                  : 'bucket-horizontal-divider-hide'
+              }
+            />
             <table>
               <tbody>
                 {selectedItems.map((item, index) => {
@@ -88,6 +93,13 @@ class BucketList extends Component {
               </tbody>
             </table>
           </div>
+          <hr
+            className={
+              visible
+                ? 'bucket-vertical-divider'
+                : 'bucket-vertical-divider-hide'
+            }
+          />
           <img
             alt="family relatives"
             src={
