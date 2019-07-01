@@ -4,25 +4,26 @@ import { withState } from 'recompose';
 
 import './Skillset.css';
 
+const descriptions = [
+  'React',
+  'Redux',
+  'Jest',
+  'Vue',
+  'Ruby',
+  'Node',
+  'HTML',
+  'Git',
+  'CSS',
+  'Material-ui',
+  'Typescript'
+];
+
 const Skillset = ({ tooltip, handleTooltip }) => {
-  let descriptions = [
-    'React',
-    'Redux',
-    'Jest',
-    'Vue',
-    'Ruby',
-    'Node',
-    'HTML',
-    'CSS',
-    'Git',
-    'Material-ui',
-    'Typescript'
-  ];
   const skills = descriptions.map((description, index) => {
     const styles = { margin: '0 5px' };
     return (
       <div
-        className="skill-box"
+        className={`skill-box skill-box-${index}`}
         key={`skill-${index}`}
         onMouseEnter={() => handleTooltip(description)}
         onMouseLeave={() => handleTooltip('')}
