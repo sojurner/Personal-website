@@ -127,7 +127,7 @@
   transform: translate3d(0, 0, 0);
   display: flex;
   align-items: center;
-  align-self: center;
+  align-self: flex-start;
   justify-content: space-evenly;
   background: #0c2454;
   border-radius: 1rem;
@@ -188,9 +188,9 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  height: 12rem;
+  height: 10rem;
   width: 100vw;
-  padding: 3rem;
+  padding: 1.5rem 3rem;
   overflow: hidden;
   align-content: center;
   background: none;
@@ -206,10 +206,25 @@
   z-index: 102;
 }
 
-.logo-show {
+.logo-show,
+.logo-hide {
+  height: 40px;
+  width: 180px;
   transform: translate3d(0, 0, 0);
   transition: 0.5s ease-in-out;
   align-self: center;
+}
+
+.logo-icon-show,
+.logo-icon-hide {
+  height: 45px;
+  margin-left: 1rem;
+}
+
+.logos-show,
+.logos-hide {
+  align-self: center;
+  width: max-content;
 }
 
 .fa-stream {
