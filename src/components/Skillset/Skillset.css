@@ -56,7 +56,7 @@
   position: relative;
   width: 80px;
   height: 45px;
-  background-color: #3636366c;
+  background-color: #36363634;
   margin: 23.09px 0;
   border-left: solid 1.5px #2f5f8a;
   border-right: solid 1.5px #2f5f8a;
@@ -113,7 +113,7 @@
 }
 
 .skill-box:hover {
-  background: rgb(28, 58, 73);
+  background: rgb(1, 29, 43);
   animation: sheen 2s linear infinite;
   transition: 0.2s linear;
 }
