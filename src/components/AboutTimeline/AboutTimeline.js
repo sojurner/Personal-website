@@ -135,43 +135,45 @@ class AboutTimeline extends React.Component {
           />
         </aside>
         <main ref={ref => (this.parentRef = ref)} className="about-content">
-          {this.state.activeTimeline === 'Experience' &&
-            sortedInfo.map((item, index) => {
-              return (
-                <>
+          <div className="about-content_inner">
+            {this.state.activeTimeline === 'Experience' &&
+              sortedInfo.map((item, index) => {
+                return (
+                  <>
+                    <section
+                      key={`${item.career}-${index}`}
+                      id={item.career}
+                      className="about-item-content"
+                      ref={ref => (this.experienceContentRefs[index] = ref)}
+                    >
+                      <header>
+                        <h2>{item.career}</h2>
+                        <h4>{item.company}</h4>
+                      </header>
+                      <p>{item.details}</p>
+                    </section>
+                  </>
+                );
+              })}
+            {this.state.activeTimeline === 'Education' &&
+              sortedEducation.map((item, index) => {
+                const { institution, details } = item;
+                return (
                   <section
-                    key={`${item.career}-${index}`}
-                    id={item.career}
+                    key={`${institution}-${index}`}
+                    id={institution}
                     className="about-item-content"
-                    ref={ref => (this.experienceContentRefs[index] = ref)}
+                    ref={ref => (this.educationContentRefs[index] = ref)}
                   >
                     <header>
-                      <h2>{item.career}</h2>
-                      <h4>{item.company}</h4>
+                      <h2>{institution}</h2>
                     </header>
-                    <p>{item.details}</p>
+                    <p>{details}</p>
                   </section>
-                </>
-              );
-            })}
-          {this.state.activeTimeline === 'Education' &&
-            sortedEducation.map((item, index) => {
-              const { institution, details } = item;
-              return (
-                <section
-                  key={`${institution}-${index}`}
-                  id={institution}
-                  className="about-item-content"
-                  ref={ref => (this.educationContentRefs[index] = ref)}
-                >
-                  <header>
-                    <h2>{institution}</h2>
-                  </header>
-                  <p>{details}</p>
-                </section>
-              );
-            })}
-          <span className="about-item-content" />
+                );
+              })}
+            <span className="about-item-content" />
+          </div>
         </main>
       </section>
     );
