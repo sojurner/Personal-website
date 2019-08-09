@@ -1,25 +1,44 @@
 .resource-cards {
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
   display: flex;
   height: 20rem;
-  width: max-content;
+
+  height: max-content;
   justify-content: space-betteen;
   align-items: space-around;
-  flex-direction: row;
+  flex-direction: column;
+  margin: auto;
+}
+
+.resource-section-title {
+  text-align: center;
+  margin: 5rem 0;
 }
 
 .resource-subtitle-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 20rem;
-  flex-wrap: wrap;
-  padding-left: 1rem;
   justify-content: flex-start;
   list-style: none;
-  margin-top: 2rem;
+  justify-content: space-evenly;
+  margin: 1rem 3rem;
 }
 
 .resource-subtitle-section li {
   margin: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+.resource-subtitle-section li a {
+  display: flex;
+  font-size: 1.2em;
+}
+
+.resource-subtitle-section li a:hover,
+.resource-subtitle-section li a:focus {
+  text-decoration-line: none;
+  color: rgb(190, 237, 255);
 }
 
 .resource-content-section {
@@ -28,13 +47,15 @@
 }
 
 .resource-description-section {
-  padding: 1rem;
-  margin: 2rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  margin: 0 3rem;
 }
 
 .resource-description-section p {
-  width: 10rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .divider {
@@ -42,7 +63,7 @@
 }
 
 .resource-card {
-  margin: 2rem;
+  margin: 5rem auto;
   border: 1px solid rgb(51, 78, 90);
   position: relative;
   background: rgba(66, 66, 66, 0.24);
