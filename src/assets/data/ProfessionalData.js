@@ -129,7 +129,8 @@ export const experienceInfo = [
     img: '65med-patch.png'
   },
   {
-    career: 'Front-End Developer',
+    career: 'Front-End Dev',
+    company: 'Catalyst Healthcare',
     details: 'React, Material-Ui, Redux, Jest, Typescript, Webpack',
     start: 2017,
     end: 'Now',

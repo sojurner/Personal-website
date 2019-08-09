@@ -30,7 +30,7 @@
 
 .weather-high,
 .weather-low {
-  color: rgb(210, 142, 142);
+  color: rgb(150, 206, 249);
   font-size: 2rem;
   margin: 0rem -15px 0rem 0px;
 
@@ -39,7 +39,7 @@
 }
 
 .weather-high {
-  color: rgb(150, 206, 249);
+  color: rgb(210, 142, 142);
   border-bottom: 1px solid white;
 }
 
@@ -51,28 +51,25 @@
 
 .weather-desc-img {
   height: max-content;
-  display: -webkit-flex;
+  align-items: center;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   background: #131111;
   border-radius: 5rem;
   padding: 1rem 2rem 1rem 1rem;
   border: 1px solid #fff;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   z-index: 1;
-  margin-top: 1rem;
 }
 
 .weather-summary {
   align-self: center;
   text-align: left;
   margin: 0 0 0 1rem;
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  width: 210px;
 }
 
 .fa-temperature-low,

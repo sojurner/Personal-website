@@ -6,7 +6,17 @@ import './ResourceCard.css';
 const ResourceCard = ({ handleHover }) => {
   const resourceCard = resourceList.map((item, index) => {
     return (
-      <card className="resource-card">
+      <div
+        className="resource-card"
+        style={{
+          backgroundImage: `url('${item.logo}')`,
+          backgroundBlendMode: 'multiply',
+          backgroundColor: 'rgba(0, 0, 0, 0.78)',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center'
+        }}
+      >
         <h4 className="resource-container" key={`resource-${index}`}>
           <a
             target="_blank"
@@ -17,7 +27,7 @@ const ResourceCard = ({ handleHover }) => {
             {item.name}
           </a>
         </h4>
-        <cardcontent className="resource-content-section">
+        <div className="resource-content-section">
           <section className="resource-description-section">
             <p>{item.description}</p>
           </section>
@@ -39,15 +49,18 @@ const ResourceCard = ({ handleHover }) => {
               );
             })}
           </ul>
-        </cardcontent>
-      </card>
+        </div>
+      </div>
     );
   });
 
   return (
-    <section style={{ width: 'max-content', margin: '10rem auto' }}>
-      <cards className="resource-cards">{resourceCard}</cards>
-    </section>
+    <div className="resource-cards">
+      <h1 className="resource-section-title">
+        Immensely helpful during my Journey
+      </h1>
+      {resourceCard}
+    </div>
   );
 };
 

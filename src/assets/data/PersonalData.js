@@ -86,15 +86,19 @@ export const bucketList = [
 
 const hashrocketUrl = 'https://til.hashrocket.com/';
 const devHintsUrl = 'https://devhints.io/';
+const owaspURL = 'https://cheatsheetseries.owasp.org/';
+
 export const resourceList = [
   {
     link: hashrocketUrl,
     name: 'Hash Rocket',
+    logo:
+      'https://cdn.hashrocket.com/assets/brand/hr_logo_h-0e1c864918fde29fdf7fb0ac10d0a2f3ac6c654d821725c1a60e4b5f3117ceaa.png',
     description: 'Random Programming Facts',
     subLinks: [
       {
         link: `${hashrocketUrl}/html-css`,
-        name: ['HTML', 'CSS']
+        name: 'HTML - CSS'
       },
       {
         link: `${hashrocketUrl}/javascript`,
@@ -113,6 +117,7 @@ export const resourceList = [
   {
     link: devHintsUrl,
     name: 'Dev Hints',
+    logo: 'http://i.imgur.com/Mr9pvq9.jpg',
     description: 'Collection of Cheatsheets by Rico',
     subLinks: [
       {
@@ -130,6 +135,31 @@ export const resourceList = [
       {
         link: `${devHintsUrl}/typescript`,
         name: 'TypeScript'
+      }
+    ]
+  },
+  {
+    link: owaspURL,
+    name: 'OWASP',
+    logo:
+      'https://cheatsheetseries.owasp.org/assets/Preface_Cheatsheet_Logo.png',
+    description: 'Application Security Topics',
+    subLinks: [
+      {
+        link: `${owaspURL}/cheatsheets/HTML5_Security_Cheat_Sheet.html`,
+        name: 'HTML5 Security'
+      },
+      {
+        link: `${owaspURL}/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html`,
+        name: 'DOM base XSS Prevention'
+      },
+      {
+        link: `${owaspURL}/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html`,
+        name: 'Securing CSS'
+      },
+      {
+        link: `${owaspURL}/cheatsheets/REST_Security_Cheat_Sheet.html`,
+        name: 'REST Security'
       }
     ]
   }

@@ -10,13 +10,12 @@
 }
 
 .experience-education-nav {
-  position: absolute;
-  margin-top: 14rem;
-  margin-left: 26rem;
+  margin: 0 0 0 -3rem;
   font-size: 1.7rem;
   font-weight: 800;
   cursor: pointer;
   z-index: 99;
+  flex-basis: 7rem;
 }
 
 .about-tab {
@@ -47,8 +46,7 @@
   padding: 5rem;
   width: max-content;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
+  flex-direction: column;
   position: relative;
   margin: 0 0 0 25rem;
 }
@@ -66,10 +64,9 @@
 
 .about-content {
   background: #0000001b;
-  border: 1px solid #0000008a;
-  border-radius: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+  border-top: 1px solid #5db0b3;
   color: white;
-  box-shadow: 0 0 10px 5px #0400009e;
   width: 50rem;
   position: absolute;
   padding: 30px;
@@ -82,6 +79,7 @@
 .about-content_inner {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: 10px;
 }
 
@@ -90,7 +88,7 @@
   height: 100%;
   width: 100%;
   margin: 0 0 0 20rem;
-  padding: 0 0 0 39px;
+  padding: 15px;
 }
 
 .about-item-content:first-child {
@@ -105,10 +103,15 @@
   color: #5db0b3;
 }
 
+.about-item-content h2 {
+  margin: 0;
+  font-size: 4.5rem;
+}
+
 .about-content h4 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: lightblue;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 
 .about-content p {
@@ -119,17 +122,11 @@
 
 .professional-emblem {
   position: absolute;
-  top: 0rem;
-  left: 8rem;
-  opacity: 0.7;
-  height: 180px;
+  top: 1.5rem;
+  left: 25%;
+  height: 125px;
   z-index: 0;
-  filter: blur(3px) brightness(0.7);
-  border-radius: 4rem;
-}
-
-.year-item:last-child {
-  margin-top: 20rem;
+  border-radius: 5px;
 }
 
 .year-item:hover {
@@ -140,6 +137,18 @@
 .year-item {
   border: 1px solid rgba(0, 255, 255, 0);
   z-index: 1;
+  width: max-content;
+}
+
+.side-quote {
+  width: 200px;
+  margin-top: 15rem;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.side-quote p {
+  margin: 1.5rem;
 }
 
 .year-item-active {

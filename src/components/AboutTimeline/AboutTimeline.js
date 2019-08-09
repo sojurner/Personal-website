@@ -72,23 +72,36 @@ class AboutTimeline extends React.Component {
     const sortedEducation = educationInfo.sort((a, b) => b.start - a.start);
     return (
       <section className="jumbo-experience-education" ref={aboutRef}>
+        <img
+          alt="professional emblem"
+          className="professional-emblem"
+          src={
+            this.state.activeTimeline === 'Experience'
+              ? `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
+                  this.state.activeInfo.img
+                }`
+              : `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/education/${
+                  this.state.activeInfo.img
+                }`
+          }
+        />
         <aside className="timeline-bar">
-          <nav className="experience-education-nav">
-            {aboutTabs.map((tab, index) => (
-              <span
-                key={`experience-education-nav-${index}`}
-                className={
-                  this.state.activeTimeline === tab
-                    ? 'about-tab-active about-tab'
-                    : 'about-tab'
-                }
-                onClick={this.setTimeline.bind(null, tab)}
-              >
-                {tab}
-              </span>
-            ))}
-          </nav>
           <section className="year-section">
+            <nav className="experience-education-nav">
+              {aboutTabs.map((tab, index) => (
+                <span
+                  key={`experience-education-nav-${index}`}
+                  className={
+                    this.state.activeTimeline === tab
+                      ? 'about-tab-active about-tab'
+                      : 'about-tab'
+                  }
+                  onClick={this.setTimeline.bind(null, tab)}
+                >
+                  {tab}
+                </span>
+              ))}
+            </nav>
             {this.state.activeTimeline === 'Experience' &&
               experienceInfo.map(item => (
                 <span
@@ -105,34 +118,23 @@ class AboutTimeline extends React.Component {
               ))}
             {this.state.activeTimeline === 'Education' &&
               educationInfo.map(item => (
-                <>
-                  <span
-                    key={`about-${item.institution}`}
-                    className={
-                      this.state.activeInfo.start === item.start
-                        ? 'year-item year-item-active'
-                        : 'year-item'
-                    }
-                    onClick={this.showYearInfo.bind(null, item)}
-                  >
-                    {item.start} - {item.end}
-                  </span>
-                </>
+                <span
+                  key={`about-${item.institution}`}
+                  className={
+                    this.state.activeInfo.start === item.start
+                      ? 'year-item year-item-active'
+                      : 'year-item'
+                  }
+                  onClick={this.showYearInfo.bind(null, item)}
+                >
+                  {item.start} - {item.end}
+                </span>
               ))}
+            <p className="side-quote">
+              You are doomed to make choices. This is life's greatest paradox.
+              <p>- Wayne Dyer</p>
+            </p>
           </section>
-          <img
-            alt="professional emblem"
-            className="professional-emblem"
-            src={
-              this.state.activeTimeline === 'Experience'
-                ? `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/professional/${
-                    this.state.activeInfo.img
-                  }`
-                : `https://res.cloudinary.com/paulkim/image/upload/v1552393728/images/education/${
-                    this.state.activeInfo.img
-                  }`
-            }
-          />
         </aside>
         <main ref={ref => (this.parentRef = ref)} className="about-content">
           <div className="about-content_inner">
@@ -148,7 +150,7 @@ class AboutTimeline extends React.Component {
                     >
                       <header>
                         <h2>{item.career}</h2>
-                        <h4>{item.company}</h4>
+                        <h4>- {item.company}</h4>
                       </header>
                       <p>{item.details}</p>
                     </section>
