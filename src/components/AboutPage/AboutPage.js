@@ -28,7 +28,6 @@ class AboutPage extends React.Component {
         </div>
         <GalleryDisplay />
         <ResourceCards />
-        <h1>Work In Progress</h1>
       </div>
     );
   }
